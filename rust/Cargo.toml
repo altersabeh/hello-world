@@ -1,0 +1,16 @@
+[package]
+name = "rust-hello"
+version = "1.0.0"
+description = "Hello World program written in Rust"
+license = "MIT"
+repository = "https://github.com/altersabeh/hello-world"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "rust-hello"
+path = "src/hello.rs"
+
+[dependencies]
+chrono = "0.4.37"
