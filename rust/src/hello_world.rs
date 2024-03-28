@@ -1,5 +1,7 @@
 // Hello World in Rust !
 
+extern crate chrono;
+
 use chrono::{DateTime, Local};
 use std::env;
 
@@ -12,8 +14,10 @@ fn print_greeting(args: &[String]) {
 }
 
 fn print_date() {
-  let now: DateTime<Local> = Local::now();
-  println!("Today is {}", now.format("%B %e, %Y %H:%M:%S"));
+  let current_date: DateTime<Local> = Local::now();
+  let layout: &str = "%B %e, %Y %H:%M:%S";
+  let formatted_date: String = current_date.format(layout).to_string();
+  println!("Today is {}", formatted_date);
 }
 
 fn main() {
