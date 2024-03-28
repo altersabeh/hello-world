@@ -5,7 +5,7 @@ use std::process::Command;
 fn hello_world_test() {
   let now: DateTime<Local> = Local::now();
   let expected_output = format!(
-    "Hello World from Cargo !\nCurrent Date and Time: {}\n",
+    "Hello World from Rust !\nCurrent Date and Time: {}\n",
     now.format("%Y-%m-%d %H:%M:%S")
   );
 
