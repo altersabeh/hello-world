@@ -1,8 +1,12 @@
 {
   "files.exclude": {
+    "**/.gradle": true,
+    "**/build": true,
     "**/target": true,
   },
   "files.watcherExclude": {
-    "**/target": true
+    "**/.gradle": true,
+    "**/build": true,
+    "**/target": true,
   }
 }
