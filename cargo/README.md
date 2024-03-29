@@ -40,7 +40,7 @@ fn main() {
 
 To create a new Rust project, run the following command:
 
-`cargo new hello-world`
+`cargo new --bin hello-world`
 
 ## Building the project
 
