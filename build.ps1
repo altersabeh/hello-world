@@ -13,6 +13,15 @@ $cargo_commands = @(
   "cargo clean"
 )
 
+$gradle_commands = @(
+  "gradle assemble",
+  "gradle test",
+  "gradle run",
+  "gradle lint",
+  "gradle jar",
+  "gradle clean"
+)
+
 # Get the action and language from command-line arguments
 $action = $args[0]
 $language = $args[1]

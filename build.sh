@@ -2,7 +2,7 @@
 
 # Directories
 cargo_dir="cargo"
-
+gradle_dir="gradle"
 
 # Commands
 cargo_commands=(
@@ -12,6 +12,15 @@ cargo_commands=(
   "cargo clippy"
   "cargo package"
   "cargo clean"
+)
+
+gradle_commands=(
+  "gradlew assemble"
+  "gradlew test"
+  "gradlew run"
+  "gradlew check"
+  "gradlew jar"
+  "gradlew clean"
 )
 
 # Get the action and language from command-line arguments
@@ -30,6 +39,10 @@ case "$language" in
 cargo)
   lang_dir="$cargo_dir"
   commands=("${cargo_commands[@]}")
+  ;;
+gradle)
+  lang_dir="$gradle_dir"
+  commands=("${gradle_commands[@]}")
   ;;
 *)
   echo "Unsupported language: $language"
