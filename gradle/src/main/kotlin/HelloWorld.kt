@@ -1,4 +1,4 @@
-// Hello World in Kotlin !
+// Hello World in Gradle !
 
 package hello
 
