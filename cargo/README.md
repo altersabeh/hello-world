@@ -1,0 +1,64 @@
+# Cargo - Hello World
+
+A simple **Hello World** program in Cargo.
+
+```rust
+// Hello World in Cargo !
+
+extern crate chrono;
+
+use chrono::{DateTime, Local};
+use std::env;
+
+fn print_greeting(args: &[String]) {
+  if args.len() > 1 {
+    println!("Hi {}, greetings from Cargo !", args[1..].join(" "));
+  } else {
+    println!("Hello World from Cargo !");
+  }
+}
+
+fn print_date() {
+  let current_date: DateTime<Local> = Local::now();
+  let layout: &str = "%B %e, %Y %H:%M:%S";
+  let formatted_date: String = current_date.format(layout).to_string();
+  println!("Today is {}", formatted_date);
+}
+
+fn main() {
+  let args: Vec<_> = env::args().collect();
+  print_greeting(&args);
+  print_date();
+}
+```
+
+## Programming Language
+
+- Rust
+
+## Creating a new Cargo project
+
+To create a new Rust project, run the following command:
+
+`cargo new hello-world`
+
+## Building the project
+
+To build the project, navigate to the project directory and run the following
+command:
+
+`cargo build`
+
+## Running the project
+
+To run the project, navigate to the project directory and run the following
+command:
+
+`cargo run`
+
+## Testing the project
+
+To test the project, navigate to the project directory and run the following
+command:
+
+`cargo test`
