@@ -15,7 +15,7 @@ fn print_greeting(args: &[String]) {
 
 fn print_date() {
     let current_date: DateTime<Local> = Local::now();
-    let layout: &str = "%B %e, %Y %H:%M:%S";
+    let layout: &str = "%B %e, %Y %H:%M";
     let formatted_date: String = current_date.format(layout).to_string();
     println!("Today is {}", formatted_date);
 }

@@ -6,7 +6,7 @@ fn hello_world_test() {
     let now: DateTime<Local> = Local::now();
     let expected_output = format!(
         "Hello World from Cargo !\nToday is {}\n",
-        now.format("%B %e, %Y %H:%M:%S")
+        now.format("%B %e, %Y %H:%M")
     );
 
     let output = Command::new("./target/debug/cargo-hello")
@@ -33,7 +33,7 @@ fn hello_world_with_name_test() {
     let expected_output = format!(
         "Hi {}, greetings from Cargo !\nToday is {}\n",
         name,
-        now.format("%B %e, %Y %H:%M:%S")
+        now.format("%B %e, %Y %H:%M")
     );
 
     let output = Command::new("./target/debug/cargo-hello")
