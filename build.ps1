@@ -1,10 +1,10 @@
 #!/usr/bin/env pwsh
 
 # Define directories
-$rust_dir = "rust"
+$cargo_dir = "cargo"
 
 # Define commands
-$rust_commands = @(
+$cargo_commands = @(
   "cargo build",
   "cargo test",
   "cargo run",
@@ -21,15 +21,15 @@ $language = $args[1]
 if (-not $action -or -not $language) {
   Write-Host "Usage: ./build.ps1 <action> <language>"
   Write-Host "Actions: build, test, run, lint, package"
-  Write-Host "Languages: rust, java, groovy"
+  Write-Host "Build Tool: cargo"
   return
 }
 
 # Set the language directory and commands
 switch ($language) {
-  "rust" {
-    $lang_dir = $rust_dir
-    $commands = $rust_commands
+  "cargo" {
+    $lang_dir = $cargo_dir
+    $commands = $cargo_commands
   }
   default {
     Write-Host "Unsupported language: $language"

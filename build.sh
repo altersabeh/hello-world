@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Directories
-rust_dir="rust"
+cargo_dir="cargo"
 
 
 # Commands
-rust_commands=(
+cargo_commands=(
   "cargo build"
   "cargo test"
   "cargo run"
@@ -27,9 +27,9 @@ fi
 
 # Set the language directory
 case "$language" in
-rust)
-  lang_dir="$rust_dir"
-  commands=("${rust_commands[@]}")
+cargo)
+  lang_dir="$cargo_dir"
+  commands=("${cargo_commands[@]}")
   ;;
 *)
   echo "Unsupported language: $language"
