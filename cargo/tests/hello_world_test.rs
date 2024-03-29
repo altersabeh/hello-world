@@ -16,7 +16,7 @@ fn hello_world_test() {
   assert!(
     output.status.success(),
     "Command did not execute successfully: {}",
-    String::from_utf8_lossy(&output.stderr) 
+    String::from_utf8_lossy(&output.stderr)
   );
 
   assert_eq!(
