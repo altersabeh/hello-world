@@ -15,7 +15,7 @@ class HelloWorldTest {
         System.setOut(PrintStream(outputStreamCaptor))
         val timestamp = System.currentTimeMillis()
         val expectedOutput =
-            "Hello World from Gradle !\nToday is ${DateFormatUtils.format(timestamp, "MMMM d, yyyy HH:mm:ss")}\n"
+            "Hello World from Gradle !\nToday is ${DateFormatUtils.format(timestamp, "MMMM d, yyyy HH:mm")}\n"
 
         main(emptyArray())
 
@@ -29,7 +29,7 @@ class HelloWorldTest {
         val name = "Alter Sabeh"
         val timestamp = System.currentTimeMillis()
         val expectedOutput =
-            "Hi $name, greetings from Gradle !\nToday is ${DateFormatUtils.format(timestamp, "MMMM d, yyyy HH:mm:ss")}\n"
+            "Hi $name, greetings from Gradle !\nToday is ${DateFormatUtils.format(timestamp, "MMMM d, yyyy HH:mm")}\n"
 
         main(arrayOf("", name))
 

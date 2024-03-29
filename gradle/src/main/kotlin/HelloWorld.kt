@@ -15,7 +15,7 @@ fun printGreeting(args: Array<String>) {
 
 fun printDate() {
     val currentDate = System.currentTimeMillis()
-    val format = "MMMM dd, yyyy HH:mm:ss"
+    val format = "MMMM dd, yyyy HH:mm"
     val formattedDate = DateFormatUtils.format(currentDate, format)
     println("Today is $formattedDate")
 }
