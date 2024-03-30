@@ -1,25 +1,28 @@
 use cargo_hello::{print_date, print_greeting};
 
-use chrono::{DateTime, Local};
+use chrono::Local;
 
 #[test]
 fn print_greeting_without_name_test() {
-    let args: Vec<String> = vec![];
+    let args = vec![];
     let expected_output = "Hello World from Cargo !".to_string();
-    assert_eq!(print_greeting(&args), expected_output);
+    let actual_output = print_greeting(&args);
+    assert_eq!(actual_output, expected_output);
 }
 
 #[test]
 fn print_greeting_with_name_test() {
-    let args: Vec<String> = vec![String::from("hello"), String::from("Alter Sabeh")];
+    let args = vec!["".into(), "Alter".into(), "Sabeh".into()];
     let expected_output = "Hi Alter Sabeh, greetings from Cargo !".to_string();
-    assert_eq!(print_greeting(&args), expected_output);
+    let actual_output = print_greeting(&args);
+    assert_eq!(actual_output, expected_output);
 }
 
 #[test]
 fn print_date_test() {
-    let now: DateTime<Local> = Local::now();
+    let now = Local::now();
     let formatted_date = now.format("%B %e, %Y %H:%M").to_string();
     let expected_output = format!("Today is {}", formatted_date);
-    assert_eq!(print_date(), expected_output);
+    let actual_output = print_date();
+    assert_eq!(actual_output, expected_output);
 }

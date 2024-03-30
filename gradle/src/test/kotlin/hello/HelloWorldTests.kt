@@ -9,14 +9,16 @@ class HelloWorldTests {
     fun `print greeting without name test`() {
         val args = emptyArray<String>()
         val expectedOutput = "Hello World from Gradle !"
-        assertEquals(expectedOutput, printGreeting(args))
+        val actualOutput = printGreeting(args)
+        assertEquals(actualOutput, expectedOutput)
     }
 
     @Test
     fun `print greeting with name test`() {
         val args = arrayOf("Alter", "Sabeh")
         val expectedOutput = "Hi Alter Sabeh, greetings from Gradle !"
-        assertEquals(expectedOutput, printGreeting(args))
+        val actualOutput = printGreeting(args)
+        assertEquals(actualOutput, expectedOutput)
     }
 
     @Test
@@ -24,6 +26,7 @@ class HelloWorldTests {
         val now = System.currentTimeMillis()
         val formattedDate = DateFormatUtils.format(now, "MMMM d, yyyy HH:mm")
         val expectedOutput = "Today is $formattedDate"
-        assertEquals(expectedOutput, printDate())
+        val actualOutput = printDate()
+        assertEquals(actualOutput, expectedOutput)
     }
 }
