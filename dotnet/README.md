@@ -1,16 +1,15 @@
-# Gradle - Hello World
+# Dotnet - Hello World
 
-A simple **Hello World** program in Cargo.
+A simple **Hello World** program in dotnet.
 
 ## Programming Language
 
-- Kotlin
-- Groovy
-- Java
+- C#
+- F#
 
-## Creating a new Cargo project
+## Creating a new Dotnet project
 
-To create a new **`gradle`** project, run the following command:
+To create a new **`dotnet`** project, run the following command:
 
 `dotnet new -n hello-world`
 

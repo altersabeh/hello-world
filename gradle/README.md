@@ -1,6 +1,6 @@
 # Gradle - Hello World
 
-A simple **Hello World** program in Cargo.
+A simple **Hello World** program in Gradle.
 
 ## Programming Language
 
@@ -8,7 +8,7 @@ A simple **Hello World** program in Cargo.
 - Groovy
 - Java
 
-## Creating a new Cargo project
+## Creating a new Gradle project
 
 To create a new **`gradle`** project, run the following command:
 
