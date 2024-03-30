@@ -1,12 +1,18 @@
 {
-  "files.exclude": {
-    "**/.gradle": true,
-    "**/build": true,
-    "**/target": true,
-  },
-  "files.watcherExclude": {
-    "**/.gradle": true,
-    "**/build": true,
-    "**/target": true,
-  }
+    "files.exclude": {
+        "**/.gradle": true,
+        "**/build": true,
+        "**/dist": true,
+        "**/dotnet/**/bin": true,
+        "**/obj": true,
+        "**/target": true,
+    },
+    "files.watcherExclude": {
+        "**/.gradle": true,
+        "**/build": true,
+        "**/dist": true,
+        "**/dotnet/**/bin": true,
+        "**/obj": true,
+        "**/target": true,
+    },
 }
