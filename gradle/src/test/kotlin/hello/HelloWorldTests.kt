@@ -24,7 +24,7 @@ class HelloWorldTests {
     @Test
     fun `print current date test`() {
         val now = System.currentTimeMillis()
-        val formattedDate = DateFormatUtils.format(now, "MMMM d, yyyy HH:mm")
+        val formattedDate = DateFormatUtils.format(now, "MMMM d, yyyy 'at' hh:mm a")
         val expectedOutput = "Today is $formattedDate"
         val actualOutput = printDate()
         assertEquals(actualOutput, expectedOutput)
