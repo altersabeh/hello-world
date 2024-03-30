@@ -1,3 +1,6 @@
+# cargo
+**/target
+
 # dotnet
 **/dotnet/**/bin
 **/obj
@@ -6,7 +9,7 @@
 **/build
 **/.gradle
 
-# cargo
-**/target
+# swift
+**/.build
 
 **/dist
