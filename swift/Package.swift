@@ -10,6 +10,9 @@ let package = Package(
       targets: ["HelloWorld"]
     )
   ],
+  dependencies: [
+    .package(url: "https://github.com/nicklockwood/SwiftFormat", from: "0.53.5")
+  ],
   targets: [
     .executableTarget(
       name: "HelloWorld",

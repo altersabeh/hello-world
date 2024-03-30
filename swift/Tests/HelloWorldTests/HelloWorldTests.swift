@@ -19,7 +19,9 @@ final class HelloWorldTests: XCTestCase {
 
   func testPrintDate() {
     let now = Date()
-    let formattedDate = DateFormatter.localizedString(from: now, dateStyle: .long, timeStyle: .short)
+    let formattedDate = DateFormatter.localizedString(
+      from: now, dateStyle: .long, timeStyle: .short
+    )
     let expectedOutput = "Today is \(formattedDate)"
     let actualOutput = printDate()
     XCTAssertEqual(actualOutput, expectedOutput)
