@@ -18,7 +18,7 @@ public class HelloWorld
     public static string PrintDate()
     {
         DateTime currentDate = DateTime.Now;
-        string layout = "MMMM d, yyyy HH:mm";
+        string layout = "MMMM d, yyyy 'at' hh:mm tt";
         string formattedDate = currentDate.ToString(layout);
         return $"Today is {formattedDate}";
     }

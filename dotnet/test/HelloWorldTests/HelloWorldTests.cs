@@ -24,7 +24,7 @@ public class HelloWorldTests
     public void PrintDateTest()
     {
         DateTime now = DateTime.Now;
-        string formattedDate = now.ToString("MMMM d, yyyy HH:mm");
+        string formattedDate = now.ToString("MMMM d, yyyy 'at' hh:mm tt");
         string expectedOutput = $"Today is {formattedDate}";
         string actualOutput = HelloWorld.PrintDate();
         Assert.Equal(actualOutput, expectedOutput);
