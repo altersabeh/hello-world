@@ -1,6 +1,12 @@
+# dotnet
+**/dotnet/**/bin
+**/obj
+
 # gradle
 **/build
 **/.gradle
 
 # cargo
 **/target
+
+**/dist

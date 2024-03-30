@@ -3,6 +3,7 @@
 # Directories
 cargo_dir="cargo"
 gradle_dir="gradle"
+dotnet_dir="dotnet"
 
 # Commands
 cargo_commands=(
@@ -12,6 +13,16 @@ cargo_commands=(
     "cargo clippy"
     "cargo package"
     "cargo clean"
+)
+
+dotnet_commands=(
+    "dotnet build"
+    "dotnet test"
+    "dotnet run --project src"
+    "dotnet format"
+    "dotnet format"
+    "dotnet pack"
+    "dotnet clean"
 )
 
 gradle_commands=(
@@ -43,6 +54,10 @@ cargo)
 gradle)
     lang_dir="$gradle_dir"
     commands=("${gradle_commands[@]}")
+    ;;
+dotnet)
+    lang_dir="$dotnet_dir"
+    commands=("${dotnet_commands[@]}")
     ;;
 *)
     echo "Unsupported language: $language"

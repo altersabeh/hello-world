@@ -2,6 +2,8 @@
 
 # Define directories
 $cargo_dir = "cargo"
+$dotnet_dir = "dotnet"
+$gradle_dir = "gradle"
 
 # Define commands
 $cargo_commands = @(
@@ -12,6 +14,16 @@ $cargo_commands = @(
     "cargo clippy",
     "cargo package",
     "cargo clean"
+)
+
+$dotnet_commands = @(
+    "dotnet build",
+    "dotnet test",
+    "dotnet run",
+    "dotnet format",
+    "dotnet format",
+    "dotnet pack",
+    "dotnet clean"
 )
 
 $gradle_commands = @(
@@ -44,6 +56,10 @@ switch ($language) {
     "gradle" {
         $lang_dir = $gradle_dir
         $commands = $gradle_commands
+    }
+    "dotnet" {
+        $lang_dir = $dotnet_dir
+        $commands = $dotnet_commands
     }
     default {
         Write-Host "Unsupported language: $language"
