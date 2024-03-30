@@ -3,9 +3,9 @@ import Foundation
 public func printGreeting(_ args: [String]) -> String {
   if args.count > 1 {
     let name = args[1...].joined(separator: " ")
-    return "Hi \(name), greetings from Swift!"
+    return "Hi \(name), greetings from SwiftPM !"
   } else {
-    return "Hello World from Swift!"
+    return "Hello World from SwiftPM !"
   }
 }
 

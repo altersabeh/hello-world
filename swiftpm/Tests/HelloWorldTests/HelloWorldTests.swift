@@ -5,14 +5,14 @@ import XCTest
 final class HelloWorldTests: XCTestCase {
   func testPrintGreetingWithoutName() {
     let args: [String] = []
-    let expectedOutput = "Hello World from Swift!"
+    let expectedOutput = "Hello World from Swift PM !"
     let actualOutput = printGreeting(args)
     XCTAssertEqual(actualOutput, expectedOutput)
   }
 
   func testPrintGreetingWithName() {
     let args = ["", "Alter", "Sabeh"]
-    let expectedOutput = "Hi Alter Sabeh, greetings from Swift!"
+    let expectedOutput = "Hi Alter Sabeh, greetings from SwiftPM !"
     let actualOutput = printGreeting(args)
     XCTAssertEqual(actualOutput, expectedOutput)
   }
