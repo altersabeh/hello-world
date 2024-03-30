@@ -17,7 +17,7 @@
 
   <ItemGroup>
     <Using Include="Xunit" />
-    <ProjectReference Include="../src/Hello.World.csproj" />
+    <ProjectReference Include="../../src/HelloWorld/HelloWorld.csproj" />
   </ItemGroup>
 
 </Project>
