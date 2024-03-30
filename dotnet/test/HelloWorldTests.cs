@@ -1,51 +1,29 @@
-namespace HelloWorld.Tests;
+namespace Hello.World;
 
 public class HelloWorldTests
 {
     [Fact]
-    public void TestHelloWorld()
+    public void PrintGreetingWithoutNameTest()
     {
-        string[] args = [];
-        var consoleMock = new ConsoleMock();
-        Console.SetOut(consoleMock.OutputWriter);
-
-        Hello.World.HelloWorld.PrintGreeting(args);
-
-        Assert.Equal("Hello World from Dotnet !\n", consoleMock.Output);
+        string[] args = new string[] { };
+        string expectedOutput = "Hello World from Dotnet !";
+        Assert.Equal(expectedOutput, HelloWorld.PrintGreeting(args));
     }
 
     [Fact]
-    public void TestHelloWorldWithName()
+    public void PrintGreetingWithNameTest()
     {
-        string[] args = ["Alter", "Sabeh"];
-        var consoleMock = new ConsoleMock();
-        Console.SetOut(consoleMock.OutputWriter);
-
-        Hello.World.HelloWorld.PrintGreeting(args);
-
-        Assert.Equal("Hi Alter Sabeh, greetings from Dotnet !\n", consoleMock.Output);
+        string[] args = new string[] { "Alter", "Sabeh" };
+        string expectedOutput = "Hi Alter Sabeh, greetings from Dotnet !";
+        Assert.Equal(expectedOutput, HelloWorld.PrintGreeting(args));
     }
 
     [Fact]
-    public void TestCurrentDate()
+    public void PrintDateTest()
     {
-        var consoleMock = new ConsoleMock();
-        Console.SetOut(consoleMock.OutputWriter);
-        string expectedOutput = $"Today is {DateTime.Now.ToString("MMMM d, yyyy HH:mm")}\n";
-
-        Hello.World.HelloWorld.PrintDate();
-
-        Assert.Equal(expectedOutput, consoleMock.Output);
-    }
-
-    private class ConsoleMock : IDisposable
-    {
-        public StringWriter OutputWriter { get; } = new StringWriter();
-        public string Output => OutputWriter.ToString();
-
-        public void Dispose()
-        {
-            Console.SetOut(Console.Out);
-        }
+        DateTime now = DateTime.Now;
+        string formattedDate = now.ToString("MMMM d, yyyy HH:mm");
+        string expectedOutput = $"Today is {formattedDate}";
+        Assert.Equal(expectedOutput, HelloWorld.PrintDate());
     }
 }
