@@ -26,7 +26,7 @@ dependencies {
 
 application {
     applicationName = "gradle-hello"
-    mainClass = "hello.HelloWorldKt"
+    mainClass = "hello.MainKt"
 }
 
 tasks {
@@ -38,7 +38,7 @@ tasks {
     }
     jar {
         manifest {
-            attributes["Main-Class"] = "hello.HelloWorldKt"
+            attributes["Main-Class"] = "hello.MainKt"
         }
         duplicatesStrategy = DuplicatesStrategy.EXCLUDE
         configurations["compileClasspath"].forEach { file: File ->
