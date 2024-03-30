@@ -11,7 +11,11 @@ edition = "2021"
 
 [[bin]]
 name = "cargo-hello"
+path = "src/main.rs"
+
+[lib]
 path = "src/hello_world.rs"
+doctest = false
 
 [dependencies]
 chrono = "0.4.37"

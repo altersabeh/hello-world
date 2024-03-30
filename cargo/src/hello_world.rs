@@ -1,27 +1,18 @@
-// Hello World in Cargo !
-
 extern crate chrono;
 
 use chrono::{DateTime, Local};
-use std::env;
 
-fn print_greeting(args: &[String]) {
+pub fn print_greeting(args: &[String]) -> String {
     if args.len() > 1 {
-        println!("Hi {}, greetings from Cargo !", args[1..].join(" "));
+        format!("Hi {}, greetings from Cargo !", args[1..].join(" "))
     } else {
-        println!("Hello World from Cargo !");
+        "Hello World from Cargo !".to_string()
     }
 }
 
-fn print_date() {
+pub fn print_date() -> String {
     let current_date: DateTime<Local> = Local::now();
     let layout: &str = "%B %e, %Y %H:%M";
     let formatted_date: String = current_date.format(layout).to_string();
-    println!("Today is {}", formatted_date);
-}
-
-fn main() {
-    let args: Vec<_> = env::args().collect();
-    print_greeting(&args);
-    print_date();
+    format!("Today is {}", formatted_date)
 }

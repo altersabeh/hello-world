@@ -1,55 +1,25 @@
+use cargo_hello::{print_date, print_greeting};
+
 use chrono::{DateTime, Local};
-use std::process::Command;
 
 #[test]
-fn hello_world_test() {
-    let now: DateTime<Local> = Local::now();
-    let expected_output = format!(
-        "Hello World from Cargo !\nToday is {}\n",
-        now.format("%B %e, %Y %H:%M")
-    );
-
-    let output = Command::new("./target/debug/cargo-hello")
-        .output()
-        .expect("failed to execute process");
-
-    assert!(
-        output.status.success(),
-        "Command did not execute successfully: {}",
-        String::from_utf8_lossy(&output.stderr)
-    );
-
-    assert_eq!(
-        String::from_utf8_lossy(&output.stdout),
-        expected_output,
-        "Output did not match expected output"
-    );
+fn print_greeting_without_name_test() {
+    let args: Vec<String> = vec![];
+    let expected_output = "Hello World from Cargo !".to_string();
+    assert_eq!(print_greeting(&args), expected_output);
 }
 
 #[test]
-fn hello_world_with_name_test() {
-    let name: &str = "Alter Sabeh";
+fn print_greeting_with_name_test() {
+    let args: Vec<String> = vec![String::from("hello"), String::from("Alter Sabeh")];
+    let expected_output = "Hi Alter Sabeh, greetings from Cargo !".to_string();
+    assert_eq!(print_greeting(&args), expected_output);
+}
+
+#[test]
+fn print_date_test() {
     let now: DateTime<Local> = Local::now();
-    let expected_output = format!(
-        "Hi {}, greetings from Cargo !\nToday is {}\n",
-        name,
-        now.format("%B %e, %Y %H:%M")
-    );
-
-    let output = Command::new("./target/debug/cargo-hello")
-        .arg("Alter Sabeh")
-        .output()
-        .expect("failed to execute process");
-
-    assert!(
-        output.status.success(),
-        "Command did not execute successfully: {}",
-        String::from_utf8_lossy(&output.stderr)
-    );
-
-    assert_eq!(
-        String::from_utf8_lossy(&output.stdout),
-        expected_output,
-        "Output did not match expected output"
-    );
+    let formatted_date = now.format("%B %e, %Y %H:%M").to_string();
+    let expected_output = format!("Today is {}", formatted_date);
+    assert_eq!(print_date(), expected_output);
 }
