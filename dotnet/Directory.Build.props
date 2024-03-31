@@ -13,5 +13,5 @@
     <IntermediateOutputPath>$(BaseIntermediateOutputPath)</IntermediateOutputPath>
     <PackageOutputPath>$(RepoRoot)dist/$(ProjectRelativePath)/package</PackageOutputPath>
   </PropertyGroup>
-  
+
 </Project>

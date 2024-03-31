@@ -1,4 +1,7 @@
-﻿namespace Hello.World;
+﻿using System.Linq;
+using System.Text;
+
+namespace Hello.World;
 
 public class HelloWorld
 {
@@ -7,11 +10,11 @@ public class HelloWorld
         if (args.Length > 0)
         {
             string name = string.Join(" ", args);
-            return $"Hi {name}, greetings from Dotnet !";
+            return $"Hi {name}, greetings from .NET !";
         }
         else
         {
-            return "Hello World from Dotnet !";
+            return "Hello World from .NET !";
         }
     }
 
