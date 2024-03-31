@@ -1,0 +1,31 @@
+cabal-version:   3.4
+name:            translator
+version:         1.0.0.0
+build-type:      Simple
+
+source-repository head
+    type:     git
+    location: https://github.com/altersabeh/hello-world
+
+library
+    exposed-modules:  Translator
+    hs-source-dirs:   src
+    other-modules:    Paths_translator
+    autogen-modules:  Paths_translator
+    default-language: GHC2021
+    ghc-options:      -Wall
+    build-depends:
+        base ^>=4.18.2.0,
+        containers ^>=0.6.7
+        
+test-suite translator-test
+    type:             exitcode-stdio-1.0
+    main-is:          TranslatorTests.hs
+    hs-source-dirs:   tests
+    default-language: GHC2021
+    ghc-options:      -Wall
+    build-depends:
+        base ^>=4.18.2.0,
+        translator,
+        tasty ^>=1.4.3,
+        tasty-hunit ^>=0.10.1

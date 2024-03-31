@@ -1,0 +1,82 @@
+cabal-version:   3.4
+name:            cabal-hello
+version:         1.0.0.0
+license:         MIT
+license-file:    LICENSE.md
+copyright:       2024 AlterSabeh
+maintainer:      betamaximum22@gmail.com
+author:          AlterSabeh
+synopsis:        Hello World program in Cabal
+build-type:      Simple
+extra-doc-files:
+    CHANGELOG.md
+    README.md
+
+source-repository head
+    type:     git
+    location: https://github.com/altersabeh/hello-world
+
+executable cabal-hello
+    main-is:          Main.hs
+    hs-source-dirs:   app
+    other-modules:
+        Paths_cabal_hello
+        Functions
+
+    autogen-modules:  Paths_cabal_hello
+    default-language: GHC2021
+    ghc-options:      -Wall
+    build-depends:
+        base ^>=4.18.2.0,
+        cabal-hello:hello-world,
+        cabal-hello:goodbye-world,
+        numbers-lib,
+        translator
+
+library goodbye-world
+    exposed-modules:  Goodbye.World
+    hs-source-dirs:   src
+    other-modules:    Paths_cabal_hello
+    autogen-modules:  Paths_cabal_hello
+    default-language: GHC2021
+    ghc-options:      -Wall
+    build-depends:
+        base ^>=4.18.2.0,
+        time ^>=1.12.2
+
+library hello-world
+    exposed-modules:  Hello.World
+    hs-source-dirs:   src
+    other-modules:    Paths_cabal_hello
+    autogen-modules:  Paths_cabal_hello
+    default-language: GHC2021
+    ghc-options:      -Wall
+    build-depends:
+        base ^>=4.18.2.0,
+        time ^>=1.12.2
+
+test-suite hello-world-test
+    type:             exitcode-stdio-1.0
+    main-is:          HelloWorldTests.hs
+    hs-source-dirs:   tests
+    default-language: GHC2021
+    ghc-options:      -Wall
+    build-depends:
+        base ^>=4.18.2.0,
+        cabal-hello:hello-world,
+        time ^>=1.12.2,
+        tasty ^>=1.4.3,
+        tasty-hunit ^>=0.10.1
+
+test-suite goodbye-world-test
+    type:             exitcode-stdio-1.0
+    main-is:          GoodbyeWorldTests.hs
+    hs-source-dirs:   tests
+    default-language: GHC2021
+    ghc-options:      -Wall
+    build-depends:
+        base ^>=4.18.2.0,
+        cabal-hello:goodbye-world,
+        time ^>=1.12.2,
+        tasty ^>=1.4.3,
+        tasty-hunit ^>=0.10.1

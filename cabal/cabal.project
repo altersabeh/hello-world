@@ -1,0 +1,6 @@
+packages:
+    *.cabal
+    packages/**/*.cabal
+
+tests: True
+test-show-details: direct
