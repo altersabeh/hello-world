@@ -4,6 +4,7 @@
 $cargo_dir = "cargo"
 $dotnet_dir = "dotnet"
 $gradle_dir = "gradle"
+$swiftpm_dir = "swiftpm"
 
 # Define commands
 $cargo_commands = @(
@@ -36,6 +37,16 @@ $gradle_commands = @(
     "gradle clean"
 )
 
+$swiftpm_commands = @(
+    "swift build",
+    "swift test",
+    "swift run",
+    "swift package swiftformat",
+    "swift package swiftlint",
+    "swift package",
+    "swift package clean"
+)
+
 # Get the action and language from command-line arguments
 $action = $args[0]
 $language = $args[1]
@@ -53,13 +64,17 @@ switch ($language) {
         $lang_dir = $cargo_dir
         $commands = $cargo_commands
     }
+    "dotnet" {
+        $lang_dir = $dotnet_dir
+        $commands = $dotnet_commands
+    }
     "gradle" {
         $lang_dir = $gradle_dir
         $commands = $gradle_commands
     }
-    "dotnet" {
-        $lang_dir = $dotnet_dir
-        $commands = $dotnet_commands
+    "swiftpm" {
+        $lang_dir = $swiftpm_dir
+        $commands = $swiftpm_commands
     }
     default {
         Write-Host "Unsupported language: $language"

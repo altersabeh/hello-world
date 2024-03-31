@@ -2,8 +2,9 @@
 
 # Directories
 cargo_dir="cargo"
-gradle_dir="gradle"
 dotnet_dir="dotnet"
+gradle_dir="gradle"
+swiftpm_dir="swiftpm"
 
 # Commands
 cargo_commands=(
@@ -20,7 +21,6 @@ dotnet_commands=(
     "dotnet test"
     "dotnet run --project src"
     "dotnet format"
-    "dotnet format"
     "dotnet pack"
     "dotnet clean"
 )
@@ -29,9 +29,18 @@ gradle_commands=(
     "gradle assemble"
     "gradle test"
     "gradle run"
-    "gradle check"
+    "gradle ktlintFormat"
     "gradle jar"
     "gradle clean"
+)
+
+swiftpm_commands=(
+    "swift build"
+    "swift test"
+    "swift run"
+    "swift package swiftformat"
+    "swift package"
+    "swift package clean"
 )
 
 # Get the action and language from command-line arguments
@@ -51,13 +60,17 @@ cargo)
     lang_dir="$cargo_dir"
     commands=("${cargo_commands[@]}")
     ;;
+dotnet)
+    lang_dir="$dotnet_dir"
+    commands=("${dotnet_commands[@]}")
+    ;;
 gradle)
     lang_dir="$gradle_dir"
     commands=("${gradle_commands[@]}")
     ;;
-dotnet)
-    lang_dir="$dotnet_dir"
-    commands=("${dotnet_commands[@]}")
+swiftpm_commands)
+    lang_dir="$swiftpm_dir"
+    commands=("${swiftpm_commands[@]}")
     ;;
 *)
     echo "Unsupported language: $language"
