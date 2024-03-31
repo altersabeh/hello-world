@@ -8,3 +8,6 @@ trim_trailing_whitespace = true
 
 [{*.csproj,*.sln,*.swift}]
 indent_size = 2
+
+[*.{kt,kts}]
+ktlint_standard_no-wildcard-imports = disabled
