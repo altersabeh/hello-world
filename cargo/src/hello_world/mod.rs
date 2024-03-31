@@ -1,5 +1,3 @@
-extern crate chrono;
-
 use chrono::{DateTime, Local};
 
 pub fn print_greeting(args: &[String]) -> String {
