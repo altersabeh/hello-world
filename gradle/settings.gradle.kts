@@ -3,3 +3,10 @@ plugins {
 }
 
 rootProject.name = "gradle-hello"
+
+val projects = listOf("app", "hello-world", "numbers-fun")
+
+projects.forEach { projectName ->
+    include(projectName)
+    project(":$projectName").projectDir = file("src/$projectName")
+}

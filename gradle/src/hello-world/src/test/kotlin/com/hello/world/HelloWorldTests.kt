@@ -1,4 +1,4 @@
-package hello
+package com.hello.world
 
 import org.apache.commons.lang3.time.DateFormatUtils
 import kotlin.test.Test
@@ -10,7 +10,7 @@ class HelloWorldTests {
         val args = emptyArray<String>()
         val expectedOutput = "Hello World from Gradle !"
         val actualOutput = printGreeting(args)
-        assertEquals(actualOutput, expectedOutput)
+        assertEquals(expectedOutput, actualOutput)
     }
 
     @Test
@@ -18,7 +18,7 @@ class HelloWorldTests {
         val args = arrayOf("Alter", "Sabeh")
         val expectedOutput = "Hi Alter Sabeh, greetings from Gradle !"
         val actualOutput = printGreeting(args)
-        assertEquals(actualOutput, expectedOutput)
+        assertEquals(expectedOutput, actualOutput)
     }
 
     @Test
@@ -27,6 +27,6 @@ class HelloWorldTests {
         val formattedDate = DateFormatUtils.format(now, "MMMM d, yyyy 'at' hh:mm a")
         val expectedOutput = "Today is $formattedDate"
         val actualOutput = printDate()
-        assertEquals(actualOutput, expectedOutput)
+        assertEquals(expectedOutput, actualOutput)
     }
 }
