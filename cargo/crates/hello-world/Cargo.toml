@@ -1,5 +1,5 @@
 [package]
-name = "chuchu"
+name = "hello-world"
 version.workspace = true
 license.workspace = true
 repository.workspace = true
@@ -8,11 +8,10 @@ authors.workspace = true
 edition.workspace = true
 keywords.workspace = true
 
-# See more keys and their definitions at
-# https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [[bin]]
-name = "chuchu"
+name = "hello-world"
+test = false
 
 [dependencies]
 cargo-hello = {workspace = true}
+
