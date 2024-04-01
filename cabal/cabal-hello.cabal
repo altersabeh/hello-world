@@ -6,7 +6,12 @@ license-file:    LICENSE.md
 copyright:       2024 AlterSabeh
 maintainer:      betamaximum22@gmail.com
 author:          AlterSabeh
+bug-reports:     https://github.com/altersabeh/hello-world/issues
 synopsis:        Hello World program in Cabal
+description:
+    Please see the README on GitHub at <https://github.com/altersabeh/hello-world#README>
+
+category:        command-line
 build-type:      Simple
 extra-doc-files:
     CHANGELOG.md
@@ -15,23 +20,6 @@ extra-doc-files:
 source-repository head
     type:     git
     location: https://github.com/altersabeh/hello-world
-
-executable cabal-hello
-    main-is:          Main.hs
-    hs-source-dirs:   app
-    other-modules:
-        Paths_cabal_hello
-        Functions
-
-    autogen-modules:  Paths_cabal_hello
-    default-language: GHC2021
-    ghc-options:      -Wall
-    build-depends:
-        base ^>=4.18.2.0,
-        cabal-hello:hello-world,
-        cabal-hello:goodbye-world,
-        numbers-lib,
-        translator
 
 library goodbye-world
     exposed-modules:  Goodbye.World
@@ -54,6 +42,23 @@ library hello-world
     build-depends:
         base ^>=4.18.2.0,
         time ^>=1.12.2
+
+executable cabal-hello
+    main-is:          Main.hs
+    hs-source-dirs:   app
+    other-modules:
+        Paths_cabal_hello
+        Functions
+
+    autogen-modules:  Paths_cabal_hello
+    default-language: GHC2021
+    ghc-options:      -Wall
+    build-depends:
+        base ^>=4.18.2.0,
+        cabal-hello:hello-world,
+        cabal-hello:goodbye-world,
+        numbers-lib ^>=1.0.0,
+        translator ^>=1.0.0
 
 test-suite hello-world-test
     type:             exitcode-stdio-1.0
