@@ -1,6 +1,6 @@
 # Cabal - Hello World
 
-A simple **Hello World** program in Cabal.
+A simple **Hello World** program in **Cabal**.
 
 ## Programming Language
 
@@ -8,38 +8,48 @@ A simple **Hello World** program in Cabal.
 
 ## Project Structure
 
-``` shell
-├── CHANGELOG.md
-├── LICENSE.md
-├── README.md
-├── app
-│   ├── Functions.hs
-│   └── Main.hs
-├── cabal-hello.cabal
-├── cabal.project
-├── packages
-│   ├── numbers-lib
-│   │   ├── numbers-lib.cabal
-│   │   ├── src
-│   │   │   └── Numbers
-│   │   │       └── Lib.hs
-│   │   └── tests
-│   │       └── NumbersLibTests.hs
-│   └── translator
-│       ├── src
-│       │   └── Translator.hs
-│       ├── tests
-│       │   └── TranslatorTests.hs
-│       └── translator.cabal
-├── src
-│   ├── Goodbye
-│   │   └── World.hs
-│   └── Hello
-│       └── World.hs
-├── structure.txt
-└── tests
-    ├── GoodbyeWorldTests.hs
-    └── HelloWorldTests.hs
+``` plaintext
+hello-cabal
+  ├──── app
+  │     ├──── Functions.hs
+  │     └──── Main.hs
+  ├──── dist-newstyle
+  │     └──── build
+  │           ├──── build
+  │           │     └──── ...
+  │           ├──── cache
+  │           │     └──── ...
+  │           ├──── package.db
+  │           │     └──── ...
+  │           └──── tmp
+  │                 └──── ...
+  ├──── packages
+  │     ├──── numbers-lib
+  │     │     ├──── src
+  │     │     │     └──── Numbers
+  │     │     │           └──── Lib.hs
+  │     │     ├──── tests
+  │     │     │     └──── NumbersLibTests.hs
+  │     │     └──── numbers-lib.cabal
+  │     └──── translator
+  │           ├──── src
+  │           │     └──── Translator.hs
+  │           ├──── tests
+  │           │     └──── TranslatorTests.hs
+  │           └──── translator.cabal
+  ├──── src
+  │     ├──── Goodbye
+  │     │     └──── World.hs
+  │     └──── Hello
+  │           └──── World.hs
+  ├──── tests
+  │     ├──── GoodbyeWorldTests.hs
+  │     └──── HelloWorldTests.hs
+  ├──── cabal-hello.cabal
+  ├──── cabal.project
+  ├──── CHANGELOG.md
+  ├──── LICENSE.md
+  └──── README.md
 ```
 
 ## Creating a new Cabal project
