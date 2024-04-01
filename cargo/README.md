@@ -11,6 +11,11 @@ A simple **Hello World** program in Cargo.
 ```plaintext
 cargo
 ├───── crates
+│      ├───── date-today
+│      │      ├───── Cargo.toml
+│      │      └───── src
+│      │             └───── custom
+│      │                    └───── date_today.rs
 │      ├───── hello-world
 │      │      ├───── src
 │      │      │      └───── main.rs
@@ -64,12 +69,12 @@ cargo
 ├───── tests
 │      ├───── goodbye_world_tests.rs
 │      └───── hello_world_tests.rs
-├───── CHANGELOG.md
 ├───── Cargo.lock
 ├───── Cargo.toml
+├───── rustfmt.toml
+├───── CHANGELOG.md
 ├───── LICENSE.md
-├───── README.md
-└───── rustfmt.toml
+└───── README.md
 ```
 
 ## Creating a new Cargo project

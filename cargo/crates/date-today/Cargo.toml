@@ -1,0 +1,16 @@
+[package]
+name = "date-today"
+version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+authors.workspace = true
+edition.workspace = true
+keywords.workspace = true
+
+[[bin]]
+name = "date-today"
+path = "src/custom/date_today.rs"
+
+[dependencies]
+cargo-hello = {workspace = true}

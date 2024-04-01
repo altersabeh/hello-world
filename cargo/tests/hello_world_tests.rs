@@ -20,7 +20,7 @@ fn print_greeting_with_name_test() {
 #[test]
 fn print_date_test() {
     let now = Local::now();
-    let formatted_date = now.format("%B %e, %Y at %I:%M %p").to_string();
+    let formatted_date = now.format("%B %d, %Y at %I:%M %p").to_string();
     let expected_output = format!("Today is {}", formatted_date);
     let actual_output = print_date();
     assert_eq!(expected_output, actual_output);
