@@ -12,6 +12,14 @@ publish = false
 doctest = false
 test = false
 
+[[bin]]
+name = "factorial"
+test = false
+
+[[bin]]
+name = "fibonacci"
+test = false
+
 [dependencies]
 num-bigint = { workspace = true }
 rand = { workspace = true }

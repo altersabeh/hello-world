@@ -1,0 +1,18 @@
+[package]
+name = "chuchu"
+version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+authors.workspace = true
+edition.workspace = true
+keywords.workspace = true
+
+# See more keys and their definitions at
+# https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "chuchu"
+
+[dependencies]
+cargo-hello = {workspace = true}

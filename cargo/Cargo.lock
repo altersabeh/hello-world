@@ -74,6 +74,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "chuchu"
+version = "1.0.0"
+dependencies = [
+ "cargo-hello",
+]
+
+[[package]]
 name = "core-foundation-sys"
 version = "0.8.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
