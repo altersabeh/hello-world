@@ -2,7 +2,7 @@ use chrono::{DateTime, Local};
 
 pub fn print_greeting(args: &[String]) -> String {
     if args.len() > 1 {
-        format!("Hi {}, greetings from Cargo !", args[1..].join(" "))
+        format!("Hello {} from Cargo !", args[1..].join(" "))
     } else {
         "Hello World from Cargo !".to_string()
     }

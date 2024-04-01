@@ -12,7 +12,7 @@ fn print_greeting_without_name_test() {
 #[test]
 fn print_greeting_with_name_test() {
     let args = vec!["".into(), "Alter".into(), "Sabeh".into()];
-    let expected_output = "Hi Alter Sabeh, greetings from Cargo !".to_string();
+    let expected_output = "Hello Alter Sabeh from Cargo !".to_string();
     let actual_output = print_greeting(&args);
     assert_eq!(expected_output, actual_output);
 }

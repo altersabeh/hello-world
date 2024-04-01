@@ -1,2 +1,2 @@
+pub mod goodbye_world;
 pub mod hello_world;
-pub mod numbers_lib;

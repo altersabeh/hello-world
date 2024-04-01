@@ -1,5 +1,5 @@
-use cargo_hello::numbers_lib::*;
 use num_bigint::BigUint;
+use numbers_lib::{factorial, fibonacci};
 
 #[test]
 fn fibonacci_test() {

@@ -1,23 +1,49 @@
-[package]
-name = "cargo-hello"
+[workspace]
+resolver = "2"
+members = ["crates/*"]
+
+[workspace.package]
 version = "1.0.0"
-description = "Hello World program in Cargo"
 license = "MIT"
 repository = "https://github.com/altersabeh/hello-world"
-homepage = "https://github.com/altersabeh/hello-world/tree/main/cargo#README"
+homepage = "https://github.com/altersabeh/hello-world/tree/main/cargo#cargo---cargo-hello"
+authors = ["Altersabeh"]
 edition = "2021"
+keywords = ["command-line"]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[workspace.dependencies]
+chrono = "0.4.37"
+num-bigint = "0.4.4"
+rand = "0.8.5"
+rstest = "0.18.2"
+numbers-lib = { path = "crates/numbers-lib" }
+translator = { path = "crates/translator" }
+
+[package]
+name = "cargo-hello"
+version.workspace = true
+description = "Hello World program in Cargo"
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+edition.workspace = true
+keywords.workspace = true
 
 [[bin]]
 name = "cargo-hello"
 path = "src/main.rs"
+test = false
+
+[[bin]]
+name = "banner"
+test = false
 
 [lib]
 path = "src/lib.rs"
 doctest = false
+test = false
 
 [dependencies]
-chrono = "0.4.37"
-num-bigint = "0.4.4"
-rand = "0.8.5"
+chrono = { workspace = true }
+numbers-lib = { workspace = true }
+translator = { workspace = true }

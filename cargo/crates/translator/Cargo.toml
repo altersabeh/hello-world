@@ -1,0 +1,20 @@
+[package]
+version = "0.0.0"
+name = "translator"
+description = "A translator for the language"
+edition.workspace = true
+repository.workspace = true
+homepage.workspace = true
+license.workspace = true
+publish = false
+
+[lib]
+doctest = false
+test = false
+
+[dependencies]
+num-bigint = { workspace = true }
+rand = { workspace = true }
+
+[dev-dependencies]
+rstest = { workspace = true }

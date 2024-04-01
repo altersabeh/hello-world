@@ -1,0 +1,17 @@
+[package]
+version = "0.0.0"
+name = "numbers-lib"
+description = "A library for working with numbers"
+edition.workspace = true
+repository.workspace = true
+homepage.workspace = true
+license.workspace = true
+publish = false
+
+[lib]
+doctest = false
+test = false
+
+[dependencies]
+num-bigint = { workspace = true }
+rand = { workspace = true }
