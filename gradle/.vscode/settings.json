@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        "**/.gradle": true,
+        "**/.vscode": true,
+        "**/build": true,
+    },
+    "files.watcherExclude": {
+        "**/.gradle": true,
+        "**/.vscode": true,
+        "**/build": true,
+    },
+}

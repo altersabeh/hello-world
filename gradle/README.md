@@ -34,3 +34,156 @@ To test the project, navigate to the project directory and run the following
 command:
 
 `gradle test`
+
+## Project Structure
+
+```plaintext
+gradle-hello
+├── app
+│   ├── src
+│   │   └── main
+│   │       └── kotlin
+│   │           └── com
+│   │               └── app
+│   │                   ├── Functions.kt
+│   │                   └── Main.kt
+│   └── build.gradle.kts
+├── build
+│   ├── gradle-hello
+│   │   ├── classes
+│   │   │   └── ...
+│   │   ├── distributions
+│   │   │   └── ...
+│   │   ├── intermediates
+│   │   │   └── ...
+│   │   ├── kotlin
+│   │   │   └── ...
+│   │   ├── libs
+│   │   │   └── ...
+│   │   ├── reports
+│   │   │   └── ...
+│   │   ├── resources
+│   │   │   └── ...
+│   │   ├── scripts
+│   │   │   └── ...
+│   │   └── tmp
+│   │       └── ...
+│   └── ...
+├── gradle
+│   ├── wrapper
+│   │   ├── gradle-wrapper.jar
+│   │   └── gradle-wrapper.properties
+│   └── libs.versions.toml
+├── packages
+│   ├── cli-function
+│   │   ├── src
+│   │   │   └── main
+│   │   │       └── kotlin
+│   │   │           └── com
+│   │   │               └── app
+│   │   │                   └── cli
+│   │   │                       └── function
+│   │   │                           ├── Banner.kt
+│   │   │                           ├── Details.kt
+│   │   │                           ├── Greeter.kt
+│   │   │                           ├── Number.kt
+│   │   │                           └── Random.kt
+│   │   └── build.gradle.kts
+│   ├── goodbye-world
+│   │   ├── src
+│   │   │   ├── main
+│   │   │   │   └── kotlin
+│   │   │   │       └── com
+│   │   │   │           └── app
+│   │   │   │               └── goodbye
+│   │   │   │                   └── world
+│   │   │   │                       └── GoodbyeWorld.kt
+│   │   │   └── test
+│   │   │       └── kotlin
+│   │   │           └── com
+│   │   │               └── app
+│   │   │                   └── goodbye
+│   │   │                       └── world
+│   │   │                           └── GoodbyeWorldTests.kt
+│   │   └── build.gradle.kts
+│   └── hello-world
+│       ├── src
+│       │   ├── main
+│       │   │   └── kotlin
+│       │   │       └── com
+│       │   │           └── app
+│       │   │               └── hello
+│       │   │                   └── world
+│       │   │                       └── HelloWorld.kt
+│       │   └── test
+│       │       └── kotlin
+│       │           └── com
+│       │               └── app
+│       │                   └── hello
+│       │                       └── world
+│       │                           └── HelloWorldTests.kt
+│       └── build.gradle.kts
+├── resources
+│   └── META-INF
+│       ├── MANIFEST.MF
+│       └── license.txt
+├── subprojects
+│   ├── date-today
+│   │   ├── src
+│   │   │   └── main
+│   │   │       └── kotlin
+│   │   │           └── com
+│   │   │               └── app
+│   │   │                   └── DateToday.kt
+│   │   └── build.gradle.kts
+│   ├── hello-gradle
+│   │   ├── src
+│   │   │   └── main
+│   │   │       └── kotlin
+│   │   │           └── com
+│   │   │               └── app
+│   │   │                   └── HelloGradle.kt
+│   │   └── build.gradle.kts
+│   ├── numbers-lib
+│   │   ├── src
+│   │   │   ├── main
+│   │   │   │   └── kotlin
+│   │   │   │       └── com
+│   │   │   │           └── app
+│   │   │   │               └── numbers
+│   │   │   │                   ├── lib
+│   │   │   │                   │   └── NumbersLib.kt
+│   │   │   │                   ├── Factorial.kt
+│   │   │   │                   └── Fibonacci.kt
+│   │   │   └── test
+│   │   │       └── kotlin
+│   │   │           └── com
+│   │   │               └── app
+│   │   │                   └── numbers
+│   │   │                       └── lib
+│   │   │                           └── NumbersLibTests.kt
+│   │   └── build.gradle.kts
+│   └── translator
+│       ├── src
+│       │   ├── main
+│       │   │   └── kotlin
+│       │   │       └── com
+│       │   │           └── app
+│       │   │               └── translator
+│       │   │                   └── Translator.kt
+│       │   └── test
+│       │       └── kotlin
+│       │           └── com
+│       │               └── app
+│       │                   └── translator
+│       │                       └── TranslatorTests.kt
+│       └── build.gradle.kts
+├── build.gradle.kts
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+├── settings.gradle.kts
+├── CHANGELOG.md
+├── LICENSE.md
+└── README.md
+```
