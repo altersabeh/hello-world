@@ -30,7 +30,7 @@ fn wait_for_user() {
 
 pub fn start_program() {
     let args: Vec<_> = env::args().collect();
-    println!("=============================================");
+    println!("===============================================");
     println!("");
     print_welcome_message(&args);
     print_user_details(&args);
@@ -43,5 +43,5 @@ pub fn start_program() {
     println!("");
     print_goodbye_message(&args);
     print_banner_message();
-    println!("=============================================");
+    println!("===============================================");
 }

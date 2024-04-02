@@ -13,6 +13,7 @@ keywords = ["command-line"]
 
 [workspace.dependencies]
 chrono = "0.4.37"
+colored = "2.1.0"
 num-bigint = "0.4.4"
 rand = "0.8.5"
 rstest = "0.18.2"
@@ -64,3 +65,6 @@ test = false
 chrono = { workspace = true }
 numbers-lib = { workspace = true }
 translator = { workspace = true }
+
+[dev-dependencies]
+colored = { workspace = true }

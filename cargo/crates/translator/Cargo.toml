@@ -18,3 +18,5 @@ rand = { workspace = true }
 
 [dev-dependencies]
 rstest = { workspace = true }
+colored = { workspace = true }
+chrono = { workspace = true }

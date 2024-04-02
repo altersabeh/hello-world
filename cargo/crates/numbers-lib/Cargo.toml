@@ -23,3 +23,7 @@ test = false
 [dependencies]
 num-bigint = { workspace = true }
 rand = { workspace = true }
+
+[dev-dependencies]
+colored = { workspace = true }
+chrono = { workspace = true }

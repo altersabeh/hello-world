@@ -1,0 +1,10 @@
+{
+    "files.exclude": {
+        "**/.vscode": true,
+        "**/target": true
+    },
+    "files.watcherExclude": {
+        "**/.vscode": true,
+        "**/target": true,
+    },
+}
