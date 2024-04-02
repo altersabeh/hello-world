@@ -1,16 +1,28 @@
 #!/bin/bash
 
 # Directories
+cabal_dir="cabal"
 cargo_dir="cargo"
 dotnet_dir="dotnet"
 gradle_dir="gradle"
 swiftpm_dir="swiftpm"
 
 # Commands
+cabal_commands=(
+    "cabal build all"
+    "cabal test all"
+    "cabal run cabal-hello"
+    "fourmolu -i . ; cabal format"
+    "hlint ."
+    "cabal sdist"
+    "cabal clean"
+)
+
 cargo_commands=(
-    "cargo build"
-    "cargo test"
+    "cargo build --all"
+    "cargo test --all --no-fail-fast"
     "cargo run"
+    "cargo fmt"
     "cargo clippy"
     "cargo package"
     "cargo clean"
@@ -21,15 +33,17 @@ dotnet_commands=(
     "dotnet test"
     "dotnet run --project src"
     "dotnet format"
+    "dotnet format"
     "dotnet pack"
     "dotnet clean"
 )
 
 gradle_commands=(
     "gradle assemble"
-    "gradle test"
-    "gradle run"
+    "gradle test --continue"
+    "gradle app:run -Dorg.gradle.console=plain"
     "gradle ktlintFormat"
+    "gradle ktlintCheck"
     "gradle jar"
     "gradle clean"
 )
@@ -39,6 +53,7 @@ swiftpm_commands=(
     "swift test"
     "swift run"
     "swift package swiftformat"
+    ""
     "swift package"
     "swift package clean"
 )
@@ -56,6 +71,10 @@ fi
 
 # Set the language directory
 case "$language" in
+cabal)
+    lang_dir="$cabal_dir"
+    commands=("${cabal_commands[@]}")
+    ;;
 cargo)
     lang_dir="$cargo_dir"
     commands=("${cargo_commands[@]}")
@@ -89,7 +108,7 @@ test)
 run)
     command_index=2
     ;;
-format)
+format | fmt)
     command_index=3
     ;;
 lint)
