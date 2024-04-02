@@ -18,6 +18,28 @@ library
         base ^>=4.18.2.0,
         random ^>=1.2.1.2
 
+executable factorial
+    main-is:          Factorial.hs
+    hs-source-dirs:   app
+    other-modules:    Paths_numbers_lib
+    autogen-modules:  Paths_numbers_lib
+    default-language: GHC2021
+    ghc-options:      -Wall
+    build-depends:
+        base ^>=4.18.2.0,
+        numbers-lib
+
+executable fibonacci
+    main-is:          Fibonacci.hs
+    hs-source-dirs:   app
+    other-modules:    Paths_numbers_lib
+    autogen-modules:  Paths_numbers_lib
+    default-language: GHC2021
+    ghc-options:      -Wall
+    build-depends:
+        base ^>=4.18.2.0,
+        numbers-lib
+
 test-suite numbers-lib-test
     type:             exitcode-stdio-1.0
     main-is:          NumbersLibTests.hs
@@ -29,4 +51,5 @@ test-suite numbers-lib-test
         numbers-lib,
         random ^>=1.2.1.2,
         tasty ^>=1.4.3,
-        tasty-hunit ^>=0.10.1
+        tasty-hunit ^>=0.10.1,
+        time ^>=1.12.2

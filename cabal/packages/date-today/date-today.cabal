@@ -1,0 +1,19 @@
+cabal-version:   3.4
+name:            date-today
+version:         1.0.0.0
+build-type:      Simple
+
+source-repository head
+    type:     git
+    location: https://github.com/altersabeh/hello-world
+
+executable date-today
+    main-is:          custom/DateToday.hs
+    hs-source-dirs:   app
+    other-modules:    Paths_date_today
+    autogen-modules:  Paths_date_today
+    default-language: GHC2021
+    ghc-options:      -Wall
+    build-depends:
+        base ^>=4.18.2.0,
+        cabal-hello

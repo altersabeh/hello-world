@@ -6,51 +6,6 @@ A simple **Hello World** program in **Cabal**.
 
 - Haskell
 
-## Project Structure
-
-``` plaintext
-hello-cabal
-├───── app
-│      ├───── Functions.hs
-│      └───── Main.hs
-├───── dist-newstyle
-│      ├───── build
-│      │      └───── ...
-│      ├───── cache
-│      │      └───── ...
-│      ├───── package.db
-│      │      └───── ...
-│      └───── tmp
-│             └───── ...
-├───── packages
-│      ├───── numbers-lib
-│      │      ├───── src
-│      │      │      └───── Numbers
-│      │      │             └───── Lib.hs
-│      │      ├───── tests
-│      │      │      └───── NumbersLibTests.hs
-│      │      └───── numbers-lib.cabal
-│      └───── translator
-│             ├───── src
-│             │      └───── Translator.hs
-│             ├───── tests
-│             │      └───── TranslatorTests.hs
-│             └───── translator.cabal
-├───── src
-│      ├───── Goodbye
-│      │      └───── World.hs
-│      └───── Hello
-│             └───── World.hs
-├───── tests
-│      ├───── GoodbyeWorldTests.hs
-│      └───── HelloWorldTests.hs
-├───── cabal-hello.cabal
-├───── cabal.project
-├───── CHANGELOG.md
-├───── LICENSE.md
-└───── README.md
-```
-
 ## Creating a new Cabal project
 
 To create a new **`cabal`** project, run the following command:
@@ -77,3 +32,86 @@ To test the project, navigate to the project directory and run the following
 command:
 
 `cabal test all`
+
+## Project Structure
+
+``` plaintext
+cabal-hello
+├── app
+│   ├── Command
+│   │   ├── Banner.hs
+│   │   ├── Details.hs
+│   │   ├── Greeter.hs
+│   │   ├── Number.hs
+│   │   └── Random.hs
+│   ├── Functions.hs
+│   └── Main.hs
+├── dist-newstyle
+│   ├── build
+│   │   └── x86_64-linux
+│   │       └── ghc-9.6.4
+│   │           ├── cabal-hello
+│   │           │   ├── build
+│   │           │   │   └── ...
+│   │           │   ├── cache
+│   │           │   │   └── ...
+│   │           │   ├── l
+│   │           │   │   └── ...
+│   │           │   └── x
+│   │           │       └── ...
+│   │           └── ...
+│   ├── cache
+│   │   └── ...
+│   ├── packagedb
+│   │   └── ghc-9.6.4
+│   │       └── ...
+│   └── tmp
+│       └── ...
+├── packages
+│   ├── date-today
+│   │   ├── app
+│   │   │   └── custom
+│   │   │       └── DateToday.hs
+│   │   └── date-today.cabal
+│   ├── hello-cabal
+│   │   ├── app
+│   │   │   └── Main.hs
+│   │   └── hello-world.cabal
+│   ├── numbers-lib
+│   │   ├── app
+│   │   │   ├── Factorial.hs
+│   │   │   └── Fibonacci.hs
+│   │   ├── src
+│   │   │   └── Numbers
+│   │   │       └── Lib.hs
+│   │   ├── tests
+│   │   │   └── NumbersLibTests.hs
+│   │   └── numbers-lib.cabal
+│   └── translator
+│       ├── src
+│       │   └── Translator.hs
+│       ├── tests
+│       │   └── TranslatorTests.hs
+│       └── translator.cabal
+├── src
+│   ├── CLI
+│   │   └── Function
+│   │       ├── Banner.hs
+│   │       ├── Details.hs
+│   │       ├── Greeter.hs
+│   │       ├── Number.hs
+│   │       └── Random.hs
+│   ├── Goodbye
+│   │   └── World.hs
+│   └── Hello
+│       └── World.hs
+├── tests
+│   ├── GoodbyeWorldTests.hs
+│   └── HelloWorldTests.hs
+├── cabal-hello.cabal
+├── cabal.project
+├── fourmolu.yaml
+├── CHANGELOG.md
+├── LICENSE.md
+└── README.md
+```

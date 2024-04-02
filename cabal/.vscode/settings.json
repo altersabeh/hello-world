@@ -1,0 +1,10 @@
+{
+    "files.exclude": {
+        "**/.vscode": true,
+        "**/dist-newstyle": true
+    },
+    "files.watcherExclude": {
+        "**/.vscode": true,
+        "**/dist-newstyle": true
+    },
+}

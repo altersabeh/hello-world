@@ -17,7 +17,7 @@ library
     build-depends:
         base ^>=4.18.2.0,
         containers ^>=0.6.7
-        
+
 test-suite translator-test
     type:             exitcode-stdio-1.0
     main-is:          TranslatorTests.hs
@@ -28,4 +28,5 @@ test-suite translator-test
         base ^>=4.18.2.0,
         translator,
         tasty ^>=1.4.3,
-        tasty-hunit ^>=0.10.1
+        tasty-hunit ^>=0.10.1,
+        time ^>=1.12.2
