@@ -144,7 +144,7 @@ gradle-hello
 │   │   │               └── app
 │   │   │                   └── HelloGradle.kt
 │   │   └── build.gradle.kts
-│   ├── numbers-lib
+│   ├── numbers-utils
 │   │   ├── src
 │   │   │   ├── main
 │   │   │   │   └── kotlin

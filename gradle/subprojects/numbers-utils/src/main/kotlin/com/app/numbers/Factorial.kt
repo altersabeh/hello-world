@@ -1,6 +1,6 @@
 package com.app.numbers
 
-import com.app.numbers.lib.factorial
+import com.app.numbers.utils.factorial
 
 private fun getUserNumber(): Int {
     print("Enter a number : ")

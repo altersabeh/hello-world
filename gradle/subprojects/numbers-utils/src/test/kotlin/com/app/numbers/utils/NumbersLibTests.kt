@@ -1,4 +1,4 @@
-package com.app.numbers.lib
+package com.app.numbers.utils
 
 import org.apache.commons.lang3.time.DateFormatUtils
 import java.math.BigInteger

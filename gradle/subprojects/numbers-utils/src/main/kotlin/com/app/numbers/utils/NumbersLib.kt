@@ -1,4 +1,4 @@
-package com.app.numbers.lib
+package com.app.numbers.utils
 
 import java.math.BigInteger
 import kotlin.random.Random

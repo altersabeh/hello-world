@@ -12,7 +12,7 @@ java {
 dependencies {
     implementation(project(":packages:hello-world"))
     implementation(project(":packages:goodbye-world"))
-    implementation(project(":subprojects:numbers-lib"))
+    implementation(project(":subprojects:numbers-utils"))
     implementation(project(":subprojects:translator"))
 }
 
@@ -41,7 +41,15 @@ tasks {
         enabled = false
     }
 
+    val packagesDependencies = listOf("hello-world", "goodbye-world")
+    val subprojectsDependencies = listOf("numbers-utils", "translator")
+
     jar {
-        dependsOn(":packages:hello-world:jar", ":packages:goodbye-world:jar", ":subprojects:numbers-lib:jar", ":subprojects:translator:jar")
+        packagesDependencies.forEach { dependency ->
+            dependsOn(":packages:$dependency:jar")
+        }
+        subprojectsDependencies.forEach { dependency ->
+            dependsOn(":subprojects:$dependency:jar")
+        }
     }
 }
