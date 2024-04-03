@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.kotlin) apply false
     alias(libs.plugins.ktlint)
+    alias(libs.plugins.dep.updates)
+    alias(libs.plugins.dep.check)
 }
 
 allprojects {
