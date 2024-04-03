@@ -152,7 +152,7 @@ gradle-hello
 │   │   │   │           └── app
 │   │   │   │               └── numbers
 │   │   │   │                   ├── lib
-│   │   │   │                   │   └── NumbersLib.kt
+│   │   │   │                   │   └── NumbersUtils.kt
 │   │   │   │                   ├── Factorial.kt
 │   │   │   │                   └── Fibonacci.kt
 │   │   │   └── test
@@ -161,7 +161,7 @@ gradle-hello
 │   │   │               └── app
 │   │   │                   └── numbers
 │   │   │                       └── lib
-│   │   │                           └── NumbersLibTests.kt
+│   │   │                           └── NumbersUtilsTests.kt
 │   │   └── build.gradle.kts
 │   └── translator
 │       ├── src
