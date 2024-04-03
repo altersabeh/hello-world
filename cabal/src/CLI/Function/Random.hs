@@ -1,9 +1,9 @@
 module CLI.Function.Random (printRandomNumbers) where
 
-import Numbers.Lib (factorialRandom, fibonacciRandom)
+import Numbers.Utils (factorialRandom, fibonacciRandom)
 
 printRandomNumbers :: IO ()
 printRandomNumbers = do
-    putStrLn "Some random numbers : "
-    putStrLn =<< fibonacciRandom
-    putStrLn =<< factorialRandom
+  putStrLn "Some random numbers : "
+  putStrLn =<< fibonacciRandom
+  putStrLn =<< factorialRandom

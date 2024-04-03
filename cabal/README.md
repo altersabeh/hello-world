@@ -77,7 +77,7 @@ cabal-hello
 │   │   ├── app
 │   │   │   └── Main.hs
 │   │   └── hello-world.cabal
-│   ├── numbers-lib
+│   ├── numbers-utils
 │   │   ├── app
 │   │   │   ├── Factorial.hs
 │   │   │   └── Fibonacci.hs
@@ -86,7 +86,7 @@ cabal-hello
 │   │   │       └── Lib.hs
 │   │   ├── tests
 │   │   │   └── NumbersLibTests.hs
-│   │   └── numbers-lib.cabal
+│   │   └── numbers-utils.cabal
 │   └── translator
 │       ├── src
 │       │   └── Translator.hs
