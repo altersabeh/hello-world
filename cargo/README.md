@@ -49,14 +49,14 @@ cargo-hello
 │   │   ├── src
 │   │   │   └── main.rs
 │   │   └── Cargo.toml
-│   ├── numbers-lib
+│   ├── numbers-utils
 │   │   ├── src
 │   │   │   ├── bin
 │   │   │   │   ├── factorial.rs
 │   │   │   │   └── fibonacci.rs
 │   │   │   └── lib.rs
 │   │   ├── tests
-│   │   │   └── numbers_lib_tests.rs
+│   │   │   └── numbers_utils_tests.rs
 │   │   └── Cargo.toml
 │   └── translator
 │       ├── src

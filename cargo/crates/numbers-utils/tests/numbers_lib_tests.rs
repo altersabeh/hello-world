@@ -1,7 +1,7 @@
 use chrono::Local;
 use colored::Colorize;
 use num_bigint::BigUint;
-use numbers_lib::{factorial, fibonacci};
+use numbers_utils::{factorial, fibonacci};
 
 fn format_error_message(expected: &BigUint, actual: &BigUint) -> colored::ColoredString {
     format!(

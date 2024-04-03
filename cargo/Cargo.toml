@@ -17,7 +17,7 @@ colored = "2.1.0"
 num-bigint = "0.4.4"
 rand = "0.8.5"
 rstest = "0.18.2"
-numbers-lib = { path = "crates/numbers-lib" }
+numbers-utils = { path = "crates/numbers-utils" }
 translator = { path = "crates/translator" }
 cargo-hello = { path = "." }
 
@@ -63,7 +63,7 @@ test = false
 
 [dependencies]
 chrono = { workspace = true }
-numbers-lib = { workspace = true }
+numbers-utils = { workspace = true }
 translator = { workspace = true }
 
 [dev-dependencies]

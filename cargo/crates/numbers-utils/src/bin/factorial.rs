@@ -1,7 +1,7 @@
 use std::env;
 use std::io::{self, Write};
 
-use numbers_lib::factorial;
+use numbers_utils::factorial;
 
 fn get_user_number() -> i32 {
     print!("Enter a number : ");

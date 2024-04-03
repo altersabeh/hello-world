@@ -1,6 +1,6 @@
 [package]
 version = "0.0.0"
-name = "numbers-lib"
+name = "numbers-utils"
 description = "A library for working with numbers"
 edition.workspace = true
 repository.workspace = true

@@ -44,7 +44,7 @@ version = "1.0.0"
 dependencies = [
  "chrono",
  "colored",
- "numbers-lib",
+ "numbers-utils",
  "translator",
 ]
 
@@ -302,7 +302,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "numbers-lib"
+name = "numbers-utils"
 version = "0.0.0"
 dependencies = [
  "chrono",
