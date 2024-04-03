@@ -27,7 +27,7 @@ library
         Hello.World
         Goodbye.World
 
-    hs-source-dirs:   srcc
+    hs-source-dirs:   src
     default-language: GHC2021
     ghc-options:      -Wall
     build-depends:
