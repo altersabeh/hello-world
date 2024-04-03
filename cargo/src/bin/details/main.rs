@@ -1,6 +1,4 @@
-mod details;
-
-use details::print_user_details;
+use cargo_hello::cli_functions::details::print_user_details;
 use std::env;
 
 fn main() {

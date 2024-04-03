@@ -1,4 +1,5 @@
-use cargo_hello::hello_world::print_date;
+use crate::hello_world::print_date;
+
 use std::io;
 use std::io::Write;
 use translator::translate;
