@@ -1,12 +1,11 @@
 [package]
-version = "0.0.0"
+version.workspace = true
 name = "numbers-utils"
 description = "A library for working with numbers"
 edition.workspace = true
 repository.workspace = true
 homepage.workspace = true
 license.workspace = true
-publish = false
 
 [lib]
 doctest = false
