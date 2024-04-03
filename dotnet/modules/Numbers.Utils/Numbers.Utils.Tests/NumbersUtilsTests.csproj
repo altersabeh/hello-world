@@ -17,7 +17,7 @@
 
   <ItemGroup>
     <Using Include="Xunit" />
-    <ProjectReference Include="../../src/NumbersLib.csproj" />
+    <ProjectReference Include="../Numbers.Utils.Lib/NumbersUtils.csproj" />
   </ItemGroup>
 
 </Project>

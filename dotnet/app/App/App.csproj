@@ -12,16 +12,13 @@
     <PackageID>dotnet-hello</PackageID>
     <Version>$(PackageVersion)</Version>
     <Description>Hello World program in Dotnet</Description>
-    <Authors>AlterSabeh</Authors>
-    <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/altersabeh/hello-world</RepositoryUrl>
     <PackageType>DotnetTool</PackageType>
     <PackAsTool>true</PackAsTool>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="../../src/Hello.World/HelloWorld.csproj" />
-    <ProjectReference Include="../../lib/Numbers.Lib/src/NumbersLib.csproj" />
+    <ProjectReference Include="../../modules/Numbers.Utils/Numbers.Utils.Lib/NumbersUtils.csproj" />
   </ItemGroup>
 
 </Project>

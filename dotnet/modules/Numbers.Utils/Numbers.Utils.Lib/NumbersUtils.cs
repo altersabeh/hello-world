@@ -1,8 +1,8 @@
 ﻿using System.Numerics;
 
-namespace Numbers.Lib;
+namespace Numbers.Utils;
 
-public class NumbersLib
+public class NumbersUtils
 {
     public static BigInteger Fibonacci(int n)
     {

@@ -1,7 +1,7 @@
 // Hello World in .NET
 
 using Hello.World;
-using Numbers.Lib;
+using Numbers.Utils;
 
 class Program
 {
@@ -10,7 +10,7 @@ class Program
         Console.WriteLine(HelloWorld.PrintGreeting(args));
         Console.WriteLine(HelloWorld.PrintDate());
         Console.WriteLine("Some random numbers:");
-        Console.WriteLine(NumbersLib.FibonacciRandom());
-        Console.WriteLine(NumbersLib.FactorialRandom());
+        Console.WriteLine(NumbersUtils.FibonacciRandom());
+        Console.WriteLine(NumbersUtils.FactorialRandom());
     }
 }
