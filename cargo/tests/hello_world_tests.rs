@@ -1,6 +1,7 @@
-use cargo_hello::hello_world::{print_date, print_greeting, GREETING};
 use chrono::Local;
 use colored::Colorize;
+
+use cargo_hello::hello_world::{print_date, print_greeting, GREETING};
 
 fn format_error_message(expected: &str, actual: &str) -> colored::ColoredString {
     format!(

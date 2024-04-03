@@ -1,6 +1,7 @@
-use cargo_hello::goodbye_world::{print_banner, print_goodbye};
 use chrono::Local;
 use colored::Colorize;
+
+use cargo_hello::goodbye_world::{print_banner, print_goodbye};
 
 fn format_error_message(expected: &str, actual: &str) -> colored::ColoredString {
     format!(

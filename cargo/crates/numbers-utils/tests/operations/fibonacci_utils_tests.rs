@@ -1,5 +1,6 @@
 use chrono::Local;
 use colored::Colorize;
+
 use num_bigint::BigUint;
 use numbers_utils::operations::fibonacci_utils::{fibonacci, fibonacci_random};
 
@@ -23,8 +24,10 @@ fn fibonacci_test() {
 }
 
 #[test]
-fn test_factor_random() {
+fn fibonacci_random_test() {
     let result = fibonacci_random();
-    assert!(result.starts_with("Fib["));
+    let start_string = "Fib[";
+    let error_message = format!("\nExpected: {}\n     Got: {}\n", start_string, result).red();
+    assert!(result.starts_with(start_string), "{}", error_message,);
     assert!(result.contains(" = "));
 }

@@ -1,5 +1,6 @@
-use cargo_hello::cli_functions::details::print_user_details;
 use std::env;
+
+use cargo_hello::cli_functions::details::print_user_details;
 
 fn main() {
     let args: Vec<_> = env::args().collect();

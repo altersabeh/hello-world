@@ -1,5 +1,6 @@
 use chrono::Local;
 use colored::Colorize;
+
 use num_bigint::BigUint;
 use numbers_utils::operations::factorial_utils::{factorial, factorial_random};
 
@@ -23,8 +24,10 @@ fn factorial_test() {
 }
 
 #[test]
-fn test_factor_random() {
+fn factor_random_test() {
     let result = factorial_random();
-    assert!(result.starts_with("Fact["));
+    let start_string = "Fact[";
+    let error_message = format!("\nExpected: {}\n     Got: {}\n", start_string, result).red();
+    assert!(result.starts_with(start_string), "{}", error_message,);
     assert!(result.contains(" = "));
 }

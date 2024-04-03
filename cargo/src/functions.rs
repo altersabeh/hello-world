@@ -1,11 +1,11 @@
+use std::env;
+use std::io::{self, Write};
+
 use cargo_hello::cli_functions::banner::print_banner_message;
 use cargo_hello::cli_functions::details::print_user_details;
 use cargo_hello::cli_functions::greeter::{print_goodbye_message, print_welcome_message};
 use cargo_hello::cli_functions::number::print_number_calculations;
 use cargo_hello::cli_functions::random::print_random_numbers;
-
-use std::env;
-use std::io::{self, Write};
 
 fn wait_for_user() {
     print!("Press enter to continue ...");
