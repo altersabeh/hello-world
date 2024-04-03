@@ -52,11 +52,22 @@ cargo-hello
 │   ├── numbers-utils
 │   │   ├── src
 │   │   │   ├── bin
+│   │   │   │   ├── factor.rs
 │   │   │   │   ├── factorial.rs
 │   │   │   │   └── fibonacci.rs
+│   │   │   ├── operations
+│   │   │   │   ├── factor_utils.rs
+│   │   │   │   ├── factorial_utils.rs
+│   │   │   │   ├── fibonacci_utils.rs
+│   │   │   │   └── mod.rs
 │   │   │   └── lib.rs
 │   │   ├── tests
-│   │   │   └── numbers_utils_tests.rs
+│   │   │   ├── operations
+│   │   │   │   ├── factor_utils_tests.rs
+│   │   │   │   ├── factorial_utils_tests.rs
+│   │   │   │   ├── fibonacci_utils_tests.rs
+│   │   │   │   └── mod.rs
+│   │   │   └── operations_tests.rs
 │   │   └── Cargo.toml
 │   └── translator
 │       ├── src
