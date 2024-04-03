@@ -1,5 +1,7 @@
 use chrono::{DateTime, Local};
 
+pub const GREETING: &str = "Hello, Cargo Here!";
+
 pub fn print_greeting(args: &[String]) -> String {
     if args.len() > 1 {
         format!("Hello {} from Cargo !", args[1..].join(" "))

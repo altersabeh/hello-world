@@ -1,4 +1,4 @@
-use cargo_hello::hello_world::{print_date, print_greeting};
+use cargo_hello::hello_world::{print_date, print_greeting, GREETING};
 use chrono::Local;
 use colored::Colorize;
 
@@ -38,4 +38,12 @@ fn print_date_test() {
     let actual_output = print_date();
     let error_message = format_error_message(&expected_output, &actual_output);
     assert_eq!(expected_output, actual_output, "{}", error_message);
+}
+
+#[test]
+fn print_greet_test() {
+    let expected_output = GREETING;
+    let actual_output = "Hello, Cargo's Here!";
+    let error_message = format_error_message(&expected_output, &actual_output);
+    assert_ne!(expected_output, actual_output, "{}", error_message);
 }

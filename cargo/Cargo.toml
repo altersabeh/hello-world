@@ -15,6 +15,7 @@ keywords = ["command-line"]
 chrono = "0.4.37"
 colored = "2.1.0"
 num-bigint = "0.4.4"
+num-traits = "0.2.18"
 rand = "0.8.5"
 rstest = "0.18.2"
 numbers-utils = { path = "crates/numbers-utils" }

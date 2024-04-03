@@ -1,7 +1,7 @@
 use std::env;
 use std::io::{self, Write};
 
-use numbers_utils::fibonacci;
+use numbers_utils::operations::fibonacci_utils::fibonacci;
 
 fn get_user_number() -> i32 {
     print!("Enter a number : ");

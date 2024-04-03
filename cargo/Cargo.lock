@@ -308,6 +308,7 @@ dependencies = [
  "chrono",
  "colored",
  "num-bigint",
+ "num-traits",
  "rand",
 ]
 

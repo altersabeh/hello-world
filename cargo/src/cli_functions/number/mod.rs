@@ -1,4 +1,5 @@
-use numbers_utils::{factorial, fibonacci};
+use numbers_utils::operations::factorial_utils::factorial;
+use numbers_utils::operations::fibonacci_utils::fibonacci;
 use std::io::{self, Write};
 
 fn get_user_number() -> i32 {
