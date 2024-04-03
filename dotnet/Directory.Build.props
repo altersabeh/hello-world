@@ -5,13 +5,17 @@
   </PropertyGroup>
 
   <PropertyGroup>
+    <PackageVersion>1.0.0</PackageVersion>
+    <SdkTargetFramework>net8.0</SdkTargetFramework>
     <RepoRoot>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))</RepoRoot>
     <ProjectRelativePath>$([MSBuild]::MakeRelative($(RepoRoot), $(MSBuildProjectDirectory)))</ProjectRelativePath>
-    <BaseOutputPath>$(RepoRoot)dist/$(ProjectRelativePath)/bin</BaseOutputPath>
+    <BaseOutputPath>$(RepoRoot)artifacts/$(ProjectRelativePath)/bin</BaseOutputPath>
     <OutputPath>$(BaseOutputPath)</OutputPath>
-    <BaseIntermediateOutputPath>$(RepoRoot)dist/$(ProjectRelativePath)/obj</BaseIntermediateOutputPath>
+    <BaseIntermediateOutputPath>$(RepoRoot)artifacts/$(ProjectRelativePath)/obj</BaseIntermediateOutputPath>
     <IntermediateOutputPath>$(BaseIntermediateOutputPath)</IntermediateOutputPath>
-    <PackageOutputPath>$(RepoRoot)dist/$(ProjectRelativePath)/package</PackageOutputPath>
+    <PackageOutputPath>$(RepoRoot)artifacts/$(ProjectRelativePath)/package</PackageOutputPath>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
 </Project>

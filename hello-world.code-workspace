@@ -1,23 +1,23 @@
 {
-  "folders": [
-    {
-      "path": "."
-    },
-    {
-      "path": "./cabal"
-    },
-    {
-      "path": "./cargo"
-    },
-    {
-      "path": "./dotnet"
-    },
-    {
-      "path": "./gradle"
-    },
-    {
-      "path": "./swiftpm"
-    }
-  ],
-  "settings": {}
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": "./cabal"
+        },
+        {
+            "path": "./cargo"
+        },
+        {
+            "path": "./dotnet"
+        },
+        {
+            "path": "./gradle"
+        },
+        {
+            "path": "./swiftpm"
+        }
+    ],
+    "settings": {}
 }

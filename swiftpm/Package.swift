@@ -3,10 +3,10 @@
 import PackageDescription
 
 let package = Package(
-  name: "swift-hello",
+  name: "swiftpm-hello",
   products: [
     .executable(
-      name: "swift-hello",
+      name: "swiftpm-hello",
       targets: ["App"]
     )
   ],
