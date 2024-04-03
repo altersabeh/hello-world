@@ -21,19 +21,6 @@ source-repository head
     type:     git
     location: https://github.com/altersabeh/hello-world
 
-library
-    exposed-modules:
-        Paths_cabal_hello
-        Hello.World
-        Goodbye.World
-
-    hs-source-dirs:   src
-    default-language: GHC2021
-    ghc-options:      -Wall
-    build-depends:
-        base ^>=4.18.2.0,
-        time ^>=1.12.2
-
 library goodbye-world
     exposed-modules:  Goodbye.World
     hs-source-dirs:   src
@@ -47,6 +34,7 @@ library goodbye-world
 
 library hello-world
     exposed-modules:  Hello.World
+    visibility:       public
     hs-source-dirs:   src
     other-modules:    Paths_cabal_hello
     autogen-modules:  Paths_cabal_hello
@@ -74,7 +62,8 @@ library cli-function
     default-language: GHC2021
     ghc-options:      -Wall
     build-depends:
-        cabal-hello,
+        cabal-hello:hello-world,
+        cabal-hello:goodbye-world,
         base ^>=4.18.2.0,
         time ^>=1.12.2,
         numbers-utils ^>=1.0.0,
