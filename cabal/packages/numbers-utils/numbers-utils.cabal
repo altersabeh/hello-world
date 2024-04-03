@@ -42,7 +42,7 @@ executable fibonacci
 
 test-suite numbers-utils-test
     type:             exitcode-stdio-1.0
-    main-is:          NumbersLibTests.hs
+    main-is:          NumbersUtilsTests.hs
     hs-source-dirs:   tests
     default-language: GHC2021
     ghc-options:      -Wall

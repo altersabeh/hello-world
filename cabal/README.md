@@ -85,7 +85,7 @@ cabal-hello
 │   │   │   └── Numbers
 │   │   │       └── Lib.hs
 │   │   ├── tests
-│   │   │   └── NumbersLibTests.hs
+│   │   │   └── NumbersUtilsTests.hs
 │   │   └── numbers-utils.cabal
 │   └── translator
 │       ├── src
