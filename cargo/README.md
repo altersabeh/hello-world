@@ -67,26 +67,31 @@ cargo-hello
 ├── src
 │   ├── bin
 │   │   ├── banner
-│   │   │   ├── banner.rs
-│   │   │   ├── main.rs
-│   │   │   └── mod.rs
+│   │   │   └── main.rs
 │   │   ├── details
-│   │   │   ├── details.rs
 │   │   │   └── main.rs
 │   │   ├── greeter
-│   │   │   ├── greeter.rs
 │   │   │   └── main.rs
 │   │   ├── number
-│   │   │   ├── main.rs
-│   │   │   └── number.rs
+│   │   │   └── main.rs
 │   │   └── random
-│   │       ├── main.rs
-│   │       └── random.rs
+│   │       └── main.rs
+│   ├── cli_functions
+│   │   ├── banner
+│   │   │   └── mod.rs
+│   │   ├── details
+│   │   │   └── mod.rs
+│   │   ├── greeter
+│   │   │   └── mod.rs
+│   │   ├── number
+│   │   │   └── mod.rs
+│   │   └── random
+│   │       └── mod.rs
+│   ├── functions.rs
 │   ├── goodbye_world
 │   │   └── mod.rs
 │   ├── hello_world
 │   │   └── mod.rs
-│   ├── functions.rs
 │   ├── lib.rs
 │   └── main.rs
 ├── target
