@@ -29,14 +29,24 @@ pub fn factor_random() -> String {
 
 pub fn prime_factor(mut n: BigUint) -> Vec<BigUint> {
     let mut prime_factors = Vec::new();
-    let mut divisor = BigUint::from(2u32);
+    let two = BigUint::from(2u32);
 
-    while n > BigUint::one() {
+    while &n % &two == BigUint::zero() {
+        prime_factors.push(two.clone());
+        n /= &two;
+    }
+
+    let mut divisor = BigUint::from(3u32);
+    while &divisor * &divisor <= n {
         while &n % &divisor == BigUint::zero() {
             prime_factors.push(divisor.clone());
             n /= &divisor;
         }
-        divisor += BigUint::one();
+        divisor += BigUint::from(2u32);
+    }
+
+    if n > BigUint::one() {
+        prime_factors.push(n);
     }
 
     prime_factors

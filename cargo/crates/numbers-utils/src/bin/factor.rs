@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 use std::env;
 use std::io::{self, Write};
 use std::str::FromStr;
@@ -31,13 +32,14 @@ fn print_factor(number: BigUint) {
 }
 
 fn print_prime_factor(number: BigUint) {
-    let factors = prime_factor(number.clone());
-    let factors_str = format!("{:?}", factors);
-    println!("PFactor[{}] = {}", number, factors_str);
+    let prime_factors = prime_factor(number.clone());
+    let prime_factors_str = format!("{:?}", prime_factors);
+    println!("PFactor[{}] = {}", number, prime_factors_str);
 }
 
 fn main() {
     let number = get_number();
+    // Find faster way to print factors
     print_factor(number.clone());
     print_prime_factor(number);
 }
