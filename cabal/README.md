@@ -37,90 +37,94 @@ command:
 
 ``` plaintext
 cabal-hello
-├── app
-│   ├── Command
-│   │   ├── Banner.hs
-│   │   ├── Details.hs
-│   │   ├── Greeter.hs
-│   │   ├── Number.hs
-│   │   └── Random.hs
-│   ├── Functions.hs
-│   └── Main.hs
-├── dist-newstyle
-│   ├── build
-│   │   └── x86_64-linux
-│   │       └── ghc-9.6.4
-│   │           ├── cabal-hello
-│   │           │   ├── build
-│   │           │   │   └── ...
-│   │           │   ├── cache
-│   │           │   │   └── ...
-│   │           │   ├── l
-│   │           │   │   └── ...
-│   │           │   └── x
-│   │           │       └── ...
-│   │           └── ...
-│   ├── cache
-│   │   └── ...
-│   ├── packagedb
-│   │   └── ghc-9.6.4
-│   │       └── ...
-│   └── tmp
-│       └── ...
-├── packages
-│   ├── date-today
-│   │   ├── app
-│   │   │   └── custom
-│   │   │       └── DateToday.hs
-│   │   └── date-today.cabal
-│   ├── hello-cabal
-│   │   ├── app
-│   │   │   └── Main.hs
-│   │   └── hello-world.cabal
-│   ├── numbers-utils
-│   │   ├── app
-│   │   │   ├── Factor.hs
-│   │   │   ├── Factorial.hs
-│   │   │   └── Fibonacci.hs
-│   │   ├── src
-│   │   │   └── Numbers
-│   │   │       └── Utils
-│   │   │           └── Operations
-│   │   │               ├── FactorUtils.hs
-│   │   │               ├── FactorialUtils.hs
-│   │   │               └── FibonacciUtils.hs
-│   │   ├── tests
-│   │   │   ├── Operations
-│   │   │   │   ├── FactorUtilsTests.hs
-│   │   │   │   ├── FactorialUtilsTests.hs
-│   │   │   │   └── FibonacciUtilsTests.hs
-│   │   │   └── OperationsTests.hs
-│   │   └── numbers-utils.cabal
-│   └── translator
-│       ├── src
-│       │   └── Translator.hs
-│       ├── tests
-│       │   └── TranslatorTests.hs
-│       └── translator.cabal
-├── src
-│   ├── CLI
-│   │   └── Function
-│   │       ├── Banner.hs
-│   │       ├── Details.hs
-│   │       ├── Greeter.hs
-│   │       ├── Number.hs
-│   │       └── Random.hs
-│   ├── Goodbye
-│   │   └── World.hs
-│   └── Hello
-│       └── World.hs
-├── tests
-│   ├── GoodbyeWorldTests.hs
-│   └── HelloWorldTests.hs
-├── cabal-hello.cabal
-├── cabal.project
-├── fourmolu.yaml
-├── CHANGELOG.md
-├── LICENSE.md
-└── README.md
+├──── app
+│     ├──── Command
+│     │     ├──── Banner.hs
+│     │     ├──── Details.hs
+│     │     ├──── Greeter.hs
+│     │     ├──── Number.hs
+│     │     └──── Random.hs
+│     ├──── Functions.hs
+│     └──── Main.hs
+├──── dist-newstyle
+│     ├──── build
+│     │     └──── x86_64-linux
+│     │           └──── ghc-9.6.4
+│     │                 ├──── cabal-hello
+│     │                 │     ├──── build
+│     │                 │     │     └──── ...
+│     │                 │     ├──── cache
+│     │                 │     │     └──── ...
+│     │                 │     ├──── l
+│     │                 │     │     └──── ...
+│     │                 │     ├──── package.conf.inplace
+│     │                 │     │     └──── ...
+│     │                 │     └──── x
+│     │                 │           └──── ...
+│     │                 └──── ...
+│     ├──── cache
+│     │     └──── ...
+│     ├──── packagedb
+│     │     └──── ghc-9.6.4
+│     │           └──── ...
+│     ├──── sdist
+│     │     └──── ...
+│     └──── tmp
+│           └──── ...
+├──── packages
+│     ├──── date-today
+│     │     ├──── app
+│     │     │     └──── custom
+│     │     │           └──── DateToday.hs
+│     │     └──── date-today.cabal
+│     ├──── hello-cabal
+│     │     ├──── app
+│     │     │     └──── Main.hs
+│     │     └──── hello-world.cabal
+│     ├──── numbers-utils
+│     │     ├──── app
+│     │     │     ├──── Factor.hs
+│     │     │     ├──── Factorial.hs
+│     │     │     └──── Fibonacci.hs
+│     │     ├──── src
+│     │     │     └──── Numbers
+│     │     │           └──── Utils
+│     │     │                 └──── Operations
+│     │     │                       ├──── FactorUtils.hs
+│     │     │                       ├──── FactorialUtils.hs
+│     │     │                       └──── FibonacciUtils.hs
+│     │     ├──── tests
+│     │     │     ├──── Operations
+│     │     │     │     ├──── FactorUtilsTests.hs
+│     │     │     │     ├──── FactorialUtilsTests.hs
+│     │     │     │     └──── FibonacciUtilsTests.hs
+│     │     │     └──── OperationsTests.hs
+│     │     └──── numbers-utils.cabal
+│     └──── translator
+│           ├──── src
+│           │     └──── Translator.hs
+│           ├──── tests
+│           │     └──── TranslatorTests.hs
+│           └──── translator.cabal
+├──── src
+│     ├──── CLI
+│     │     └──── Function
+│     │           ├──── Banner.hs
+│     │           ├──── Details.hs
+│     │           ├──── Greeter.hs
+│     │           ├──── Number.hs
+│     │           └──── Random.hs
+│     ├──── Goodbye
+│     │     └──── World.hs
+│     └──── Hello
+│           └──── World.hs
+├──── tests
+│     ├──── GoodbyeWorldTests.hs
+│     └──── HelloWorldTests.hs
+├──── cabal-hello.cabal
+├──── cabal.project
+├──── fourmolu.yaml
+├──── CHANGELOG.md
+├──── LICENSE.md
+└──── README.md
 ```
