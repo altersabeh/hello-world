@@ -15,14 +15,14 @@ dependencies {
 
 application {
     applicationName = "date-today"
-    mainClass = "com.app.DateTodayKt"
+    mainClass = "com.prog.DateTodayKt"
 }
 
 tasks.register<JavaExec>("run-date-today") {
     group = "Application"
     description = "Print the date today."
     classpath = sourceSets["main"].runtimeClasspath
-    mainClass = "com.app.DateTodayKt"
+    mainClass = "com.prog.DateTodayKt"
 }
 
 tasks {
@@ -33,7 +33,7 @@ tasks {
     jar {
         dependsOn(":packages:hello-world:jar")
         manifest {
-            attributes["Main-Class"] = "com.app.DateTodayKt"
+            attributes["Main-Class"] = "com.prog.DateTodayKt"
         }
     }
 }

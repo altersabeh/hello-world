@@ -15,14 +15,14 @@ dependencies {
 
 application {
     applicationName = "hello-gradle"
-    mainClass = "com.app.HelloGradleKt"
+    mainClass = "com.prog.HelloGradleKt"
 }
 
 tasks.register<JavaExec>("run-hello-gradle") {
     group = "Application"
     description = "Runs the HELLO GRADLE."
     classpath = sourceSets["main"].runtimeClasspath
-    mainClass = "com.app.HelloGradleKt"
+    mainClass = "com.prog.HelloGradleKt"
 }
 
 tasks {
@@ -33,7 +33,7 @@ tasks {
     jar {
         dependsOn(":packages:hello-world:jar")
         manifest {
-            attributes["Main-Class"] = "com.app.HelloGradleKt"
+            attributes["Main-Class"] = "com.prog.HelloGradleKt"
         }
     }
 }

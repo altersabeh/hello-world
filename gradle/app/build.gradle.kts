@@ -14,7 +14,7 @@ dependencies {
 
 application {
     applicationName = "gradle-hello"
-    mainClass = "com.app.MainKt"
+    mainClass = "com.prog.MainKt"
 }
 
 tasks {
@@ -29,7 +29,7 @@ tasks {
             attributes["Implementation-Title"] = "gradle-hello"
             attributes["Name"] = "gradle-hello"
             attributes["Description"] = "Hello World program in Gradle"
-            attributes["Main-Class"] = "com.app.MainKt"
+            attributes["Main-Class"] = "com.prog.MainKt"
         }
     }
 }

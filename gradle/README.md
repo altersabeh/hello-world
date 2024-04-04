@@ -44,7 +44,7 @@ gradle-hello
 │     │     └──── main
 │     │           └──── kotlin
 │     │                 └──── com
-│     │                       └──── app
+│     │                       └──── prog
 │     │                             ├──── Functions.kt
 │     │                             └──── Main.kt
 │     └──── build.gradle.kts
@@ -80,7 +80,7 @@ gradle-hello
 │     │     │     └──── main
 │     │     │           └──── kotlin
 │     │     │                 └──── com
-│     │     │                       └──── app
+│     │     │                       └──── prog
 │     │     │                             └──── cli
 │     │     │                                   └──── function
 │     │     │                                         ├──── Banner.kt
@@ -94,14 +94,14 @@ gradle-hello
 │     │     │     ├──── main
 │     │     │     │     └──── kotlin
 │     │     │     │           └──── com
-│     │     │     │                 └──── app
+│     │     │     │                 └──── prog
 │     │     │     │                       └──── goodbye
 │     │     │     │                             └──── world
 │     │     │     │                                   └──── GoodbyeWorld.kt
 │     │     │     └──── test
 │     │     │           └──── kotlin
 │     │     │                 └──── com
-│     │     │                       └──── app
+│     │     │                       └──── prog
 │     │     │                             └──── goodbye
 │     │     │                                   └──── world
 │     │     │                                         └──── GoodbyeWorldTests.kt
@@ -111,14 +111,14 @@ gradle-hello
 │           │     ├──── main
 │           │     │     └──── kotlin
 │           │     │           └──── com
-│           │     │                 └──── app
+│           │     │                 └──── prog
 │           │     │                       └──── hello
 │           │     │                             └──── world
 │           │     │                                   └──── HelloWorld.kt
 │           │     └──── test
 │           │           └──── kotlin
 │           │                 └──── com
-│           │                       └──── app
+│           │                       └──── prog
 │           │                             └──── hello
 │           │                                   └──── world
 │           │                                         └──── HelloWorldTests.kt
@@ -133,7 +133,7 @@ gradle-hello
 │     │     │     └──── main
 │     │     │           └──── kotlin
 │     │     │               └──── com
-│     │     │                     └──── app
+│     │     │                     └──── prog
 │     │     │                     └──── DateToday.kt
 │     │     └──── build.gradle.kts
 │     ├──── hello-gradle
@@ -141,7 +141,7 @@ gradle-hello
 │     │     │     └──── main
 │     │     │           └──── kotlin
 │     │     │                 └──── com
-│     │     │                       └──── app
+│     │     │                       └──── prog
 │     │     │                             └──── HelloGradle.kt
 │     │     └──── build.gradle.kts
 │     ├──── numbers-utils
@@ -149,7 +149,7 @@ gradle-hello
 │     │     │     ├──── main
 │     │     │     │     └──── kotlin
 │     │     │     │           └──── com
-│     │     │     │                 └──── app
+│     │     │     │                 └──── prog
 │     │     │     │                       └──── numbers
 │     │     │     │                             └──── utils
 │     │     │     │                                   ├──── bin
@@ -163,7 +163,7 @@ gradle-hello
 │     │     │     └──── test
 │     │     │           └──── kotlin
 │     │     │                 └──── com
-│     │     │                       └──── app
+│     │     │                       └──── prog
 │     │     │                             └──── numbers
 │     │     │                                   └──── utils
 │     │     │                                         └──── operations
@@ -176,13 +176,13 @@ gradle-hello
 │           │     ├──── main
 │           │     │     └──── kotlin
 │           │     │           └──── com
-│           │     │                 └──── app
+│           │     │                 └──── prog
 │           │     │                       └──── translator
 │           │     │                             └──── Translator.kt
 │           │     └──── test
 │           │           └──── kotlin
 │           │                 └──── com
-│           │                       └──── app
+│           │                       └──── prog
 │           │                             └──── translator
 │           │                                   └──── TranslatorTests.kt
 │           └──── build.gradle.kts

@@ -19,9 +19,9 @@ dependencies {
 application {
     val mainSourceSet = sourceSets["main"]
     val mainClasspath = mainSourceSet.runtimeClasspath
-    val packagePrefix = "com.app.cli.function"
+    val packagePrefix = "com.prog.cli.function"
 
-    fileTree("${mainSourceSet.kotlin.srcDirs.first()}/com/app/cli/function").forEach { classFile ->
+    fileTree("${mainSourceSet.kotlin.srcDirs.first()}/com/prog/cli/function").forEach { classFile ->
         if (classFile.isFile && classFile.extension == "kt") {
             val className = classFile.nameWithoutExtension
             val taskName = "run-${className.lowercase()}"
