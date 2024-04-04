@@ -5,9 +5,10 @@ module Main where
 import Data.Time.Clock (getCurrentTime)
 import Data.Time.Format (defaultTimeLocale, formatTime)
 import Data.Time.LocalTime (utcToLocalZonedTime)
-import Hello.World (printDate, printGreeting)
 import Test.Tasty (TestTree, defaultMain, testGroup)
 import Test.Tasty.HUnit (assertBool, testCase)
+
+import Hello.World (printDate, printGreeting)
 
 formatErrorMessage :: String -> String -> IO String
 formatErrorMessage expected actual = do
