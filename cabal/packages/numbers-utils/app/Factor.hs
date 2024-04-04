@@ -47,5 +47,6 @@ printPrimeFactor number = do
 main :: IO ()
 main = do
     number <- getNumber
-    --  printFactor number
+    --  Find faster way to print factors
+    printFactor number
     printPrimeFactor number
