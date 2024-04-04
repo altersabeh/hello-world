@@ -135,12 +135,12 @@ cabal sdist all
 ## Project Structure
 
 Name | Description
-:---: | :---
-**`app`** | Contains the main executable and its components.
-**`dist-newstyle`** | Contains the build artifacts.
-**`packages`** | Contains the subprojects.
-**`src`** | Contains the library source code.
-**`tests`** | Contains the test code.
+:--- | :---
+**`app/`** | Contains the main executable and its components.
+**`dist-newstyle/`** | Contains the build artifacts.
+**`packages/`** | Contains the subprojects.
+**`src/`** | Contains the library source code.
+**`tests/`** | Contains the test code.
 **`cabal-hello.cabal`** | Contains the project metadata.
 **`cabal.project`** | Contains the project or workspace configuration.
 **`fourmolu.yaml`** | Contains the code formatting configuration.
