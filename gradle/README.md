@@ -151,17 +151,25 @@ gradle-hello
 │     │     │     │           └──── com
 │     │     │     │                 └──── app
 │     │     │     │                       └──── numbers
-│     │     │     │                             ├──── utils
-│     │     │     │                             │     └──── NumbersUtils.kt
-│     │     │     │                             ├──── Factorial.kt
-│     │     │     │                             └──── Fibonacci.kt
+│     │     │     │                             └──── utils
+│     │     │     │                                   ├──── bin
+│     │     │     │                                   │     ├──── Factor.kt
+│     │     │     │                                   │     ├──── Factorial.kt
+│     │     │     │                                   │     └──── Fibonacci.kt
+│     │     │     │                                   └──── operations
+│     │     │     │                                         ├──── FactorUtils.kt
+│     │     │     │                                         ├──── FactorialUtils.kt
+│     │     │     │                                         └──── FibonacciUtils.kt
 │     │     │     └──── test
 │     │     │           └──── kotlin
 │     │     │                 └──── com
 │     │     │                       └──── app
 │     │     │                             └──── numbers
 │     │     │                                   └──── utils
-│     │     │                                         └──── NumbersUtilsTests.kt
+│     │     │                                         └──── operations
+│     │     │                                               ├──── FactorUtilsTests.kt
+│     │     │                                               ├──── FactorialUtilsTests.kt
+│     │     │                                               └──── FibonacciUtilsTests.kt
 │     │     └──── build.gradle.kts
 │     └──── translator
 │           ├──── src
