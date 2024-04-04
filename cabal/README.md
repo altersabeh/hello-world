@@ -79,13 +79,22 @@ cabal-hello
 │   │   └── hello-world.cabal
 │   ├── numbers-utils
 │   │   ├── app
+│   │   │   ├── Factor.hs
 │   │   │   ├── Factorial.hs
 │   │   │   └── Fibonacci.hs
 │   │   ├── src
 │   │   │   └── Numbers
-│   │   │       └── Lib.hs
+│   │   │       └── Utils
+│   │   │           └── Operations
+│   │   │               ├── FactorUtils.hs
+│   │   │               ├── FactorialUtils.hs
+│   │   │               └── FibonacciUtils.hs
 │   │   ├── tests
-│   │   │   └── NumbersUtilsTests.hs
+│   │   │   ├── Operations
+│   │   │   │   ├── FactorUtilsTests.hs
+│   │   │   │   ├── FactorialUtilsTests.hs
+│   │   │   │   └── FibonacciUtilsTests.hs
+│   │   │   └── OperationsTests.hs
 │   │   └── numbers-utils.cabal
 │   └── translator
 │       ├── src
