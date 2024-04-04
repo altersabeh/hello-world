@@ -61,6 +61,7 @@ test-suite operations-test
     main-is:          OperationsTests.hs
     hs-source-dirs:   tests
     other-modules:
+        Operations.FactorUtilsTests
         Operations.FactorialUtilsTests
         Operations.FibonacciUtilsTests
 

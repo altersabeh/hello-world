@@ -7,7 +7,7 @@ import Data.List (isInfixOf, isPrefixOf)
 import Data.Time.Clock (getCurrentTime)
 import Data.Time.LocalTime (utcToLocalZonedTime)
 import Test.Tasty (TestTree)
-import Test.Tasty.HUnit (Assertion, assertBool, testCase, (@?=))
+import Test.Tasty.HUnit (assertBool, testCase, assertEqual)
 
 import Numbers.Utils.Operations.FactorialUtils (factorial, factorialRandom)
 
@@ -32,13 +32,12 @@ factorialTest = testCase "Factorial" $ do
                 :: Integer
     let actualOutput = factorial n
     errorMessage <- formatErrorMessage (show expectedOutput) (show actualOutput)
-    assertBool errorMessage (expectedOutput == actualOutput)
+    assertEqual errorMessage expectedOutput actualOutput
 
-factorialRandomTest :: Assertion
-factorialRandomTest = do
+factorialRandomTest :: TestTree
+factorialRandomTest = testCase "Factorial Random Test" $ do
     result <- factorialRandom
-    let start_string = "Fact"
-    assertBool
-        ("\nExpected: " ++ start_string ++ "\n     Got: " ++ result ++ "\n")
-        (start_string `isPrefixOf` result)
-    " = " `isInfixOf` result @?= True
+    let startString = "Fact["
+    let errorMessage = "\nExpected: " ++ startString ++ "\n     Got: " ++ result ++ "\n"
+    assertBool errorMessage (startString `isPrefixOf` result)
+    assertBool errorMessage (" = " `isInfixOf` result)

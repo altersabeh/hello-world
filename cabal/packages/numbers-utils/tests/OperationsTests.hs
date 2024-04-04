@@ -2,19 +2,29 @@
 
 module Main where
 
+import Test.Tasty (TestTree, defaultMain, testGroup)
+
+import Operations.FactorUtilsTests
+    ( factorRandomTest
+    , factorTest
+    , primeFactorRandomTest
+    , primeFactorTest
+    )
 import Operations.FactorialUtilsTests (factorialRandomTest, factorialTest)
 import Operations.FibonacciUtilsTests (fibonacciRandomTest, fibonacciTest)
-import Test.Tasty (TestTree, defaultMain, testGroup)
-import Test.Tasty.HUnit (testCase)
 
 tests :: TestTree
 tests =
     testGroup
         "Operations Tests"
         [ fibonacciTest
-        , testCase "Fibonacci Random" fibonacciRandomTest
+        , fibonacciRandomTest
         , factorialTest
-        , testCase "Factorial Random" factorialRandomTest
+        , factorialRandomTest
+        , factorTest
+        , factorRandomTest
+        , primeFactorTest
+        , primeFactorRandomTest
         ]
 
 main :: IO ()

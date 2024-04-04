@@ -8,7 +8,7 @@ import Data.Time.LocalTime (utcToLocalZonedTime)
 import Test.Tasty (TestTree, defaultMain, testGroup)
 import Test.Tasty.HUnit (assertBool, testCase)
 
-import Hello.World (printDate, printGreeting)
+import Hello.World (greeting, printDate, printGreeting)
 
 formatErrorMessage :: String -> String -> IO String
 formatErrorMessage expected actual = do
@@ -47,11 +47,22 @@ printDateTest = testCase "Print Date Test" $ do
     errorMessage <- formatErrorMessage expectedOutput actualOutput
     assertBool errorMessage (expectedOutput == actualOutput)
 
+printGreetTest :: TestTree
+printGreetTest = testCase "Print Greet Test" $ do
+    let expectedOutput = "Hello, Cabal's Here !"
+    let actualOutput = greeting
+    errorMessage <- formatErrorMessage expectedOutput actualOutput
+    assertBool errorMessage (expectedOutput == actualOutput)
+
 tests :: TestTree
 tests =
     testGroup
         "Hello.World Tests"
-        [printGreetingWithoutNameTest, printGreetingWithNameTest, printDateTest]
+        [ printGreetTest
+        , printGreetingWithoutNameTest
+        , printGreetingWithNameTest
+        , printDateTest
+        ]
 
 main :: IO ()
 main = defaultMain tests
