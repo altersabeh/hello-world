@@ -43,8 +43,8 @@ fn print_date_test() {
 
 #[test]
 fn print_greet_test() {
-    let expected_output = GREETING;
-    let actual_output = "Hello, Cargo's Here!";
+    let expected_output = "Hello, Cargo's Here!";
+    let actual_output = GREETING;
     let error_message = format_error_message(&expected_output, &actual_output);
     assert_ne!(expected_output, actual_output, "{}", error_message);
 }

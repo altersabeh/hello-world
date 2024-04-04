@@ -28,6 +28,10 @@ pub fn factor_random() -> String {
 }
 
 pub fn prime_factor(mut n: BigUint) -> Vec<BigUint> {
+    if n == BigUint::zero() {
+        return vec![];
+    }
+
     let mut prime_factors = Vec::new();
     let two = BigUint::from(2u32);
 
@@ -36,13 +40,14 @@ pub fn prime_factor(mut n: BigUint) -> Vec<BigUint> {
         n /= &two;
     }
 
-    let mut divisor = BigUint::from(3u32);
-    while &divisor * &divisor <= n {
+    let mut i = 3u32;
+    while BigUint::from(i * i) <= n {
+        let divisor = BigUint::from(i);
         while &n % &divisor == BigUint::zero() {
             prime_factors.push(divisor.clone());
             n /= &divisor;
         }
-        divisor += BigUint::from(2u32);
+        i += 2;
     }
 
     if n > BigUint::one() {
