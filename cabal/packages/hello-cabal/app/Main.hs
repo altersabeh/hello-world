@@ -1,10 +1,7 @@
 module Main where
 
-import System.Environment (getArgs)
-
-import Hello.World (printGreeting)
+import Hello.World (greeting)
 
 main :: IO ()
 main = do
-    args <- getArgs
-    putStrLn $ printGreeting args
+    putStrLn greeting
