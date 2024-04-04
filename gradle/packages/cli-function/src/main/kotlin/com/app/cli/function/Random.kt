@@ -1,7 +1,7 @@
 package com.app.cli.function
 
-import com.app.numbers.utils.factorialRandom
-import com.app.numbers.utils.fibonacciRandom
+import com.app.numbers.utils.operations.FactorialUtils.factorialRandom
+import com.app.numbers.utils.operations.FibonacciUtils.fibonacciRandom
 
 object Random {
     @JvmStatic

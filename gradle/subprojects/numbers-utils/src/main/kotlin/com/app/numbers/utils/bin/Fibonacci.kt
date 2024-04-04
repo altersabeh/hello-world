@@ -1,6 +1,6 @@
-package com.app.numbers
+package com.app.numbers.utils.bin
 
-import com.app.numbers.utils.fibonacci
+import com.app.numbers.utils.operations.FibonacciUtils.fibonacci
 
 private fun getUserNumber(): Int {
     print("Enter a number : ")

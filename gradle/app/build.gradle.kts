@@ -23,6 +23,7 @@ tasks {
     }
 
     jar {
+        exclude("**/bin/*.class")
         dependsOn(":packages:cli-function:jar")
         manifest {
             attributes["Implementation-Title"] = "gradle-hello"

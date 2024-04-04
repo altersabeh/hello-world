@@ -2,6 +2,8 @@ package com.app.hello.world
 
 import org.apache.commons.lang3.time.DateFormatUtils
 
+const val GREETING = "Hello, Gradle's Here !"
+
 fun printGreeting(args: Array<String>): String {
     return if (args.isNotEmpty()) {
         val name = args.drop(0).joinToString(" ")

@@ -1,7 +1,7 @@
 package com.app
 
-import com.app.hello.world.printGreeting
+import com.app.hello.world.GREETING
 
 fun main(args: Array<String>) {
-    printGreeting(args)
+    println(GREETING)
 }

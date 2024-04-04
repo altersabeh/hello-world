@@ -15,7 +15,7 @@ class HelloWorldTests {
             |${"\u001B[31m"}
             |Test run at: $formattedDate
             |Expected : $expected
-            |Actual : $actual
+            |  Actual : $actual
             |
             |${"\u001B[00m"}
             """.trimMargin()
@@ -46,6 +46,18 @@ class HelloWorldTests {
         val expectedOutput = "Today is $formattedDate"
         val actualOutput = printDate()
         val errorMessage = formatErrorMessage(expectedOutput, actualOutput)
+        assertEquals(expectedOutput, actualOutput, errorMessage)
+    }
+
+    @Test
+    fun `print greet test`() {
+        val expectedOutput = "Hello, Gradle'ss Here !"
+        val actualOutput = GREETING
+        val errorMessage =
+            formatErrorMessage(
+                expectedOutput,
+                actualOutput,
+            )
         assertEquals(expectedOutput, actualOutput, errorMessage)
     }
 }

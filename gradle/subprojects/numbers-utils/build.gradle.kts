@@ -12,9 +12,9 @@ java {
 application {
     val mainSourceSet = sourceSets["main"]
     val mainClasspath = mainSourceSet.runtimeClasspath
-    val packagePrefix = "com.app.numbers"
+    val packagePrefix = "com.app.numbers.utils.bin"
 
-    fileTree("${mainSourceSet.kotlin.srcDirs.first()}/com/app/numbers").forEach { classFile ->
+    fileTree("${mainSourceSet.kotlin.srcDirs.first()}/com/app/numbers/utils/bin").forEach { classFile ->
         if (classFile.isFile && classFile.extension == "kt") {
             val className = classFile.nameWithoutExtension
             val taskName = "run-${className.lowercase()}"

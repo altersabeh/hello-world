@@ -1,7 +1,7 @@
 package com.app.cli.function
 
-import com.app.numbers.utils.factorial
-import com.app.numbers.utils.fibonacci
+import com.app.numbers.utils.operations.FactorialUtils.factorial
+import com.app.numbers.utils.operations.FibonacciUtils.fibonacci
 
 object Number {
     @JvmStatic

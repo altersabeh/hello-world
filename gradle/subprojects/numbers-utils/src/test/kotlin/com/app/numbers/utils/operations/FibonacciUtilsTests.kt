@@ -1,11 +1,12 @@
-package com.app.numbers.utils
+package com.app.numbers.utils.operations
 
 import org.apache.commons.lang3.time.DateFormatUtils
 import java.math.BigInteger
 import kotlin.test.Test
 import kotlin.test.assertEquals
+import kotlin.test.assertTrue
 
-class NumbersUtilsTests {
+class FibonacciUtilsTests {
     private fun formatErrorMessage(
         expected: BigInteger,
         actual: BigInteger,
@@ -16,7 +17,7 @@ class NumbersUtilsTests {
             |${"\u001B[31m"}
             |Test run at: $formattedDate
             |Expected : $expected
-            |Actual : $actual
+            |  Actual : $actual
             |
             |${"\u001B[00m"}
             """.trimMargin()
@@ -26,20 +27,22 @@ class NumbersUtilsTests {
     fun `fibonacci test`() {
         val n = 100
         val expectedOutput = BigInteger("354224848179261915075")
-        val actualOutput = fibonacci(n)
+        val actualOutput = FibonacciUtils.fibonacci(n)
         val errorMessage = formatErrorMessage(expectedOutput, actualOutput)
         assertEquals(expectedOutput, actualOutput, errorMessage)
     }
 
     @Test
-    fun `factorial test`() {
-        val n = 75
-        val expectedOutput =
-            BigInteger(
-                "24809140811395398091946477116594033660926243886570122837795894512655842677572867409443815424000000000000000000",
-            )
-        val actualOutput = factorial(n)
-        val errorMessage = formatErrorMessage(expectedOutput, actualOutput)
-        assertEquals(expectedOutput, actualOutput, errorMessage)
+    fun `fibonacci random test`() {
+        val result = FibonacciUtils.fibonacciRandom()
+        val startString = "Fib["
+        val errorMessage =
+            """
+            |${"\u001B[31m"}
+            |Expected: $startString
+            |     Got: $result${"\u001B[00m"}
+            """.trimMargin()
+        assertTrue(result.startsWith(startString), errorMessage)
+        assertTrue(result.contains(" = "))
     }
 }
