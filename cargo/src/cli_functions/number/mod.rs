@@ -1,6 +1,9 @@
-use numbers_utils::operations::factorial_utils::factorial;
-use numbers_utils::operations::fibonacci_utils::fibonacci;
 use std::io::{self, Write};
+
+use numbers_utils::operations as mathematics;
+
+use mathematics::factorial_utils::factorial;
+use mathematics::fibonacci_utils::fibonacci;
 
 fn get_user_number() -> i32 {
     print!("Enter a number : ");

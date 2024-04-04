@@ -1,6 +1,6 @@
 use chrono::{DateTime, Local};
 
-pub const GREETING: &str = "Hello, Cargo Here!";
+pub const GREETING: &str = "Hello, Cargo's Here !";
 
 pub fn print_greeting(args: &[String]) -> String {
     if args.len() > 1 {
