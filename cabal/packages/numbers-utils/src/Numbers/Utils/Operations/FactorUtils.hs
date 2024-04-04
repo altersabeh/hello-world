@@ -1,4 +1,9 @@
-module Numbers.Utils.Operations.FactorUtils (factor, factorRandom, primeFactor, primeFactorRandom) where
+module Numbers.Utils.Operations.FactorUtils
+    ( factor
+    , factorRandom
+    , primeFactor
+    , primeFactorRandom
+    ) where
 
 import Numeric.Natural (Natural)
 import System.Random (randomRIO)

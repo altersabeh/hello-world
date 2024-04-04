@@ -1,9 +1,10 @@
 module CLI.Function.Number (printNumberCalculations) where
 
-import Numbers.Utils.Operations.FactorialUtils (factorial)
-import Numbers.Utils.Operations.FibonacciUtils (fibonacci)
 import System.IO (hFlush, stdout)
 import Text.Read (readMaybe)
+
+import Numbers.Utils.Operations.FactorialUtils (factorial)
+import Numbers.Utils.Operations.FibonacciUtils (fibonacci)
 
 getUserNumber :: IO Integer
 getUserNumber = do

@@ -1,8 +1,9 @@
 module CLI.Function.Greeter (printWelcomeMessage, printGoodbyeMessage) where
 
+import System.IO (hPutStrLn, stderr)
+
 import Goodbye.World (printGoodbye)
 import Hello.World (printGreeting)
-import System.IO (hPutStrLn, stderr)
 
 printWelcomeMessage :: [String] -> IO ()
 printWelcomeMessage args = do

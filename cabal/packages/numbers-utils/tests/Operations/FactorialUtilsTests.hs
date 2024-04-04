@@ -3,11 +3,13 @@
 module Operations.FactorialUtilsTests (factorialTest, factorialRandomTest) where
 
 import Data.List (isInfixOf, isPrefixOf)
+
 import Data.Time.Clock (getCurrentTime)
 import Data.Time.LocalTime (utcToLocalZonedTime)
-import Numbers.Utils.Operations.FactorialUtils (factorial, factorialRandom)
 import Test.Tasty (TestTree)
 import Test.Tasty.HUnit (Assertion, assertBool, testCase, (@?=))
+
+import Numbers.Utils.Operations.FactorialUtils (factorial, factorialRandom)
 
 formatErrorMessage :: String -> String -> IO String
 formatErrorMessage expected actual = do

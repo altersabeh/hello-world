@@ -1,9 +1,10 @@
 module Main where
 
-import Numbers.Utils.Operations.FactorialUtils (factorial)
 import System.Environment (getArgs)
 import System.IO (hFlush, stdout)
 import Text.Read (readMaybe)
+
+import Numbers.Utils.Operations.FactorialUtils (factorial)
 
 getUserNumber :: IO Integer
 getUserNumber = do

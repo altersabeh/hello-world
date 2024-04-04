@@ -1,7 +1,8 @@
 module Main where
 
-import CLI.Function.Greeter (printGoodbyeMessage, printWelcomeMessage)
 import System.Environment (getArgs)
+
+import CLI.Function.Greeter (printGoodbyeMessage, printWelcomeMessage)
 
 main :: IO ()
 main = do

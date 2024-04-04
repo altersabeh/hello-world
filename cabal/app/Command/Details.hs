@@ -1,7 +1,8 @@
 module Main where
 
-import CLI.Function.Details (printUserDetails)
 import System.Environment (getArgs)
+
+import CLI.Function.Details (printUserDetails)
 
 main :: IO ()
 main = do

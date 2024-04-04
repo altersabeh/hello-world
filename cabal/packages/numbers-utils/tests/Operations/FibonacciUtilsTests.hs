@@ -3,11 +3,13 @@
 module Operations.FibonacciUtilsTests (fibonacciTest, fibonacciRandomTest) where
 
 import Data.List (isInfixOf, isPrefixOf)
+
 import Data.Time.Clock (getCurrentTime)
 import Data.Time.LocalTime (utcToLocalZonedTime)
-import Numbers.Utils.Operations.FibonacciUtils (fibonacci, fibonacciRandom)
 import Test.Tasty (TestTree)
 import Test.Tasty.HUnit (Assertion, assertBool, testCase, (@?=))
+
+import Numbers.Utils.Operations.FibonacciUtils (fibonacci, fibonacciRandom)
 
 formatErrorMessage :: String -> String -> IO String
 formatErrorMessage expected actual = do

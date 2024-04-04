@@ -1,12 +1,13 @@
 module Functions (startProgram) where
 
+import System.Environment (getArgs)
+import System.IO (hFlush, stdout)
+
 import CLI.Function.Banner (printBannerMessage)
 import CLI.Function.Details (printUserDetails)
 import CLI.Function.Greeter (printGoodbyeMessage, printWelcomeMessage)
 import CLI.Function.Number (printNumberCalculations)
 import CLI.Function.Random (printRandomNumbers)
-import System.Environment (getArgs)
-import System.IO (hFlush, stdout)
 
 waitForUser :: IO ()
 waitForUser = do

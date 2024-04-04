@@ -1,8 +1,10 @@
 module CLI.Function.Details (printUserDetails) where
 
-import Hello.World (printDate)
 import System.IO (hFlush, stdout)
+
 import Translator (translate)
+
+import Hello.World (printDate)
 
 getUserName :: [String] -> IO String
 getUserName args =

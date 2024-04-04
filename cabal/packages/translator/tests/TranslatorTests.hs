@@ -6,6 +6,7 @@ import Data.Time.Clock (getCurrentTime)
 import Data.Time.LocalTime (utcToLocalZonedTime)
 import Test.Tasty (TestTree, defaultMain, testGroup)
 import Test.Tasty.HUnit (assertBool, testCase)
+
 import Translator (translate)
 
 formatErrorMessage :: String -> String -> IO String
