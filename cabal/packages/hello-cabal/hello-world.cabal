@@ -1,7 +1,7 @@
-cabal-version:   3.4
-name:            hello-world
-version:         1.0.0.0
-build-type:      Simple
+cabal-version: 3.4
+name:          hello-world
+version:       1.0.0.0
+build-type:    Simple
 
 source-repository head
     type:     git

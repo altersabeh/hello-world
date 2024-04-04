@@ -1,14 +1,18 @@
-cabal-version:   3.4
-name:            numbers-utils
-version:         1.0.0.0
-build-type:      Simple
+cabal-version: 3.4
+name:          numbers-utils
+version:       1.0.0.0
+build-type:    Simple
 
 source-repository head
     type:     git
     location: https://github.com/altersabeh/hello-world
 
 library
-    exposed-modules:  Numbers.Utils
+    exposed-modules:
+        Numbers.Utils.Operations.FactorUtils
+        Numbers.Utils.Operations.FactorialUtils
+        Numbers.Utils.Operations.FibonacciUtils
+
     hs-source-dirs:   src
     other-modules:    Paths_numbers_utils
     autogen-modules:  Paths_numbers_utils
@@ -16,7 +20,19 @@ library
     ghc-options:      -Wall
     build-depends:
         base ^>=4.18.2.0,
-        random ^>=1.2.1.2
+        random ^>=1.2.1.2,
+        arithmoi ^>=0.13.0.0
+
+executable factor
+    main-is:          Factor.hs
+    hs-source-dirs:   app
+    other-modules:    Paths_numbers_utils
+    autogen-modules:  Paths_numbers_utils
+    default-language: GHC2021
+    ghc-options:      -Wall
+    build-depends:
+        base ^>=4.18.2.0,
+        numbers-utils
 
 executable factorial
     main-is:          Factorial.hs
@@ -40,10 +56,14 @@ executable fibonacci
         base ^>=4.18.2.0,
         numbers-utils
 
-test-suite numbers-utils-test
+test-suite operations-test
     type:             exitcode-stdio-1.0
-    main-is:          NumbersUtilsTests.hs
+    main-is:          OperationsTests.hs
     hs-source-dirs:   tests
+    other-modules:
+        Operations.FactorialUtilsTests
+        Operations.FibonacciUtilsTests
+
     default-language: GHC2021
     ghc-options:      -Wall
     build-depends:
