@@ -28,25 +28,25 @@ pub fn factor_random() -> String {
 }
 
 pub fn prime_factor(mut n: BigUint) -> Vec<BigUint> {
-    let mut factors = Vec::new();
+    let mut prime_factors = Vec::new();
     let mut divisor = BigUint::from(2u32);
 
     while n > BigUint::one() {
         while &n % &divisor == BigUint::zero() {
-            factors.push(divisor.clone());
+            prime_factors.push(divisor.clone());
             n /= &divisor;
         }
         divisor += BigUint::one();
     }
 
-    factors
+    prime_factors
 }
 
 pub fn prime_factor_random() -> String {
     let mut rng = rand::thread_rng();
     let random_num = rng.gen_range(1..=25);
 
-    let factors = factor((random_num as usize).into());
+    let prime_factors = prime_factor((random_num as usize).into());
 
-    format!("PFactor[{}] = {:?}", random_num, factors)
+    format!("PFactor[{}] = {:?}", random_num, prime_factors)
 }

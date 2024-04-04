@@ -33,7 +33,7 @@ fn print_factor(number: BigUint) {
 fn print_prime_factor(number: BigUint) {
     let factors = prime_factor(number.clone());
     let factors_str = format!("{:?}", factors);
-    println!("Prime Factor[{}] = {}", number, factors_str);
+    println!("PFactor[{}] = {}", number, factors_str);
 }
 
 fn main() {
