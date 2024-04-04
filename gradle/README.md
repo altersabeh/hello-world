@@ -107,26 +107,26 @@ gradle-hello
 │     │     │                                         └──── GoodbyeWorldTests.kt
 │     │     └──── build.gradle.kts
 │     └──── hello-world
-│         ├──── src
-│         │     ├──── main
-│         │     │     └──── kotlin
-│         │     │           └──── com
-│         │     │                 └──── app
-│         │     │                       └──── hello
-│         │     │                             └──── world
-│         │     │                                   └──── HelloWorld.kt
-│         │     └──── test
-│         │           └──── kotlin
-│         │                 └──── com
-│         │                       └──── app
-│         │                             └──── hello
-│         │                                   └──── world
-│         │                                         └──── HelloWorldTests.kt
-│         └──── build.gradle.kts
+│           ├──── src
+│           │     ├──── main
+│           │     │     └──── kotlin
+│           │     │           └──── com
+│           │     │                 └──── app
+│           │     │                       └──── hello
+│           │     │                             └──── world
+│           │     │                                   └──── HelloWorld.kt
+│           │     └──── test
+│           │           └──── kotlin
+│           │                 └──── com
+│           │                       └──── app
+│           │                             └──── hello
+│           │                                   └──── world
+│           │                                         └──── HelloWorldTests.kt
+│           └──── build.gradle.kts
 ├──── resources
 │     └──── META-INF
-│         ├──── MANIFEST.MF
-│         └──── license.txt
+│           ├──── MANIFEST.MF
+│           └──── license.txt
 ├──── subprojects
 │     ├──── date-today
 │     │     ├──── src
@@ -164,20 +164,20 @@ gradle-hello
 │     │     │                                         └──── NumbersUtilsTests.kt
 │     │     └──── build.gradle.kts
 │     └──── translator
-│         ├──── src
-│         │     ├──── main
-│         │     │     └──── kotlin
-│         │     │           └──── com
-│         │     │                 └──── app
-│         │     │                       └──── translator
-│         │     │                             └──── Translator.kt
-│         │     └──── test
-│         │           └──── kotlin
-│         │                 └──── com
-│         │                       └──── app
-│         │                             └──── translator
-│         │                                   └──── TranslatorTests.kt
-│         └──── build.gradle.kts
+│           ├──── src
+│           │     ├──── main
+│           │     │     └──── kotlin
+│           │     │           └──── com
+│           │     │                 └──── app
+│           │     │                       └──── translator
+│           │     │                             └──── Translator.kt
+│           │     └──── test
+│           │           └──── kotlin
+│           │                 └──── com
+│           │                       └──── app
+│           │                             └──── translator
+│           │                                   └──── TranslatorTests.kt
+│           └──── build.gradle.kts
 ├──── build.gradle.kts
 ├──── gradle.properties
 ├──── gradlew
