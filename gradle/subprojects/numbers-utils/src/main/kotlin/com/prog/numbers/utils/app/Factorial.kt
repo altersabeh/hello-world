@@ -1,6 +1,6 @@
-package com.app.numbers.utils.bin
+package com.prog.numbers.utils.app
 
-import com.app.numbers.utils.operations.FactorialUtils.factorial
+import com.prog.numbers.utils.operations.FactorialUtils.factorial
 
 private fun getUserNumber(): Int {
     print("Enter a number : ")
@@ -11,11 +11,11 @@ private fun getUserNumber(): Int {
 fun printFactorial() {
     val args = arrayOf<String>()
     val number =
-            if (args.size > 1) {
-                args[1].toIntOrNull() ?: 0
-            } else {
-                getUserNumber()
-            }
+        if (args.size > 1) {
+            args[1].toIntOrNull() ?: 0
+        } else {
+            getUserNumber()
+        }
     println("Fact[$number] = ${factorial(number)}")
 }
 

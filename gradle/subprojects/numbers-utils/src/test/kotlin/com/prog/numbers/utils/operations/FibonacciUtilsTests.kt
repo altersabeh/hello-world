@@ -1,15 +1,15 @@
 package com.prog.numbers.utils.operations
 
+import org.apache.commons.lang3.time.DateFormatUtils
 import java.math.BigInteger
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
-import org.apache.commons.lang3.time.DateFormatUtils
 
 class FibonacciUtilsTests {
     private fun formatErrorMessage(
-            expected: BigInteger,
-            actual: BigInteger,
+        expected: BigInteger,
+        actual: BigInteger,
     ): String {
         val now = System.currentTimeMillis()
         val formattedDate = DateFormatUtils.format(now, "yyyy-MM-dd'T'HH:mm:ss")
@@ -37,7 +37,7 @@ class FibonacciUtilsTests {
         val result = FibonacciUtils.fibonacciRandom()
         val startString = "Fib["
         val errorMessage =
-                """
+            """
             |${"\u001B[31m"}
             |Expected: $startString
             |     Got: $result${"\u001B[00m"}

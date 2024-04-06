@@ -1,7 +1,7 @@
-package com.app.numbers.utils.bin
+package com.prog.numbers.utils.app
 
-import com.app.numbers.utils.operations.FactorUtils.factor
-import com.app.numbers.utils.operations.FactorUtils.primeFactor
+import com.prog.numbers.utils.operations.FactorUtils.factor
+import com.prog.numbers.utils.operations.FactorUtils.primeFactor
 import java.math.BigInteger
 
 private fun getUserNumber(): BigInteger {
@@ -11,8 +11,8 @@ private fun getUserNumber(): BigInteger {
 }
 
 fun getNumber(args: Array<String>): BigInteger {
-    return if (args.isNotEmpty()) {
-        args[0].toBigIntegerOrNull() ?: BigInteger.ZERO
+    return if (args.isNotEmpty() && args[0].toBigIntegerOrNull() != null) {
+        args[0].toBigIntegerOrNull()!!
     } else {
         getUserNumber()
     }
