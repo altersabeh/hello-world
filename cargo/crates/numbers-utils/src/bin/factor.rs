@@ -18,8 +18,8 @@ fn get_user_number() -> BigUint {
 
 fn get_number() -> BigUint {
     let args: Vec<String> = env::args().collect();
-    if args.len() > 1 {
-        BigUint::from_str(&args[1]).unwrap_or_else(|_| BigUint::zero())
+    if args.len() > 1 && args[1].parse::<BigUint>().is_ok() {
+        args[1].parse::<BigUint>().unwrap()
     } else {
         get_user_number()
     }
