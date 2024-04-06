@@ -15,7 +15,7 @@ class TranslatorTests {
             |${"\u001B[31m"}
             |Test run at: $formattedDate
             |Expected : $expected
-            |Actual : $actual
+            |  Actual : $actual
             |
             |${"\u001B[00m"}
             """.trimMargin()
