@@ -7,7 +7,7 @@ import Data.List (isInfixOf, isPrefixOf)
 import Data.Time.Clock (getCurrentTime)
 import Data.Time.LocalTime (utcToLocalZonedTime)
 import Test.Tasty (TestTree)
-import Test.Tasty.HUnit (assertBool, testCase, assertEqual)
+import Test.Tasty.HUnit (assertBool, assertEqual, testCase)
 
 import Numbers.Utils.Operations.FactorialUtils (factorial, factorialRandom)
 

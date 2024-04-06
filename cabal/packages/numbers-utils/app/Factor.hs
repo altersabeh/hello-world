@@ -1,7 +1,7 @@
 module Main where
 
 import Data.List (intercalate)
-import Data.Maybe (fromMaybe)
+import Data.Maybe (fromJust, fromMaybe, isJust)
 import Numeric.Natural (Natural)
 import System.Environment (getArgs)
 import System.IO (hFlush, stdout)
@@ -18,8 +18,8 @@ getUserNumber = do
 getNumber :: IO Natural
 getNumber = do
     args <- getArgs
-    if not (null args)
-        then return $ fromMaybe 0 (readMaybe (head args))
+    if not (null args) && isJust (readMaybe (head args) :: Maybe Natural)
+        then return $ fromJust (readMaybe (head args) :: Maybe Natural)
         else getUserNumber
 
 printFactor :: Natural -> IO ()
