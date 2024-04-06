@@ -87,7 +87,7 @@ cargo-hello
 │     │     │     └──── main.rs
 │     │     └──── random
 │     │           └──── main.rs
-│     ├──── cli_functions
+│     ├──── cli_function
 │     │     ├──── banner
 │     │     │     └──── mod.rs
 │     │     ├──── details
