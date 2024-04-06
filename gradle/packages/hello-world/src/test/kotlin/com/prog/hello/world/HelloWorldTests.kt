@@ -1,13 +1,13 @@
 package com.prog.hello.world
 
+import org.apache.commons.lang3.time.DateFormatUtils
 import kotlin.test.Test
 import kotlin.test.assertEquals
-import org.apache.commons.lang3.time.DateFormatUtils
 
 class HelloWorldTests {
     private fun formatErrorMessage(
-            expected: String,
-            actual: String,
+        expected: String,
+        actual: String,
     ): String {
         val now = System.currentTimeMillis()
         val formattedDate = DateFormatUtils.format(now, "yyyy-MM-dd'T'HH:mm:ss")
@@ -51,7 +51,7 @@ class HelloWorldTests {
 
     @Test
     fun `print greet test`() {
-        val expectedOutput = "Hello, Gradle'ss Here !"
+        val expectedOutput = "Hello, Gradle's Here !"
         val actualOutput = GREETING
         val errorMessage = formatErrorMessage(expectedOutput, actualOutput)
         assertEquals(expectedOutput, actualOutput, errorMessage)
