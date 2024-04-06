@@ -8,7 +8,7 @@ import Numbers.Utils.Operations.FactorialUtils (factorial)
 
 getUserNumber :: IO Integer
 getUserNumber = do
-    putStr "Enter a number: "
+    putStr "Enter a number : "
     hFlush stdout
     maybeNum <- fmap readMaybe getLine
     case maybeNum of
