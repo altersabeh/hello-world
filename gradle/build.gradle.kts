@@ -20,7 +20,9 @@ subprojects {
     group = "hello.gradle"
     version = "1.0.0"
 
-    project.layout.buildDirectory = project.rootProject.layout.buildDirectory.dir("$name").get().asFile
+    val repoRoot = project.rootProject.layout.buildDirectory
+    val projectPath = project.path.substring(1).replace(':', '/')
+    project.layout.buildDirectory.set(repoRoot.dir(projectPath))
 
     val implementation by configurations
     val testImplementation by configurations
