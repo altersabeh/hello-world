@@ -16,7 +16,7 @@ fn format_error_message(expected: &str, actual: &str) -> colored::ColoredString 
 #[test]
 fn print_goodbye_without_name_test() {
     let args = vec![];
-    let expected_output = "Goodbye World from Cargo !".to_string();
+    let expected_output = "Goodbye World from Cargo !";
     let actual_output = print_goodbye(&args);
     let error_message = format_error_message(&expected_output, &actual_output);
     assert_eq!(expected_output, actual_output, "{}", error_message);
@@ -24,8 +24,8 @@ fn print_goodbye_without_name_test() {
 
 #[test]
 fn print_goodbye_with_name_test() {
-    let args = vec!["".into(), "Alter".into(), "Sabeh".into()];
-    let expected_output = "Goodbye Alter Sabeh from Cargo !".to_string();
+    let args = vec!["", "Alter", "Sabeh"];
+    let expected_output = "Goodbye Alter Sabeh from Cargo !";
     let actual_output = print_goodbye(&args);
     let error_message = format_error_message(&expected_output, &actual_output);
     assert_eq!(expected_output, actual_output, "{}", error_message);

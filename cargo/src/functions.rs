@@ -18,8 +18,8 @@ pub fn start_program() {
     let args: Vec<_> = env::args().collect();
     println!("===============================================");
     println!("");
-    print_welcome_message(&args);
-    print_user_details(&args);
+    print_welcome_message(&args.iter().map(AsRef::as_ref).collect::<Vec<_>>());
+    print_user_details(&args.iter().map(AsRef::as_ref).collect::<Vec<_>>());
     println!("");
     print_number_calculations();
     println!("");
@@ -27,7 +27,7 @@ pub fn start_program() {
     println!("");
     wait_for_user();
     println!("");
-    print_goodbye_message(&args);
+    print_goodbye_message(&args.iter().map(AsRef::as_ref).collect::<Vec<_>>());
     print_banner_message();
     println!("===============================================");
 }

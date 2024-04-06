@@ -5,7 +5,7 @@ use std::io::Write;
 
 use translator::translate;
 
-fn get_user_name(args: &[String]) -> String {
+fn get_user_name(args: &[&str]) -> String {
     if args.len() <= 1 {
         print!("Please enter your name : ");
         io::stdout().flush().unwrap();
@@ -25,7 +25,7 @@ fn get_user_language() -> String {
     language.trim().to_string()
 }
 
-pub fn print_user_details(args: &[String]) {
+pub fn print_user_details(args: &[&str]) {
     let name = get_user_name(args);
     let language = get_user_language();
     println!("{}", translate(&language, &name));

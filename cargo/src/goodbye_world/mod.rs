@@ -1,4 +1,4 @@
-pub fn print_goodbye(args: &[String]) -> String {
+pub fn print_goodbye(args: &[&str]) -> String {
     if args.len() > 1 {
         format!("Goodbye {} from Cargo !", args[1..].join(" "))
     } else {
