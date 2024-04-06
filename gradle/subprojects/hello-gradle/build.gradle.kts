@@ -15,7 +15,7 @@ dependencies {
 
 application {
     applicationName = "hello-gradle"
-    mainClass = "com.prog.HelloGradleKt"
+    mainClass = "com.prog.MainKt"
 }
 
 tasks.register<JavaExec>("run-hello-gradle") {
