@@ -38,11 +38,11 @@ public class Translator
 
         if (greeting != null && greetingsFrom != null)
         {
-            return $"{greeting} {name}, {greetingsFrom} .NET !";
+            return $"{greeting} {name}, {greetingsFrom} C# !";
         }
         else
         {
-            return $"Hi {name}, greetings from .NET !";
+            return $"Hi {name}, greetings from C# !";
         }
     }
 }

@@ -10,13 +10,13 @@ public class TranslationTests
 
     private static readonly object[] TestCases =
     [
-        new object[] { "English", "Hi Alter Sabeh, greetings from .NET !" },
-        new object[] { "French", "Bonjour Alter Sabeh, salutations de .NET !" },
-        new object[] { "Spanish", "Hola Alter Sabeh, saludos desde .NET !" },
-        new object[] { "German", "Hallo Alter Sabeh, grüße aus .NET !" },
-        new object[] { "Italian", "Ciao Alter Sabeh, saluti da .NET !" },
-        new object[] { "Dutch", "Hallo Alter Sabeh, groeten uit .NET !" },
-        new object[] { "Unknown", "Hi Alter Sabeh, greetings from .NET !" }
+        new object[] { "English", "Hi Alter Sabeh, greetings from C# !" },
+        new object[] { "French", "Bonjour Alter Sabeh, salutations de C# !" },
+        new object[] { "Spanish", "Hola Alter Sabeh, saludos desde C# !" },
+        new object[] { "German", "Hallo Alter Sabeh, grüße aus C# !" },
+        new object[] { "Italian", "Ciao Alter Sabeh, saluti da C# !" },
+        new object[] { "Dutch", "Hallo Alter Sabeh, groeten uit C# !" },
+        new object[] { "Unknown", "Hi Alter Sabeh, greetings from C# !" }
     ];
 
     [TestCaseSource(nameof(TestCases))]

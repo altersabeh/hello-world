@@ -7,11 +7,11 @@ public class GoodbyeWorld
         if (args.Length > 0)
         {
             string name = string.Join(" ", args);
-            return $"Goodbye {name} from .NET !";
+            return $"Goodbye {name} from C# !";
         }
         else
         {
-            return "Goodbye World from .NET !";
+            return "Goodbye World from C# !";
         }
     }
 

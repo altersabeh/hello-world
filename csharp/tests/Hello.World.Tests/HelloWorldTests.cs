@@ -12,7 +12,7 @@ public class HelloWorldTests
     public void PrintGreetingWithoutNameTest()
     {
         string[] args = [];
-        string expectedOutput = "Hello World from .NET !";
+        string expectedOutput = "Hello World from C# !";
         string actualOutput = HelloWorld.PrintGreeting(args);
         string errorMessage = FormatErrorMessage(expectedOutput, actualOutput);
         Assert.That(expectedOutput, Is.EqualTo(actualOutput), errorMessage);
@@ -22,7 +22,7 @@ public class HelloWorldTests
     public void PrintGreetingWithNameTest()
     {
         string[] args = ["Alter", "Sabeh"];
-        string expectedOutput = "Hello Alter Sabeh from .NET !";
+        string expectedOutput = "Hello Alter Sabeh from C# !";
         string actualOutput = HelloWorld.PrintGreeting(args);
         string errorMessage = FormatErrorMessage(expectedOutput, actualOutput);
         Assert.That(expectedOutput, Is.EqualTo(actualOutput), errorMessage);
@@ -42,7 +42,7 @@ public class HelloWorldTests
     [Test]
     public void PrintGreettTest()
     {
-        string expectedOutput = "Hello, .NET's Here !";
+        string expectedOutput = "Hello, C#'s Here !";
         string actualOutput = HelloWorld.GREETING;
         string errorMessage = FormatErrorMessage(expectedOutput, actualOutput);
         Assert.That(expectedOutput, Is.EqualTo(actualOutput), errorMessage);

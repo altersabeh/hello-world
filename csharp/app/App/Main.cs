@@ -1,4 +1,4 @@
-// Hello World in .NET
+// Hello World in CSharp
 
 namespace Prog;
 
