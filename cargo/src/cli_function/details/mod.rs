@@ -20,7 +20,7 @@ use translator::translate;
 ///
 /// ```rust
 /// use prog::cli_function::details::get_user_name;
-/// let name = get_user_name(&["John", "Doe"]);
+/// let name = get_user_name(&["", "John", "Doe"]);
 /// ```
 ///
 /// __Output:__'
