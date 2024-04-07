@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <Using Include="NUnit.Framework" />
-    <ProjectReference Include="../../src/Hello.World/HelloWorld.csproj" />
+    <ProjectReference Include="../Translator.Lib/Translator.csproj" />
   </ItemGroup>
 
 </Project>

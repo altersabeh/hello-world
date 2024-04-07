@@ -2,10 +2,11 @@
 
   <PropertyGroup>
     <IsPackable>false</IsPackable>
-    <AssemblyName>NumbersUtils</AssemblyName>
+    <AssemblyName>$([System.IO.Path]::GetFileName($(MSBuildProjectDirectory)))</AssemblyName>
     <TargetFramework>$(SdkTargetFramework)</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
 
 </Project>

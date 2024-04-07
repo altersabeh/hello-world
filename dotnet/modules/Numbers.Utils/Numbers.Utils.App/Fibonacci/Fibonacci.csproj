@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <AssemblyName>dotnet-hello</AssemblyName>
+    <AssemblyName>$([System.IO.Path]::GetFileName($(MSBuildProjectDirectory)).ToLower())</AssemblyName>
     <OutputType>Exe</OutputType>
     <TargetFramework>$(SdkTargetFramework)</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -9,15 +9,15 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageID>dotnet-hello</PackageID>
+    <PackageID>$([System.IO.Path]::GetFileName($(MSBuildProjectDirectory)).ToLower())</PackageID>
     <Version>$(PackageVersion)</Version>
-    <Description>Hello World program in Dotnet</Description>
     <PackageType>DotnetTool</PackageType>
     <PackAsTool>true</PackAsTool>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../../src/CLI.Function/CLIFunction.csproj" />
+    <ProjectReference
+      Include="../../Numbers.Utils.Operations/Fibonacci.Utils/FibonacciUtils.csproj" />
   </ItemGroup>
 
 </Project>

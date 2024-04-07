@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <AssemblyName>$([System.IO.Path]::GetFileName($(MSBuildProjectDirectory)))</AssemblyName>
+    <TargetFramework>$(SdkTargetFramework)</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../Goodbye.World/GoodbyeWorld.csproj" />
+    <ProjectReference Include="../Hello.World/HelloWorld.csproj" />
+    <ProjectReference Include="../../modules/Translator/Translator.Lib/Translator.csproj" />
+    <ProjectReference Include="../../modules/Numbers.Utils/Numbers.Utils.Operations/*/*.csproj" />
+  </ItemGroup>
+
+</Project>
