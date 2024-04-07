@@ -1,5 +1,5 @@
 cabal-version:   3.4
-name:            cabal-hello
+name:            haskell-hello
 version:         1.0.0.0
 license:         MIT
 license-file:    LICENSE.md
@@ -7,7 +7,7 @@ copyright:       2024 AlterSabeh
 maintainer:      betamaximum22@gmail.com
 author:          AlterSabeh
 bug-reports:     https://github.com/altersabeh/hello-world/issues
-synopsis:        Hello World program in Cabal
+synopsis:        Hello World program in Haskell
 description:
     Please see the README on GitHub at <https://github.com/altersabeh/hello-world#README>
 
@@ -24,8 +24,8 @@ source-repository head
 library goodbye-world
     exposed-modules:  Goodbye.World
     hs-source-dirs:   src
-    other-modules:    Paths_cabal_hello
-    autogen-modules:  Paths_cabal_hello
+    other-modules:    Paths_haskell_hello
+    autogen-modules:  Paths_haskell_hello
     default-language: GHC2021
     ghc-options:      -Wall
     build-depends:
@@ -36,8 +36,8 @@ library hello-world
     exposed-modules:  Hello.World
     visibility:       public
     hs-source-dirs:   src
-    other-modules:    Paths_cabal_hello
-    autogen-modules:  Paths_cabal_hello
+    other-modules:    Paths_haskell_hello
+    autogen-modules:  Paths_haskell_hello
     default-language: GHC2021
     ghc-options:      -Wall
     build-depends:
@@ -54,88 +54,88 @@ library cli-function
 
     hs-source-dirs:   src
     other-modules:
-        Paths_cabal_hello
+        Paths_haskell_hello
         Hello.World
         Goodbye.World
 
-    autogen-modules:  Paths_cabal_hello
+    autogen-modules:  Paths_haskell_hello
     default-language: GHC2021
     ghc-options:      -Wall
     build-depends:
-        cabal-hello:hello-world,
-        cabal-hello:goodbye-world,
+        haskell-hello:hello-world,
+        haskell-hello:goodbye-world,
         base ^>=4.18.2.0,
         time ^>=1.12.2,
         numbers-utils ^>=1.0.0,
         translator ^>=1.0.0
 
-executable cabal-hello
+executable haskell-hello
     main-is:          Main.hs
     hs-source-dirs:   app
     other-modules:
-        Paths_cabal_hello
+        Paths_haskell_hello
         Functions
 
-    autogen-modules:  Paths_cabal_hello
+    autogen-modules:  Paths_haskell_hello
     default-language: GHC2021
     ghc-options:      -Wall
     build-depends:
-        cabal-hello:cli-function,
+        haskell-hello:cli-function,
         base ^>=4.18.2.0
 
 executable banner
     main-is:          Command/Banner.hs
     hs-source-dirs:   app
-    other-modules:    Paths_cabal_hello
-    autogen-modules:  Paths_cabal_hello
+    other-modules:    Paths_haskell_hello
+    autogen-modules:  Paths_haskell_hello
     default-language: GHC2021
     ghc-options:      -Wall
     build-depends:
-        cabal-hello:cli-function,
+        haskell-hello:cli-function,
         base ^>=4.18.2.0
 
 executable details
     main-is:          Command/Details.hs
     hs-source-dirs:   app
-    other-modules:    Paths_cabal_hello
-    autogen-modules:  Paths_cabal_hello
+    other-modules:    Paths_haskell_hello
+    autogen-modules:  Paths_haskell_hello
     default-language: GHC2021
     ghc-options:      -Wall
     build-depends:
-        cabal-hello:cli-function,
+        haskell-hello:cli-function,
         base ^>=4.18.2.0
 
 executable greeter
     main-is:          Command/Greeter.hs
     hs-source-dirs:   app
-    other-modules:    Paths_cabal_hello
-    autogen-modules:  Paths_cabal_hello
+    other-modules:    Paths_haskell_hello
+    autogen-modules:  Paths_haskell_hello
     default-language: GHC2021
     ghc-options:      -Wall
     build-depends:
-        cabal-hello:cli-function,
+        haskell-hello:cli-function,
         base ^>=4.18.2.0
 
 executable number
     main-is:          Command/Number.hs
     hs-source-dirs:   app
-    other-modules:    Paths_cabal_hello
-    autogen-modules:  Paths_cabal_hello
+    other-modules:    Paths_haskell_hello
+    autogen-modules:  Paths_haskell_hello
     default-language: GHC2021
     ghc-options:      -Wall
     build-depends:
-        cabal-hello:cli-function,
+        haskell-hello:cli-function,
         base ^>=4.18.2.0
 
 executable random
     main-is:          Command/Random.hs
     hs-source-dirs:   app
-    other-modules:    Paths_cabal_hello
-    autogen-modules:  Paths_cabal_hello
+    other-modules:    Paths_haskell_hello
+    autogen-modules:  Paths_haskell_hello
     default-language: GHC2021
     ghc-options:      -Wall
     build-depends:
-        cabal-hello:cli-function,
+        haskell-hello:cli-function,
         base ^>=4.18.2.0
 
 test-suite hello-world-test
@@ -145,7 +145,7 @@ test-suite hello-world-test
     default-language: GHC2021
     ghc-options:      -Wall
     build-depends:
-        cabal-hello:hello-world,
+        haskell-hello:hello-world,
         base ^>=4.18.2.0,
         time ^>=1.12.2,
         tasty ^>=1.4.3,
@@ -158,7 +158,7 @@ test-suite goodbye-world-test
     default-language: GHC2021
     ghc-options:      -Wall
     build-depends:
-        cabal-hello:goodbye-world,
+        haskell-hello:goodbye-world,
         base ^>=4.18.2.0,
         time ^>=1.12.2,
         tasty ^>=1.4.3,

@@ -12,15 +12,15 @@ import Data.Time.LocalTime (utcToLocalZonedTime)
 -- @
 -- import Hello.World (greeting)
 --
--- putStrLn $ greeting -- "Hello, Cabal's Here !"
+-- putStrLn $ greeting -- "Hello, Haskell's Here !"
 -- @
 -- __Output:__
 --
 -- @
--- "Hello, Cabal's Here !"
+-- "Hello, Haskell's Here !"
 -- @
 greeting :: String
-greeting = "Hello, Cabal's Here !"
+greeting = "Hello, Haskell's Here !"
 
 -- | = 'printGreeting'
 -- This function prints a greeting.  It takes a list of strings as an argument.
@@ -47,12 +47,12 @@ greeting = "Hello, Cabal's Here !"
 -- __Output:__
 --
 -- @
--- "Hello World from Cabal !"
--- "Hello John Doe from Cabal !"
+-- "Hello World from Haskell !"
+-- "Hello John Doe from Haskell !"
 -- @
 printGreeting :: [String] -> String
-printGreeting [] = "Hello World from Cabal !"
-printGreeting name = "Hello " ++ unwords name ++ " from Cabal !"
+printGreeting [] = "Hello World from Haskell !"
+printGreeting name = "Hello " ++ unwords name ++ " from Haskell !"
 
 printDate :: IO String
 printDate = do

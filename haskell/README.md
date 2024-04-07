@@ -1,10 +1,10 @@
-# Cabal - Hello World
+# Haskell - Hello World
 
-A simple **Hello World** program in **Cabal**.
+A simple **Hello World** program in **Haskell**.
 
-## Programming Language
+## Build Tool
 
-- Haskell
+- Cabal
 
 ## Creating a new Cabal project
 
@@ -149,7 +149,7 @@ Name | Description
 **`README.md`** | Contains the project documentation.
 
 ``` plaintext
-cabal-hello
+haskell-hello
 ├──── app
 │     ├──── Command
 │     │     ├──── Banner.hs
@@ -163,7 +163,7 @@ cabal-hello
 │     ├──── build
 │     │     └──── x86_64-linux
 │     │           └──── ghc-9.6.4
-│     │                 ├──── cabal-hello
+│     │                 ├──── haskell-hello
 │     │                 │     ├──── build
 │     │                 │     │     └──── ...
 │     │                 │     ├──── cache
@@ -190,7 +190,7 @@ cabal-hello
 │     │     │     └──── custom
 │     │     │           └──── DateToday.hs
 │     │     └──── date-today.cabal
-│     ├──── hello-cabal
+│     ├──── hello-haskell
 │     │     ├──── app
 │     │     │     └──── Main.hs
 │     │     └──── hello-world.cabal
@@ -234,7 +234,7 @@ cabal-hello
 ├──── tests
 │     ├──── GoodbyeWorldTests.hs
 │     └──── HelloWorldTests.hs
-├──── cabal-hello.cabal
+├──── haskell-hello.cabal
 ├──── cabal.project
 ├──── fourmolu.yaml
 ├──── CHANGELOG.md

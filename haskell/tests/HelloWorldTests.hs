@@ -25,7 +25,7 @@ formatErrorMessage expected actual = do
 printGreetingWithoutNameTest :: TestTree
 printGreetingWithoutNameTest = testCase "Print Greeting without Name Test" $ do
     let args = []
-    let expectedOutput = "Hello World from Cabal !"
+    let expectedOutput = "Hello World from Haskell !"
     let actualOutput = printGreeting args
     errorMessage <- formatErrorMessage expectedOutput actualOutput
     assertBool errorMessage (expectedOutput == actualOutput)
@@ -33,7 +33,7 @@ printGreetingWithoutNameTest = testCase "Print Greeting without Name Test" $ do
 printGreetingWithNameTest :: TestTree
 printGreetingWithNameTest = testCase "Print Greeting with Name Test" $ do
     let args = ["Alter", "Sabeh"]
-    let expectedOutput = "Hello Alter Sabeh from Cabal !"
+    let expectedOutput = "Hello Alter Sabeh from Haskell !"
     let actualOutput = printGreeting args
     errorMessage <- formatErrorMessage expectedOutput actualOutput
     assertBool errorMessage (expectedOutput == actualOutput)
@@ -49,7 +49,7 @@ printDateTest = testCase "Print Date Test" $ do
 
 printGreetTest :: TestTree
 printGreetTest = testCase "Print Greet Test" $ do
-    let expectedOutput = "Hello, Cabal's Here !"
+    let expectedOutput = "Hello, Haskell's Here !"
     let actualOutput = greeting
     errorMessage <- formatErrorMessage expectedOutput actualOutput
     assertBool errorMessage (expectedOutput == actualOutput)

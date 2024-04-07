@@ -28,5 +28,5 @@ translate language name =
     let greeting = Map.lookup language helloTranslations
         greetingsFrom = Map.lookup language greetingsFromTranslations
      in case (greeting, greetingsFrom) of
-            (Just g, Just gf) -> g ++ " " ++ name ++ ", " ++ gf ++ " Cabal !"
-            _ -> "Hi " ++ name ++ ", greetings from Cabal !"
+            (Just g, Just gf) -> g ++ " " ++ name ++ ", " ++ gf ++ " Haskell !"
+            _ -> "Hi " ++ name ++ ", greetings from Haskell !"

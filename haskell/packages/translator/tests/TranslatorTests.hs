@@ -25,13 +25,13 @@ translateTests :: TestTree
 translateTests =
     let name = "Alter Sabeh"
         languages =
-            [ ("English", "Hi Alter Sabeh, greetings from Cabal !")
-            , ("French", "Bonjour Alter Sabeh, salutations de Cabal !")
-            , ("Spanish", "Hola Alter Sabeh, saludos desde Cabal !")
-            , ("German", "Hallo Alter Sabeh, grüße aus Cabal !")
-            , ("Italian", "Ciao Alter Sabeh, saluti da Cabal !")
-            , ("Dutch", "Hallo Alter Sabeh, groeten uit Cabal !")
-            , ("Unknown", "Hi Alter Sabeh, greetings from Cabal !")
+            [ ("English", "Hi Alter Sabeh, greetings from Haskell !")
+            , ("French", "Bonjour Alter Sabeh, salutations de Haskell !")
+            , ("Spanish", "Hola Alter Sabeh, saludos desde Haskell !")
+            , ("German", "Hallo Alter Sabeh, grüße aus Haskell !")
+            , ("Italian", "Ciao Alter Sabeh, saluti da Haskell !")
+            , ("Dutch", "Hallo Alter Sabeh, groeten uit Haskell !")
+            , ("Unknown", "Hi Alter Sabeh, greetings from Haskell !")
             ]
      in testGroup "Language" $
             map
