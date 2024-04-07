@@ -13,4 +13,4 @@ name = "hello-cargo"
 test = false
 
 [dependencies]
-cargo-hello = { workspace = true }
+prog = { workspace = true }

@@ -4,6 +4,18 @@ use colored::Colorize;
 use num_bigint::BigUint;
 use numbers_utils::operations::fibonacci_utils::{fibonacci, fibonacci_random};
 
+/// # `format_error_message`
+///
+/// This function formats the error message for the test cases.
+///
+/// __Arguments:__
+///
+/// * `expected: BigUint` - The expected output.
+/// * `actual: BigUint` - The actual output.
+///
+/// __Return:__
+///
+/// * `colored::ColoredString` - The formatted error message.
 fn format_error_message(expected: &BigUint, actual: &BigUint) -> colored::ColoredString {
     format!(
         "\n\nTest run at: {}\nExpected : {}\nActual   : {}\n",
@@ -14,6 +26,9 @@ fn format_error_message(expected: &BigUint, actual: &BigUint) -> colored::Colore
     .red()
 }
 
+/// # `fibonacci_test`
+///
+/// This function tests the `fibonacci` function.
 #[test]
 fn fibonacci_test() {
     let n = 100;
@@ -23,6 +38,9 @@ fn fibonacci_test() {
     assert_eq!(expected_output, actual_output, "{}", error_message);
 }
 
+/// # `fibonacci_random_test`
+///
+/// This function tests the `fibonacci_random` function.
 #[test]
 fn fibonacci_random_test() {
     let result = fibonacci_random();

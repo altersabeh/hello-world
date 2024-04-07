@@ -6,6 +6,18 @@ use numbers_utils::operations::factor_utils::{
     factor, factor_random, prime_factor, prime_factor_random,
 };
 
+/// # `format_error_message`
+///
+/// This function formats the error message for the test cases.
+///
+/// __Arguments:__
+///
+/// * `expected: &Vec<BigUint>` - The expected output.
+/// * `actual: &Vec<BigUint>` - The actual output.
+///
+/// __Return:__
+///
+/// * `colored::ColoredString` - The formatted error message.
 fn format_error_message(expected: &Vec<BigUint>, actual: &Vec<BigUint>) -> colored::ColoredString {
     format!(
         "\n\nTest run at: {}\nExpected : {:?}\nActual   : {:?}\n",
@@ -16,6 +28,9 @@ fn format_error_message(expected: &Vec<BigUint>, actual: &Vec<BigUint>) -> color
     .red()
 }
 
+/// # `factor_test`
+///
+/// This function tests the `factor` function.
 #[test]
 fn factor_test() {
     let number = BigUint::from(60u32);
@@ -38,6 +53,9 @@ fn factor_test() {
     assert_eq!(actual_output, expected_output, "{}", error_message);
 }
 
+/// # `factor_random_test`
+///
+/// This function tests the `factor_random` function.
 #[test]
 fn factor_random_test() {
     let result = factor_random();
@@ -47,6 +65,9 @@ fn factor_random_test() {
     assert!(result.contains(" = "));
 }
 
+/// # `prime_factor_test`
+///
+/// This function tests the `prime_factor` function.
 #[test]
 fn prime_factor_test() {
     let number = BigUint::from(60u32);
@@ -61,6 +82,9 @@ fn prime_factor_test() {
     assert_eq!(actual_output, expected_output, "{:?}", error_message);
 }
 
+/// # `prime_factor_random_test`
+///
+/// This function tests the `prime_factor_random` function.
 #[test]
 fn prime_factor_random_test() {
     let result = prime_factor_random();

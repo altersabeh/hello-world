@@ -4,13 +4,36 @@ use num_traits::ToPrimitive;
 use num_traits::Zero;
 use rand::Rng;
 
-pub fn factor(n: BigUint) -> Vec<BigUint> {
+/// # `factor`
+///
+/// This function returns the factors of a number.
+///
+/// __Arguments:__
+///
+/// * `num: BigUint` - The number to find the factors of.
+///
+/// __Return:__
+///
+/// * `Vec<BigUint>` - The factors of the number `num`
+///
+/// __Example:__
+/// ```rust
+/// use numbers_utils::operations::factor_utils::factor;
+/// let factors = factor(120u32.into());
+/// println!("{:?}", factors);
+/// ```
+///
+/// __Output:__
+/// ```txt
+/// [1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120]
+/// ```
+pub fn factor(num: BigUint) -> Vec<BigUint> {
     let mut factors = Vec::new();
-    let max = n.clone().to_usize().unwrap_or(0);
+    let max = num.clone().to_usize().unwrap_or(0);
 
     for i in 1..=max {
         let divisor = BigUint::from(i);
-        if n.clone() % divisor.clone() == BigUint::zero() {
+        if num.clone() % divisor.clone() == BigUint::zero() {
             factors.push(divisor);
         }
     }
@@ -18,6 +41,25 @@ pub fn factor(n: BigUint) -> Vec<BigUint> {
     factors
 }
 
+/// # `factor_random`
+///
+/// This function generates a random number and returns its factors.
+///
+/// __Return:__
+///
+/// * `String` - The factors of the random number.
+///
+/// __Example:__
+/// ```rust
+/// use numbers_utils::operations::factor_utils::factor_random;
+/// let factors = factor_random();
+/// println!("{}", factors);
+/// ```
+///
+/// __Output:__
+/// ```txt
+/// Factor[50] = [1, 2, 5, 10, 25, 50]
+/// ```
 pub fn factor_random() -> String {
     let mut rng = rand::thread_rng();
     let random_num = rng.gen_range(1..=25);
@@ -27,36 +69,76 @@ pub fn factor_random() -> String {
     format!("Factor[{}] = {:?}", random_num, factors)
 }
 
-pub fn prime_factor(mut n: BigUint) -> Vec<BigUint> {
-    if n == BigUint::zero() {
+/// # `prime_factor`
+///
+/// This function returns the prime factors of a number.
+///
+/// __Arguments:__
+///
+/// * `mut num: BigUint` - The number to find the prime factors of.
+///
+/// __Return:__
+///
+/// * `Vec<BigUint>` - The prime factors of the number `num`
+///
+/// __Example:__
+/// ```rust
+///
+/// ```
+///
+/// __Output:__
+/// ```txt
+///
+/// ```
+pub fn prime_factor(mut num: BigUint) -> Vec<BigUint> {
+    if num == BigUint::zero() {
         return vec![];
     }
 
     let mut prime_factors = Vec::new();
     let two = BigUint::from(2u32);
 
-    while &n % &two == BigUint::zero() {
+    while &num % &two == BigUint::zero() {
         prime_factors.push(two.clone());
-        n /= &two;
+        num /= &two;
     }
 
     let mut i = 3u32;
-    while BigUint::from(i * i) <= n {
+    while BigUint::from(i * i) <= num {
         let divisor = BigUint::from(i);
-        while &n % &divisor == BigUint::zero() {
+        while &num % &divisor == BigUint::zero() {
             prime_factors.push(divisor.clone());
-            n /= &divisor;
+            num /= &divisor;
         }
         i += 2;
     }
 
-    if n > BigUint::one() {
-        prime_factors.push(n);
+    if num > BigUint::one() {
+        prime_factors.push(num);
     }
 
     prime_factors
 }
 
+/// # `prime_factor_random`
+///
+/// This function generates a random number and returns its prime_factors.
+///
+/// __Return:__
+///
+/// * `String` - The prime factors of the random number.
+///
+/// __Example:__
+/// ```rust
+/// use numbers_utils::operations::prime_factor_utils::prime_factor_random;
+/// let prime_factors = prime_factor_random();
+/// println!("{}", prime_factors);
+/// ```
+///
+/// __Output:__
+/// ```txt
+/// PFactor[50] = [2, 5, 5]
+/// ```
 pub fn prime_factor_random() -> String {
     let mut rng = rand::thread_rng();
     let random_num = rng.gen_range(1..=25);
