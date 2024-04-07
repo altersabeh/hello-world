@@ -32,6 +32,35 @@ application {
                 classpath = mainClasspath
                 mainClass.set("$packagePrefix.$className")
             }
+
+            val jarTaskName = "jar-${className.lowercase()}"
+
+            tasks.register<Jar>(jarTaskName) {
+                val packagesDependencies = listOf("hello-world", "goodbye-world")
+                val subprojectsDependencies = listOf("numbers-utils", "translator")
+
+                packagesDependencies.forEach { dependency ->
+                    dependsOn(":packages:$dependency:jar")
+                }
+                subprojectsDependencies.forEach { dependency ->
+                    dependsOn(":subprojects:$dependency:jar")
+                }
+
+                group = "Build"
+                description = "Creates a Jar for the $className function."
+                from(mainSourceSet.output) {
+                    exclude { fileTreeElement ->
+                        val isClassFile = fileTreeElement.file.extension == "class"
+                        val isTargetClass = fileTreeElement.file.nameWithoutExtension == "$className"
+                        val isInTargetPackage = fileTreeElement.file.path.contains(packagePrefix.replace('.', '/'))
+                        isClassFile && isInTargetPackage && !isTargetClass
+                    }
+                }
+                manifest {
+                    attributes["Main-Class"] = "$packagePrefix.$className"
+                }
+                archiveBaseName.set(className.lowercase())
+            }
         }
     }
 }
@@ -40,16 +69,8 @@ tasks {
     test {
         enabled = false
     }
+}
 
-    val packagesDependencies = listOf("hello-world", "goodbye-world")
-    val subprojectsDependencies = listOf("numbers-utils", "translator")
-
-    jar {
-        packagesDependencies.forEach { dependency ->
-            dependsOn(":packages:$dependency:jar")
-        }
-        subprojectsDependencies.forEach { dependency ->
-            dependsOn(":subprojects:$dependency:jar")
-        }
-    }
+tasks.named("jar") {
+    dependsOn(tasks.matching { it.name.startsWith("jar-") })
 }

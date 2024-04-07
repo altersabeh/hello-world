@@ -29,7 +29,7 @@ application {
             val jarTaskName = "jar-${className.lowercase()}"
 
             tasks.register<Jar>(jarTaskName) {
-                group = "Application (CLI Functions)"
+                group = "Build"
                 description = "Creates a Jar for the $className function."
                 from(mainSourceSet.output) {
                     exclude { fileTreeElement ->
