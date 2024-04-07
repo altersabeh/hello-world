@@ -1,8 +1,11 @@
 use chrono::Local;
 use colored::Colorize;
 
-use cargo_hello::hello_world::{print_date, print_greeting, GREETING};
+use prog::hello_world::{print_date, print_greeting, GREETING};
 
+/// # `format_error_message`
+///
+/// This function formats the error message.
 fn format_error_message(expected: &str, actual: &str) -> colored::ColoredString {
     format!(
         "\n\nTest run at: {}\nExpected : {}\nActual   : {}\n",
@@ -13,6 +16,9 @@ fn format_error_message(expected: &str, actual: &str) -> colored::ColoredString 
     .red()
 }
 
+/// # `print_greeting_without_name_test`
+///
+/// This function tests the `print_greeting` function without a name.
 #[test]
 fn print_greeting_without_name_test() {
     let args = vec![];
@@ -22,6 +28,9 @@ fn print_greeting_without_name_test() {
     assert_eq!(expected_output, actual_output, "{}", error_message);
 }
 
+/// # `print_greeting_with_name_test`
+///
+/// This function tests the `print_greeting` function with a name.
 #[test]
 fn print_greeting_with_name_test() {
     let args = vec!["", "Alter", "Sabeh"];
@@ -31,6 +40,9 @@ fn print_greeting_with_name_test() {
     assert_eq!(expected_output, actual_output, "{}", error_message);
 }
 
+/// # `print_date_test`
+///
+/// This function tests the `print_date` function.
 #[test]
 fn print_date_test() {
     let now = Local::now();
@@ -41,6 +53,9 @@ fn print_date_test() {
     assert_eq!(expected_output, actual_output, "{}", error_message);
 }
 
+/// # `print_greet_test`
+///
+/// This function tests the `GREETING` constant.
 #[test]
 fn print_greet_test() {
     let expected_output = "Hello, Cargo's Here!";

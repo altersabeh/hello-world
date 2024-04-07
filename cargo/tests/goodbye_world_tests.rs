@@ -1,8 +1,11 @@
 use chrono::Local;
 use colored::Colorize;
 
-use cargo_hello::goodbye_world::{print_banner, print_goodbye};
+use prog::goodbye_world::{print_banner, print_goodbye};
 
+/// # `format_error_message`
+///
+/// This function formats the error message.
 fn format_error_message(expected: &str, actual: &str) -> colored::ColoredString {
     format!(
         "\n\nTest run at: {}\nExpected : {}\nActual   : {}\n",
@@ -13,6 +16,9 @@ fn format_error_message(expected: &str, actual: &str) -> colored::ColoredString 
     .red()
 }
 
+/// # `print_goodbye_without_name_test`
+///
+/// This function tests the `print_goodbye` function without a name.
 #[test]
 fn print_goodbye_without_name_test() {
     let args = vec![];
@@ -22,6 +28,9 @@ fn print_goodbye_without_name_test() {
     assert_eq!(expected_output, actual_output, "{}", error_message);
 }
 
+/// # `print_goodbye_with_name_test`
+///
+/// This function tests the `print_goodbye` function with a name.
 #[test]
 fn print_goodbye_with_name_test() {
     let args = vec!["", "Alter", "Sabeh"];
@@ -31,6 +40,9 @@ fn print_goodbye_with_name_test() {
     assert_eq!(expected_output, actual_output, "{}", error_message);
 }
 
+/// # `print_banner_test`
+///
+/// This function tests the `print_banner` function.
 #[test]
 fn print_banner_test() {
     let expected_output = r#"

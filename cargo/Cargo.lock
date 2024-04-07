@@ -39,16 +39,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7ff69b9dd49fd426c69a0db9fc04dd934cdb6645ff000864d98f7e2af8830eaa"
 
 [[package]]
-name = "cargo-hello"
-version = "1.0.0"
-dependencies = [
- "chrono",
- "colored",
- "numbers-utils",
- "translator",
-]
-
-[[package]]
 name = "cc"
 version = "1.0.90"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -94,7 +84,7 @@ checksum = "06ea2b9bc92be3c2baa9334a323ebca2d6f074ff852cd1d7b11064035cd3868f"
 name = "date-today"
 version = "1.0.0"
 dependencies = [
- "cargo-hello",
+ "prog",
 ]
 
 [[package]]
@@ -213,7 +203,7 @@ checksum = "d2fabcfbdc87f4758337ca535fb41a6d701b65693ce38287d856d1674551ec9b"
 name = "hello-cargo"
 version = "1.0.0"
 dependencies = [
- "cargo-hello",
+ "prog",
 ]
 
 [[package]]
@@ -343,6 +333,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e835ff2298f5721608eb1a980ecaee1aef2c132bf95ecc026a11b7bf3c01c02e"
 dependencies = [
  "unicode-ident",
+]
+
+[[package]]
+name = "prog"
+version = "1.0.0"
+dependencies = [
+ "chrono",
+ "colored",
+ "numbers-utils",
+ "translator",
 ]
 
 [[package]]
