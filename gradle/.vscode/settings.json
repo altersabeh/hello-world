@@ -1,11 +1,13 @@
 {
     "files.exclude": {
         "**/.gradle": true,
+        "**/.kotlin": true,
         "**/.vscode": true,
         "**/build": true,
     },
     "files.watcherExclude": {
         "**/.gradle": true,
+        "**/.kotlin": true,
         "**/.vscode": true,
         "**/build": true,
     },
