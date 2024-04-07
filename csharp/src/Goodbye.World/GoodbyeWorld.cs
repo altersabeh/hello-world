@@ -28,6 +28,6 @@ public class GoodbyeWorld
    ░      ░   ░ ░   ░   ░
     ░           ░   ░  ░
     ░
-";
+".Replace("\r\n", "\n");
     }
 }
