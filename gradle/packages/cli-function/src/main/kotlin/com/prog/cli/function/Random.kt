@@ -7,7 +7,9 @@ object Random {
     /**
      * # `main`
      *
-     * This function is entry point of the application.
+     * This function is the entry point of the application.
+     *
+     * __Arguments:__
      */
     @JvmStatic
     fun main(args: Array<String>) {

@@ -7,6 +7,20 @@ import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
 class FibonacciUtilsTests {
+    /**
+     * # `formatErrorMessage`
+     *
+     * This function formats the error message for the test.
+     *
+     * __Arguments:__
+     *
+     * * `expected: BigInteger` - The expected output.
+     * * `actual: BigInteger` - The actual output.
+     *
+     * __Return:__
+     *
+     * * `String` - The formatted error message.
+     */
     private fun formatErrorMessage(
         expected: BigInteger,
         actual: BigInteger,
@@ -23,6 +37,11 @@ class FibonacciUtilsTests {
             """.trimMargin()
     }
 
+    /**
+     * # `fibonacci test`
+     *
+     * This function tests the `fibonacci` function.
+     */
     @Test
     fun `fibonacci test`() {
         val n = 100
@@ -32,6 +51,11 @@ class FibonacciUtilsTests {
         assertEquals(expectedOutput, actualOutput, errorMessage)
     }
 
+    /**
+     * # `fibonacci random test`
+     *
+     * This function tests the `fibonacciRandom` function.
+     */
     @Test
     fun `fibonacci random test`() {
         val result = FibonacciUtils.fibonacciRandom()

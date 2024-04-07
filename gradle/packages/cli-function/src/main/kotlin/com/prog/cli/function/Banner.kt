@@ -18,8 +18,15 @@ object Banner {
     /**
      * # `printBannerMessage`
      *
-     * This function prints the banner message by calling the `printBanner`
-     * function.
+     * This function is used to print the banner message by calling the
+     * `printBanner` function.
+     *
+     * __Example:__
+     *
+     * ```kotlin
+     * import com.prog.cli.function.Banner.printBannerMessage
+     * printBannerMessage()
+     * ```
      */
     fun printBannerMessage() {
         println(printBanner())

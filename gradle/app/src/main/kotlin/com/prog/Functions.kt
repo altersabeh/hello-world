@@ -9,11 +9,35 @@ import com.prog.cli.function.Random.printRandomNumbers
 import kotlin.io.readLine
 
 object Functions {
+    /**
+     * # `waitForUser`
+     *
+     * This function is used to wait for the user to press enter before
+     * continuing the program.
+     *
+     * ```kotlin
+     * import com.prog.Functions.waitForUser
+     * waitForUser()
+     * ```
+     *
+     * __Output:__
+     *
+     * ```kotlin
+     * "Press enter to continue ..."
+     * ```
+     */
     private fun waitForUser() {
         print("Press enter to continue ...")
         readLine()
     }
 
+    /**
+     * # `startProgram`
+     *
+     * This function is used to start the program and print the welcome message,
+     * user details, number calculations, random numbers, goodbye message and
+     * banner message.
+     */
     fun startProgram(args: Array<String>) {
         println("===================================================")
         println("")

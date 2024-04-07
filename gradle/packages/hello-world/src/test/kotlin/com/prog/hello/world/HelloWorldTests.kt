@@ -5,6 +5,20 @@ import kotlin.test.Test
 import kotlin.test.assertEquals
 
 class HelloWorldTests {
+    /**
+     * # `formatErrorMessage`
+     *
+     * This function formats the error message for the test.
+     *
+     * __Arguments:__
+     *
+     * * `expected: String` - The expected output.
+     * * `actual: String` - The actual output.
+     *
+     * __Return:__
+     *
+     * * `String` - The formatted error message.
+     */
     private fun formatErrorMessage(
         expected: String,
         actual: String,
@@ -21,6 +35,11 @@ class HelloWorldTests {
             """.trimMargin()
     }
 
+    /**
+     * # `print greeting without name test`
+     *
+     * This function tests the `printGreeting` function without arguments.
+     */
     @Test
     fun `print greeting without name test`() {
         val args = emptyArray<String>()
@@ -30,6 +49,11 @@ class HelloWorldTests {
         assertEquals(expectedOutput, actualOutput, errorMessage)
     }
 
+    /**
+     * # `print greeting with name test`
+     *
+     * This function tests the `printGreeting` function with arguments.
+     */
     @Test
     fun `print greeting with name test`() {
         val args = arrayOf("Alter", "Sabeh")
@@ -39,6 +63,11 @@ class HelloWorldTests {
         assertEquals(expectedOutput, actualOutput, errorMessage)
     }
 
+    /**
+     * # `print date test`
+     *
+     * This function tests the `printDate` function.
+     */
     @Test
     fun `print current date test`() {
         val now = System.currentTimeMillis()
@@ -49,6 +78,11 @@ class HelloWorldTests {
         assertEquals(expectedOutput, actualOutput, errorMessage)
     }
 
+    /**
+     * # `print greet test`
+     *
+     * This function tests the `GREETER` constant.
+     */
     @Test
     fun `print greet test`() {
         val expectedOutput = "Hello, Gradle's Here !"

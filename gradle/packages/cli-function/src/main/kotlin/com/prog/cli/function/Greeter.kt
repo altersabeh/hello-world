@@ -7,7 +7,11 @@ object Greeter {
     /**
      * # `main`
      *
-     * This function is entry point of the application.
+     * This function is the entry point of the application.
+     *
+     * __Arguments:__
+     *
+     * * `args: Array<String>` - Command line arguments
      */
     @JvmStatic
     fun main(args: Array<String>) {
@@ -21,7 +25,10 @@ object Greeter {
      * # `printWelcomeMessage`
      *
      * This function prints the welcome message by calling the `printGreeting`
-     * function.
+     *
+     * __Arguments:__
+     *
+     * * `args: Array<String>`
      */
     fun printWelcomeMessage(args: Array<String>) {
         println(printGreeting(args))
@@ -31,7 +38,10 @@ object Greeter {
      * # `printGoodbyeMessage`
      *
      * This function prints the goodbye message by calling the `printGoodbye`
-     * function.
+     *
+     * __Arguments:__
+     *
+     * * `args: Array<String>`
      */
     fun printGoodbyeMessage(args: Array<String>) {
         System.err.println(printGoodbye(args))

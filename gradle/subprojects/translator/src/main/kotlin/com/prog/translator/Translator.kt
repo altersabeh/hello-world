@@ -20,6 +20,36 @@ val greetingsFromTranslations =
         "Dutch" to "groeten uit",
     )
 
+/**
+ * # `translate`
+ *
+ * This function translates a greeting message to the user in the specified
+ * language.
+ *
+ * __Arguments:__
+ *
+ * * `language: String` - The language in which the greeting should be
+ * translated.
+ * * `name: String` - The name of the user.
+ *
+ * __Return:__
+ *
+ * * `String` - The translated greeting message.
+ *
+ * __Example:__
+ *
+ * ```kotlin
+ * import com.prog.translator.translate
+ * val greeting = translate("French", "Jean")
+ * println(greeting)
+ * ```
+ *
+ * __Output:__
+ *
+ * ```kotlin
+ * "Bonjour Jean, salutations de Gradle !"
+ * ```
+ */
 fun translate(
     language: String,
     name: String,

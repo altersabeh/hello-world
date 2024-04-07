@@ -7,6 +7,20 @@ import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
 class FactorialUtilsTests {
+    /**
+     * # `formatErrorMessage`
+     *
+     * This function formats the error message for the test.
+     *
+     * __Arguments:__
+     *
+     * * `expected: BigInteger` - The expected output.
+     * * `actual: BigInteger` - The actual output.
+     *
+     * __Return:__
+     *
+     * * `String` - The formatted error message.
+     */
     private fun formatErrorMessage(
         expected: BigInteger,
         actual: BigInteger,
@@ -23,6 +37,11 @@ class FactorialUtilsTests {
             """.trimMargin()
     }
 
+    /**
+     * # `factorial test`
+     *
+     * This function tests the `factorial` function.
+     */
     @Test
     fun `factorial test`() {
         val n = 75
@@ -35,6 +54,11 @@ class FactorialUtilsTests {
         assertEquals(expectedOutput, actualOutput, errorMessage)
     }
 
+    /**
+     * # `factorial random test`
+     *
+     * This function tests the `factorialRandom` function.
+     */
     @Test
     fun `factorial random test`() {
         val result = FactorialUtils.factorialRandom()

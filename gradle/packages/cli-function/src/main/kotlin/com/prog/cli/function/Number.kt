@@ -7,7 +7,11 @@ object Number {
     /**
      * # `main`
      *
-     * This function is entry point of the application.
+     * This function is the entry point of the application.
+     *
+     * __Arguments:__
+     *
+     * * `args: Array<String>`
      */
     @JvmStatic
     fun main(args: Array<String>) {
@@ -19,20 +23,25 @@ object Number {
     /**
      * # `getUserNumber`
      *
-     * This function prompts the user to enter a number and returns the number
-     * entered by the user.
+     * This function prompts the user to enter a number and returns the input.
      *
-     * __Returns:__
+     * __Return:__
      *
-     * The number entered by the user.
+     * * `Int` - The user's number
      *
      * __Example:__
+     *
      * ```kotlin
+     * import com.prog.cli.function.Number.getUserNumber
      * val number = getUserNumber()
+     * println("Number : $number")
      * ```
+     *
      * __Output:__
-     * ```txt
-     * Enter a number : 5
+     *
+     * ```kotlin
+     * "Enter a number : 5"
+     * "Number : 5"
      * ```
      */
     private fun getUserNumber(): Int {
@@ -43,12 +52,8 @@ object Number {
     /**
      * # `printNumberCalculations`
      *
-     * This function prints the Fibonacci and factorial values of a
-     * user-provided number.
-     *
-     * The number is obtained by calling the `getUserNumber` function. The
-     * fibonacci and factorial values are calculated by calling the `fibonacci`
-     * and `factorial` functions respectively.
+     * This function prints the Fibonacci and Factorial of the user's number by
+     * using the `fibonacci` and `factorial` functions from the `FibonacciUtils`
      */
     fun printNumberCalculations() {
         val number = getUserNumber()

@@ -8,6 +8,10 @@ object Details {
      * # `main`
      *
      * This function is entry point of the application.
+     *
+     * __Arguments:__
+     *
+     * * `args: Array<String>` - Command line arguments
      */
     @JvmStatic
     fun main(args: Array<String>) {
@@ -20,21 +24,35 @@ object Details {
      * # `getUserName`
      *
      * This function prompts the user to enter their name and returns the input
-     * as a string.
      *
-     * The function prints a message to the console, reads a line of
-     * input from the user and returns the result.
+     * __Arguments:__
+     *
+     * * `args: Array<String>` - Command line arguments
      *
      * __Return:__
      *
-     * The user's name as a string.
+     * * `String` - The user's name
+     *
+     * __Example:__
+     *
+     * ```kotlin
+     * import com.prog.cli.function.Details.getUserName
+     * val name = getUserName(arrayOf("John", "Doe"))
+     * println(name)
+     * ```
+     *
+     * __Output:__
+     *
+     * ```kotlin
+     * "John Doe"
+     * ```
      */
     private fun getUserName(args: Array<String>): String {
-        return if (args.size <= 1) {
+        return if (args.isEmpty()) {
             print("Please enter your name : ")
             readLine()!!.trim()
         } else {
-            args.sliceArray(1 until args.size).joinToString(" ")
+            args.joinToString(" ")
         }
     }
 
@@ -42,14 +60,19 @@ object Details {
      * # `getUserLanguage`
      *
      * This function prompts the user to enter their language and returns the
-     * input as a string.
-     *
-     * The function prints a message to the console, reads a line of input from
-     * the user and returns the result.
+     * input.
      *
      * __Return:__
      *
-     * The user's language as a string.
+     * `String` - The user's language
+     *
+     * __Example:__
+     *
+     * ```kotlin
+     * import com.prog.cli.function.Details.getUserLanguage
+     * val language = getUserLanguage()
+     * println(language)
+     * ```
      */
     private fun getUserLanguage(): String {
         print("Please enter your language : ")
@@ -59,11 +82,21 @@ object Details {
     /**
      * # `printUserDetails`
      *
-     * This function prints the user's name and the current date.
+     * This function prints the user's name and the current date. It also prints
+     * the translated message based on the user's language. The user's name and
+     * language are obtained from the command line arguments and user input using
+     * the `getUserName` and `getUserLanguage` functions.
      *
-     * The user's name is obtained by calling the `getUserName` function. The
-     * user's language is obtained by calling the `getUserLanguage` function.
-     * The translated message is printed by calling the `translate` function.
+     * __Arguments:__
+     *
+     * * `Array<String>` - Command line arguments
+     *
+     * __Example:__
+     *
+     * ```kotlin
+     * import com.prog.cli.function.Details.printUserDetails
+     * printUserDetails(arrayOf("John", "Doe"))
+     * ```
      */
     fun printUserDetails(args: Array<String>) {
         val name = getUserName(args)

@@ -7,6 +7,20 @@ import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
 class FactorUtilsTests {
+    /**
+     * # `formatErrorMessage`
+     *
+     * This function formats the error message for the test.
+     *
+     * __Arguments:__
+     *
+     * * `expected: List<BigInteger>` - The expected output.
+     * * `actual: List<BigInteger>` - The actual output.
+     *
+     * __Return:__
+     *
+     * * `String` - The formatted error message.
+     */
     private fun formatErrorMessage(
         expected: List<BigInteger>,
         actual: List<BigInteger>,
@@ -23,6 +37,11 @@ class FactorUtilsTests {
             """.trimMargin()
     }
 
+    /**
+     * # `factor test`
+     *
+     * This function tests the `factor` function.
+     */
     @Test
     fun `factor test`() {
         val number = BigInteger.valueOf(60)
@@ -46,6 +65,11 @@ class FactorUtilsTests {
         assertEquals(expectedOutput, actualOutput, errorMessage)
     }
 
+    /**
+     * # `factor random test`
+     *
+     * This function tests the `factorRandom` function.
+     */
     @Test
     fun `factorial random test`() {
         val result = FactorUtils.factorRandom()
@@ -60,6 +84,11 @@ class FactorUtilsTests {
         assertTrue(result.contains(" = "))
     }
 
+    /**
+     * # `prime factor test`
+     *
+     * This function tests the `primeFactor` function.
+     */
     @Test
     fun `prime factor test`() {
         val number = BigInteger.valueOf(60)
@@ -75,6 +104,11 @@ class FactorUtilsTests {
         assertEquals(expectedOutput, actualOutput, errorMessage)
     }
 
+    /**
+     * # `prime factorial random test`
+     *
+     * This function tests the `primeFactorRandom` function.
+     */
     @Test
     fun `prime factorial random test`() {
         val result = FactorUtils.primeFactorRandom()
