@@ -13,4 +13,4 @@ name = "hello-rust"
 test = false
 
 [dependencies]
-prog = { workspace = true }
+cargo-hello = { workspace = true }

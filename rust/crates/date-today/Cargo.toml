@@ -13,4 +13,4 @@ name = "date-today"
 path = "src/custom/date_today.rs"
 
 [dependencies]
-prog = {workspace = true}
+cargo-hello = {workspace = true}

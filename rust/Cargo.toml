@@ -20,10 +20,10 @@ rand = "0.8.5"
 rstest = "0.18.2"
 numbers-utils = { path = "crates/numbers-utils" }
 translator = { path = "crates/translator" }
-prog = { path = "." }
+cargo-hello = { path = "." }
 
 [package]
-name = "prog"
+name = "cargo-hello"
 version.workspace = true
 description = "Hello World program in Rust"
 license.workspace = true
@@ -34,6 +34,7 @@ keywords.workspace = true
 default-run = "rust-hello"
 
 [lib]
+name = "prog"
 path = "src/lib.rs"
 doctest = false
 test = false
