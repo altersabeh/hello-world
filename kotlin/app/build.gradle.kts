@@ -13,7 +13,7 @@ dependencies {
 }
 
 application {
-    applicationName = "gradle-hello"
+    applicationName = "kotlin-hello"
     mainClass = "com.prog.MainKt"
 }
 
@@ -26,9 +26,9 @@ tasks {
         exclude("**/app/*.class")
         dependsOn(":packages:cli-function:jar")
         manifest {
-            attributes["Implementation-Title"] = "gradle-hello"
-            attributes["Name"] = "gradle-hello"
-            attributes["Description"] = "Hello World program in Gradle"
+            attributes["Implementation-Title"] = "kotlin-hello"
+            attributes["Name"] = "kotlin-hello"
+            attributes["Description"] = "Hello World program in Kotlin"
             attributes["Main-Class"] = "com.prog.MainKt"
         }
     }

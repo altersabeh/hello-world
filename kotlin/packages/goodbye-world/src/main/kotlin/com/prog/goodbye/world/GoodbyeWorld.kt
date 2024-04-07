@@ -3,10 +3,9 @@ package com.prog.goodbye.world
 /**
  * # `printGoodbye`
  *
- * This function prints a goodbye message to the console. If the user provides a
- * name as an argument, the function will print a goodbye message with the
- * provided name. If no argument is provided, the function will print a generic
- * goodbye message.
+ * This function prints a goodbye message to the console. If the user provides a name as an
+ * argument, the function will print a goodbye message with the provided name. If no argument is
+ * provided, the function will print a generic goodbye message.
  *
  * __Arguments:__
  *
@@ -27,16 +26,16 @@ package com.prog.goodbye.world
  * __Output:__
  *
  * ```kotlin
- * "Goodbye World from Gradle !"
- * "Goodbye John Doe from Gradle !"
+ * "Goodbye World from Kotlin !"
+ * "Goodbye John Doe from Kotlin !"
  * ```
  */
 fun printGoodbye(args: Array<String>): String {
     return if (args.isNotEmpty()) {
         val name = args.drop(0).joinToString(" ")
-        "Goodbye $name from Gradle !"
+        "Goodbye $name from Kotlin !"
     } else {
-        "Goodbye World from Gradle !"
+        "Goodbye World from Kotlin !"
     }
 }
 

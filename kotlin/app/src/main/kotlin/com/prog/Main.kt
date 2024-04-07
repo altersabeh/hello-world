@@ -1,4 +1,4 @@
-// Hello World in Gradle !
+// Hello World in Kotlin !
 
 package com.prog
 

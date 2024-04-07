@@ -43,7 +43,7 @@ class TranslatorTests {
     @Test
     fun `translate ENGLISH test`() {
         val lang = "English"
-        val expectedOutput = "Hi Alter Sabeh, greetings from Gradle !"
+        val expectedOutput = "Hi Alter Sabeh, greetings from Kotlin !"
         val name = "Alter Sabeh"
         val actualOutput = translate(lang, name)
         val errorMessage = formatErrorMessage(expectedOutput, actualOutput)
@@ -58,7 +58,7 @@ class TranslatorTests {
     @Test
     fun `translate FRENCH test`() {
         val lang = "French"
-        val expectedOutput = "Bonjour Alter Sabeh, salutations de Gradle !"
+        val expectedOutput = "Bonjour Alter Sabeh, salutations de Kotlin !"
         val name = "Alter Sabeh"
         val actualOutput = translate(lang, name)
         val errorMessage = formatErrorMessage(expectedOutput, actualOutput)
@@ -73,7 +73,7 @@ class TranslatorTests {
     @Test
     fun `translate SPANISH test`() {
         val lang = "Spanish"
-        val expectedOutput = "Hola Alter Sabeh, saludos desde Gradle !"
+        val expectedOutput = "Hola Alter Sabeh, saludos desde Kotlin !"
         val name = "Alter Sabeh"
         val actualOutput = translate(lang, name)
         val errorMessage = formatErrorMessage(expectedOutput, actualOutput)
@@ -88,7 +88,7 @@ class TranslatorTests {
     @Test
     fun `translate GERMAN test`() {
         val lang = "German"
-        val expectedOutput = "Hallo Alter Sabeh, grüße aus Gradle !"
+        val expectedOutput = "Hallo Alter Sabeh, grüße aus Kotlin !"
         val name = "Alter Sabeh"
         val actualOutput = translate(lang, name)
         val errorMessage = formatErrorMessage(expectedOutput, actualOutput)
@@ -103,7 +103,7 @@ class TranslatorTests {
     @Test
     fun `translate ITALIAN test`() {
         val lang = "Italian"
-        val expectedOutput = "Ciao Alter Sabeh, saluti da Gradle !"
+        val expectedOutput = "Ciao Alter Sabeh, saluti da Kotlin !"
         val name = "Alter Sabeh"
         val actualOutput = translate(lang, name)
         val errorMessage = formatErrorMessage(expectedOutput, actualOutput)
@@ -118,7 +118,7 @@ class TranslatorTests {
     @Test
     fun `translate DUTCH test`() {
         val lang = "Dutch"
-        val expectedOutput = "Hallo Alter Sabeh, groeten uit Gradle !"
+        val expectedOutput = "Hallo Alter Sabeh, groeten uit Kotlin !"
         val name = "Alter Sabeh"
         val actualOutput = translate(lang, name)
         val errorMessage = formatErrorMessage(expectedOutput, actualOutput)
@@ -133,7 +133,7 @@ class TranslatorTests {
     @Test
     fun `translate UNKNOWN test`() {
         val lang = "Unknown"
-        val expectedOutput = "Hi Alter Sabeh, greetings from Gradle !"
+        val expectedOutput = "Hi Alter Sabeh, greetings from Kotlin !"
         val name = "Alter Sabeh"
         val actualOutput = translate(lang, name)
         val errorMessage = formatErrorMessage(expectedOutput, actualOutput)

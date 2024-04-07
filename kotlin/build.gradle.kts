@@ -18,7 +18,7 @@ subprojects {
             apply(plugin = "kotlin")
         }
 
-        group = "hello.gradle"
+        group = "hello.kotlin"
         version = "1.0.0"
 
         val repoRoot = project.rootProject.layout.buildDirectory

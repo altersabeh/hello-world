@@ -43,7 +43,7 @@ class GoodbyeWorldTests {
     @Test
     fun `print goodbye without name test`() {
         val args = emptyArray<String>()
-        val expectedOutput = "Goodbye World from Gradle !"
+        val expectedOutput = "Goodbye World from Kotlin !"
         val actualOutput = printGoodbye(args)
         val errorMessage = formatErrorMessage(expectedOutput, actualOutput)
         assertEquals(expectedOutput, actualOutput, errorMessage)
@@ -57,7 +57,7 @@ class GoodbyeWorldTests {
     @Test
     fun `print goodbye with name test`() {
         val args = arrayOf("Alter", "Sabeh")
-        val expectedOutput = "Goodbye Alter Sabeh from Gradle !"
+        val expectedOutput = "Goodbye Alter Sabeh from Kotlin !"
         val actualOutput = printGoodbye(args)
         val errorMessage = formatErrorMessage(expectedOutput, actualOutput)
         assertEquals(expectedOutput, actualOutput, errorMessage)

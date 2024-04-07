@@ -43,7 +43,7 @@ class HelloWorldTests {
     @Test
     fun `print greeting without name test`() {
         val args = emptyArray<String>()
-        val expectedOutput = "Hello World from Gradle !"
+        val expectedOutput = "Hello World from Kotlin !"
         val actualOutput = printGreeting(args)
         val errorMessage = formatErrorMessage(expectedOutput, actualOutput)
         assertEquals(expectedOutput, actualOutput, errorMessage)
@@ -57,7 +57,7 @@ class HelloWorldTests {
     @Test
     fun `print greeting with name test`() {
         val args = arrayOf("Alter", "Sabeh")
-        val expectedOutput = "Hello Alter Sabeh from Gradle !"
+        val expectedOutput = "Hello Alter Sabeh from Kotlin !"
         val actualOutput = printGreeting(args)
         val errorMessage = formatErrorMessage(expectedOutput, actualOutput)
         assertEquals(expectedOutput, actualOutput, errorMessage)
@@ -85,7 +85,7 @@ class HelloWorldTests {
      */
     @Test
     fun `print greet test`() {
-        val expectedOutput = "Hello, Gradle's Here !"
+        val expectedOutput = "Hello, Kotlin's Here !"
         val actualOutput = GREETING
         val errorMessage = formatErrorMessage(expectedOutput, actualOutput)
         assertEquals(expectedOutput, actualOutput, errorMessage)

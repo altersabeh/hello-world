@@ -23,13 +23,11 @@ val greetingsFromTranslations =
 /**
  * # `translate`
  *
- * This function translates a greeting message to the user in the specified
- * language.
+ * This function translates a greeting message to the user in the specified language.
  *
  * __Arguments:__
  *
- * * `language: String` - The language in which the greeting should be
- * translated.
+ * * `language: String` - The language in which the greeting should be translated.
  * * `name: String` - The name of the user.
  *
  * __Return:__
@@ -47,7 +45,7 @@ val greetingsFromTranslations =
  * __Output:__
  *
  * ```kotlin
- * "Bonjour Jean, salutations de Gradle !"
+ * "Bonjour Jean, salutations de Kotlin !"
  * ```
  */
 fun translate(
@@ -58,8 +56,8 @@ fun translate(
     val greetingsFrom = greetingsFromTranslations[language]
 
     return if (greeting != null && greetingsFrom != null) {
-        "$greeting $name, $greetingsFrom Gradle !"
+        "$greeting $name, $greetingsFrom Kotlin !"
     } else {
-        "Hi $name, greetings from Gradle !"
+        "Hi $name, greetings from Kotlin !"
     }
 }

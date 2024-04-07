@@ -4,7 +4,7 @@ A simple **Hello World** program in Rust.
 
 ## Build Tool
 
-- `cargo`
+- Cargo
 
 ## Creating a new Cargo project
 

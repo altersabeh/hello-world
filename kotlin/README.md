@@ -1,12 +1,10 @@
-# Gradle - Hello World
+# Kotlin - Hello World
 
-A simple **Hello World** program in Gradle.
+A simple **Hello World** program in Kotlin.
 
-## Programming Language
+## Build Tool
 
-- Kotlin
-- Groovy
-- Java
+- Gradle (Kotlin DSL)
 
 ## Creating a new Gradle project
 
@@ -38,7 +36,7 @@ command:
 ## Project Structure
 
 ```plaintext
-gradle-hello
+kotlin-hello
 ├──── app
 │     ├──── src
 │     │     └──── main
@@ -49,7 +47,7 @@ gradle-hello
 │     │                             └──── Main.kt
 │     └──── build.gradle.kts
 ├──── build
-│     ├──── gradle-hello
+│     ├──── kotlin-hello
 │     │     ├──── classes
 │     │     │     └──── ...
 │     │     ├──── distributions
@@ -134,15 +132,15 @@ gradle-hello
 │     │     │           └──── kotlin
 │     │     │               └──── com
 │     │     │                     └──── prog
-│     │     │                     └──── DateToday.kt
+│     │     │                           └──── DateToday.kt
 │     │     └──── build.gradle.kts
-│     ├──── hello-gradle
+│     ├──── hello-kotlin
 │     │     ├──── src
 │     │     │     └──── main
 │     │     │           └──── kotlin
 │     │     │                 └──── com
 │     │     │                       └──── prog
-│     │     │                             └──── HelloGradle.kt
+│     │     │                             └──── Mainb.kt
 │     │     └──── build.gradle.kts
 │     ├──── numbers-utils
 │     │     ├──── src

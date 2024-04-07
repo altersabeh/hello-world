@@ -11,22 +11,21 @@ import org.apache.commons.lang3.time.DateFormatUtils
  * ```kotlin
  * import com.prog.hello.world.GREETING
  *
- * println(GREETING) // Hello, Gradle's Here !
+ * println(GREETING) // Hello, Kotlin's Here !
  * ```
  * __Output:__
  * ```kotlin
- * "Hello, Gradle's Here !"
+ * "Hello, Kotlin's Here !"
  * ```
  */
-const val GREETING = "Hello, Gradle's Here !"
+const val GREETING = "Hello, Kotlin's Here !"
 
 /**
  * # `printGreeting`
  *
- * This function returns a greeting message. If the function is called with
- * arguments, it will return a greeting message with the name provided in the
- * arguments. If no arguments are provided, it will return a generic greeting
- * message.
+ * This function returns a greeting message. If the function is called with arguments, it will
+ * return a greeting message with the name provided in the arguments. If no arguments are provided,
+ * it will return a generic greeting message.
  *
  * __Arguments:__
  *
@@ -47,24 +46,24 @@ const val GREETING = "Hello, Gradle's Here !"
  * __Output:__
  *
  * ```kotlin
- * "Hello World from Gradle !"
- * "Hello John Doe from Gradle !"
+ * "Hello World from Kotlin !"
+ * "Hello John Doe from Kotlin !"
  * ```
  */
 fun printGreeting(args: Array<String>): String {
     return if (args.isNotEmpty()) {
         val name = args.drop(0).joinToString(" ")
-        "Hello $name from Gradle !"
+        "Hello $name from Kotlin !"
     } else {
-        "Hello World from Gradle !"
+        "Hello World from Kotlin !"
     }
 }
 
 /**
  * # `printDate`
  *
- * This function returns the current date in a formatted string. The date is in
- * the format "MMMM dd, yyyy 'at' hh:mm a".
+ * This function returns the current date in a formatted string. The date is in the format "MMMM dd,
+ * yyyy 'at' hh:mm a".
  *
  * __Return:__
  *
