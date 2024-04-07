@@ -7,6 +7,7 @@
 # dotnet
 **/dotnet/**/bin
 **/obj
+**/.artifacts
 
 # gradle
 **/build
