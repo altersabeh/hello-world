@@ -1,6 +1,6 @@
 using Prog.Hello.World;
 
-class HelloDotnet
+class HelloCSharp
 {
     static void Main(string[] args)
     {

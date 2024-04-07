@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <AssemblyName>dotnet-hello</AssemblyName>
+    <AssemblyName>csharp-hello</AssemblyName>
     <OutputType>Exe</OutputType>
     <TargetFramework>$(SdkTargetFramework)</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -9,9 +9,9 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageID>dotnet-hello</PackageID>
+    <PackageID>csharp-hello</PackageID>
     <Version>$(PackageVersion)</Version>
-    <Description>Hello World program in Dotnet</Description>
+    <Description>Hello World program in C#</Description>
     <PackageType>DotnetTool</PackageType>
     <PackAsTool>true</PackAsTool>
   </PropertyGroup>

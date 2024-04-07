@@ -1,12 +1,13 @@
 using Banner = Prog.CLI.Function.Banner;
-using Greeter = Prog.CLI.Function.Greeter;
 using Details = Prog.CLI.Function.Details;
+using Greeter = Prog.CLI.Function.Greeter;
 using Number = Prog.CLI.Function.Number;
 using Random = Prog.CLI.Function.Random;
 
 namespace Prog;
 
-internal class Functions {
+internal class Functions
+{
     private static void WaitForUser()
     {
         Console.Write("Press enter to continue ...");
@@ -14,7 +15,8 @@ internal class Functions {
         Console.WriteLine("");
     }
 
-    public static void StartProgram() {
+    public static void StartProgram()
+    {
         string[] args = Environment.GetCommandLineArgs().Skip(1).ToArray();
         Console.WriteLine("==================================");
         Console.WriteLine("");

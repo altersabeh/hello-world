@@ -35,9 +35,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Numbers.Utils.App", "Number
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factor", "modules\Numbers.Utils\Numbers.Utils.App\Factor\Factor.csproj", "{67E8ACD9-F57B-4DA0-BA82-3C3BAF185FE1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hello.Dotnet", "Hello.Dotnet", "{5AEF1456-6963-45C8-A0D2-EF0A431FFD5C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hello.CSharp", "Hello.CSharp", "{5AEF1456-6963-45C8-A0D2-EF0A431FFD5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloDotnet", "modules\Hello.Dotnet\Hello.Dotnet.App\HelloDotnet.csproj", "{599F6F5F-0B56-40E7-9184-CA3C56FA23C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloCSharp", "modules\Hello.CSharp\Hello.CSharp.App\HelloCSharp.csproj", "{599F6F5F-0B56-40E7-9184-CA3C56FA23C2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodbyeWorld", "src\Goodbye.World\GoodbyeWorld.csproj", "{6B67A01F-FD65-4F6F-9EF3-16636FD033D8}"
 EndProject

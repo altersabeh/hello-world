@@ -1,6 +1,6 @@
-# Dotnet - Hello World
+# C# - Hello World
 
-A simple **Hello World** program in dotnet.
+A simple **Hello World** program in C#.
 
 ## Programming Language
 
