@@ -12,14 +12,16 @@ use prog::cli_function::random::print_random_numbers;
 /// This function waits for the user to press the Enter key before continuing.
 ///
 /// __Example:__
+/// 
 /// ```rust
 /// use prog::functions::wait_for_user;
 /// wait_for_user();
 /// ```
 ///
 /// __Output:__
-/// ```txt
-/// Press enter to continue ...
+///
+/// ```rust
+/// "Press enter to continue ..."
 /// ```
 fn wait_for_user() {
     print!("Press enter to continue ...");
@@ -34,6 +36,7 @@ fn wait_for_user() {
 /// details, number calculations, random numbers, and a goodbye message.
 ///
 /// __Example:__
+///
 /// ```rust
 /// use prog::functions::start_program;
 /// start_program();

@@ -7,9 +7,10 @@ use crate::hello_world::print_greeting;
 ///
 /// __Arguments:__
 ///
-/// * `args: &[&str]` - The arguments passed to the program.    
+/// * `args: &[&str]` - The arguments passed to the program.
 ///
 /// __Example:__
+/// 
 /// ```rust
 /// use prog::cli_function::greeter::print_welcome_message;
 /// print_welcome_message(&["", "John", "Doe"]);
@@ -28,6 +29,7 @@ pub fn print_welcome_message(args: &[&str]) {
 /// * `args: &[&str]` - The arguments passed to the program.
 ///
 /// __Example:__
+///
 /// ```rust
 /// use prog::cli_function::greeter::print_goodbye_message;
 /// print_goodbye_message(&["", "John", "Doe"]);

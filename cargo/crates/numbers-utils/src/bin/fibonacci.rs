@@ -12,13 +12,15 @@ use numbers_utils::operations::fibonacci_utils::fibonacci;
 /// * `i32` - The number entered by the user.
 ///
 /// __Example:__
+///
 /// ```rust
 /// let number: i32 = get_user_number();
 /// println!("Number : {}", number);
 /// ```
 ///
 /// __Output:__
-/// ```txt
+///
+/// ```rust
 /// Enter a number : 5
 /// Number : 5
 /// ```
@@ -35,8 +37,16 @@ fn get_user_number() -> i32 {
 /// This function prints the fibonacci of a number.
 ///
 /// __Example:__
+///
 /// ```rust
+/// use numbers_utils::cli_function::fibonacci::print_fibonacci;
 /// print_fibonacci();
+/// ```
+/// __Output:__'
+///
+/// ```rust
+/// "Enter a number : 5"
+/// "Fib[5] = 5"
 fn print_fibonacci() {
     let args: Vec<String> = env::args().collect();
     let number = if args.len() > 1 {

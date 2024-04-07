@@ -14,6 +14,7 @@ use rand::Rng;
 /// * `BigUint` - The nth Fibonacci number.
 ///
 /// __Example:__
+///
 /// ```rust
 /// use numbers_utils::operations::fibonacci_utils::fibonacci;
 /// let fib = fibonacci(10);
@@ -21,8 +22,9 @@ use rand::Rng;
 /// ```
 ///
 /// __Output:__
-/// ```txt
-/// Fib[10] = 55
+///
+/// ```rust
+/// "Fib[10] = 55"
 /// ```
 pub fn fibonacci(num: usize) -> BigUint {
     let mut first_term = BigUint::from(0u8);
@@ -46,6 +48,7 @@ pub fn fibonacci(num: usize) -> BigUint {
 /// * `String` - The Fibonacci number of the random number.
 ///
 /// __Example:__
+/// 
 /// ```rust
 /// use numbers_utils::operations::fibonacci_utils::fibonacci_random;
 /// let fib = fibonacci_random();
@@ -53,8 +56,9 @@ pub fn fibonacci(num: usize) -> BigUint {
 /// ```
 ///
 /// __Output:__
-/// ```txt
-/// Fib[10] = 55
+///
+/// ```rust
+/// "Fib[10] = 55"
 /// ```
 pub fn fibonacci_random() -> String {
     let mut rng = rand::thread_rng();

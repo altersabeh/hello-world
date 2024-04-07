@@ -17,14 +17,16 @@ use rand::Rng;
 /// * `Vec<BigUint>` - The factors of the number `num`
 ///
 /// __Example:__
+///
 /// ```rust
 /// use numbers_utils::operations::factor_utils::factor;
 /// let factors = factor(120u32.into());
 /// println!("{:?}", factors);
 /// ```
 ///
-/// __Output:__
-/// ```txt
+/// __Output:__'
+///
+/// ```rust
 /// [1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120]
 /// ```
 pub fn factor(num: BigUint) -> Vec<BigUint> {
@@ -50,6 +52,7 @@ pub fn factor(num: BigUint) -> Vec<BigUint> {
 /// * `String` - The factors of the random number.
 ///
 /// __Example:__
+///
 /// ```rust
 /// use numbers_utils::operations::factor_utils::factor_random;
 /// let factors = factor_random();
@@ -57,8 +60,9 @@ pub fn factor(num: BigUint) -> Vec<BigUint> {
 /// ```
 ///
 /// __Output:__
-/// ```txt
-/// Factor[50] = [1, 2, 5, 10, 25, 50]
+///
+/// ```rust
+/// "Factor[50] = [1, 2, 5, 10, 25, 50]"
 /// ```
 pub fn factor_random() -> String {
     let mut rng = rand::thread_rng();
@@ -82,13 +86,17 @@ pub fn factor_random() -> String {
 /// * `Vec<BigUint>` - The prime factors of the number `num`
 ///
 /// __Example:__
-/// ```rust
 ///
+/// ```rust
+/// use numbers_utils::operations::factor_utils::prime_factor;
+/// let prime_factors = prime_factor(120u32.into());
+/// println!("{:?}", prime_factors);
 /// ```
 ///
 /// __Output:__
-/// ```txt
 ///
+/// ```rust
+/// "[2, 2, 2, 3, 5]"
 /// ```
 pub fn prime_factor(mut num: BigUint) -> Vec<BigUint> {
     if num == BigUint::zero() {
@@ -129,6 +137,7 @@ pub fn prime_factor(mut num: BigUint) -> Vec<BigUint> {
 /// * `String` - The prime factors of the random number.
 ///
 /// __Example:__
+///
 /// ```rust
 /// use numbers_utils::operations::prime_factor_utils::prime_factor_random;
 /// let prime_factors = prime_factor_random();
@@ -136,8 +145,9 @@ pub fn prime_factor(mut num: BigUint) -> Vec<BigUint> {
 /// ```
 ///
 /// __Output:__
-/// ```txt
-/// PFactor[50] = [2, 5, 5]
+///
+/// ```rust
+/// "PFactor[50] = [2, 5, 5]"
 /// ```
 pub fn prime_factor_random() -> String {
     let mut rng = rand::thread_rng();

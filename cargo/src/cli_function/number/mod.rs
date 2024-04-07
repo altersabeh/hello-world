@@ -14,6 +14,7 @@ use mathematics::fibonacci_utils::fibonacci;
 /// * `i32` - The number entered by the user.
 ///
 /// __Example:__
+///
 /// ```rust
 /// use prog::cli_function::number::get_user_number;
 /// let number = get_user_number();
@@ -21,9 +22,10 @@ use mathematics::fibonacci_utils::fibonacci;
 /// ```
 ///
 /// __Output:__
-/// ```txt
-/// Enter a number : 5
-/// Number : 5
+///
+/// ```rust
+/// "Enter a number : 5"
+/// "Number : 5"
 /// ```
 fn get_user_number() -> i32 {
     print!("Enter a number : ");
@@ -39,16 +41,18 @@ fn get_user_number() -> i32 {
 /// Factorial of the number by calling `fibonacci` and `factorial` functions.
 ///
 /// __Example:__
+///
 /// ```rust
 /// use prog::cli_function::number::print_number_calculations;
 /// print_number_calculations();
 /// ```
 ///
 /// __Output:__
-/// ```txt
-/// Enter a number : 5
-/// Fib[5] = 5
-/// Fact[5] = 120
+///
+/// ```rust
+/// "Enter a number : 5"
+/// "Fib[5] = 5"
+/// "Fact[5] = 120"
 /// ```
 pub fn print_number_calculations() {
     let number = get_user_number();

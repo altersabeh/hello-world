@@ -12,15 +12,17 @@ use numbers_utils::operations::factorial_utils::factorial;
 /// * `i32` - The number entered by the user.
 ///
 /// __Example:__
+///
 /// ```rust
 /// let number: i32 = get_user_number();
 /// println!("Number : {}", number);
 /// ```
 ///
 /// __Output:__
-/// ```txt
-/// Enter a number : 5
-/// Number : 5
+///
+/// ```rust
+/// "Enter a number : 5"
+/// "Number : 5"
 /// ```
 fn get_user_number() -> i32 {
     print!("Enter a number : ");
@@ -35,9 +37,17 @@ fn get_user_number() -> i32 {
 /// This function prints the factorial of a number.
 ///
 /// __Example:__
+///
 /// ```rust
 /// use numbers_utils::cli_function::factorial::print_factorial;
 /// print_factorial();
+/// ```
+///
+/// __Output:__'
+///
+/// ```rust
+/// "Enter a number : 5"
+/// "Fact[5] = 120"
 fn print_factorial() {
     let args: Vec<String> = env::args().collect();
     let number = if args.len() > 1 {

@@ -48,6 +48,7 @@ fn greetings_from_translations() -> HashMap<&'static str, &'static str> {
 /// * `String` - The translated greeting.
 ///
 /// __Example:__
+///
 /// ```rust
 /// use translator::translate;
 /// let name = "Alice";
@@ -57,8 +58,9 @@ fn greetings_from_translations() -> HashMap<&'static str, &'static str> {
 /// ```
 ///
 /// __Output:__
-/// ```txt
-/// Bonjour Alice, salutations de Cargo !
+///
+/// ```rust
+/// "Bonjour Alice, salutations de Cargo !"
 /// ```
 pub fn translate(language: &str, name: &str) -> String {
     let binding = hello_translations();

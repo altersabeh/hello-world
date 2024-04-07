@@ -17,14 +17,16 @@ use translator::translate;
 /// * `String` - The name of the user.
 ///
 /// __Example:__
+///
 /// ```rust
 /// use prog::cli_function::details::get_user_name;
 /// let name = get_user_name(&["John", "Doe"]);
 /// ```
 ///
-/// __Output:__
-/// ```txt
-/// John Doe
+/// __Output:__'
+///
+/// ```rust
+/// "John Doe"
 /// ```
 fn get_user_name(args: &[&str]) -> String {
     if args.len() <= 1 {
@@ -51,13 +53,15 @@ fn get_user_name(args: &[&str]) -> String {
 /// * `String` - The language of the user.
 ///
 /// __Example:__
+///
 /// ```rust
 /// use prog::cli_function::details::get_user_language;
 /// let language = get_user_language();
 /// ```
 /// __Output:__
-/// ```txt
-/// Please enter your language : English
+///
+/// ```rust
+/// "Please enter your language : English"
 /// ```
 fn get_user_language() -> String {
     print!("Please enter your language : ");
@@ -80,6 +84,7 @@ fn get_user_language() -> String {
 /// * `args: &[&str]` - The command line arguments.
 ///
 /// __Example:__
+///
 /// ```rust
 /// use prog::cli_function::details::print_user_details;
 /// print_user_details(&["John", "Doe"]);

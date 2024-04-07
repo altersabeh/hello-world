@@ -9,13 +9,15 @@ use mathematics::fibonacci_utils::fibonacci_random;
 /// by calling the `fibonacciRandom` and `factorialRandom` functions.
 ///
 /// __Example:__
+///
 /// ```rust
 /// use prog::cli_function::random::print_random_numbers;
 /// print_random_numbers();
 /// ```
 ///
-/// __Output:__
-/// ```txt
+/// __Output:__'
+///
+/// ```rust
 /// Some random numbers :
 /// Fib[5] = 5
 /// Fact[5] = 120

@@ -17,15 +17,17 @@ use numbers_utils::operations::factor_utils::{factor, prime_factor};
 /// * `BigUint` - The number entered by the user.
 ///
 /// __Example:__
+///
 /// ```rust
 /// let number: BigUint = get_user_number();
 /// println!("Number : {}", number);
 /// ```
 ///
-/// __Output:__
-/// ```txt
-/// Enter a number : 5
-/// Number : 5
+/// __Output:__'
+///
+/// ```rust
+/// "Enter a number : 5"
+/// "Number : 5"
 /// ```
 fn get_user_number() -> BigUint {
     print!("Enter a number : ");
@@ -64,14 +66,16 @@ fn get_number() -> BigUint {
 /// * `number: BigUint` - The number to factor.
 ///
 /// __Example:__
+///
 /// ```rust
 /// let number: BigUint = 5;
 /// print_factor(number);
 /// ```
 ///
-/// __Output:__
-/// ```txt
-/// Factor[60] = [1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60]
+/// __Output:__'
+///
+/// ```rust
+/// "Factor[60] = [1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60]"
 /// ```
 fn print_factor(number: BigUint) {
     let factors = factor(number.clone());
@@ -88,14 +92,16 @@ fn print_factor(number: BigUint) {
 /// * `number: BigUint` - The number to factor.
 ///
 /// __Example:__
+///
 /// ```rust
 /// let number: BigUint = 5;
 /// print_prime_factor(number);
 /// ```
 ///
 /// __Output:__
-/// ```txt
-/// PFactor[60] = [2, 2, 3, 5]
+///
+/// ```rust
+/// "PFactor[60] = [2, 2, 3, 5]"
 /// ```
 fn print_prime_factor(number: BigUint) {
     let prime_factors = prime_factor(number.clone());

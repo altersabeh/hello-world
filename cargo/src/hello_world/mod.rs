@@ -9,13 +9,15 @@ use chrono::{DateTime, Local};
 /// * `GREETING: &str` - A string containing a greeting message.
 ///
 /// __Example:__
+///
 /// ```rust
 /// use prog::hello_world::print_greeting;
 /// println!("{}", GREETING); // "Hello, Cargo's Here !"
 /// ```
 ///
-/// __Output:__
-/// ```txt
+/// __Output:__'
+///
+/// ```rust
 /// Hello, Cargo's Here !
 /// ```
 pub const GREETING: &str = "Hello, Cargo's Here !";
@@ -35,14 +37,16 @@ pub const GREETING: &str = "Hello, Cargo's Here !";
 /// * `String` - A string containing the greeting message.
 ///
 /// __Example:__
+///
 /// ```rust
 /// use prog::hello_world::print_greeting;
 /// println!("{}", print_greeting(&[]));
 /// println!("{}", print_greeting(&["", "John", "Doe"]));
 /// ```
 ///
-/// __Output:__
-/// ```txt
+/// __Output:__'
+///
+/// ```rust
 /// Hello World from Cargo !
 /// Hello John Doe from Cargo !
 /// ```
@@ -63,14 +67,16 @@ pub fn print_greeting(args: &[&str]) -> String {
 /// * `String` - A string containing the current date and time.
 ///
 /// __Example:__
+///
 /// ```rust
 /// use prog::hello_world::print_date;
 /// println!("{}", print_date());
 /// ```
 ///
 /// __Output:__
-/// ```txt
-/// Today is May 15, 2015 at 08:05 AM
+///
+/// ```rust
+/// "Today is May 15, 2015 at 08:05 AM"
 /// ```
 pub fn print_date() -> String {
     let current_date: DateTime<Local> = Local::now();

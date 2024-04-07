@@ -12,6 +12,7 @@
 /// * `String` - A goodbye message.
 ///
 /// __Example:__
+///
 /// ```rust
 /// use prog::goodbye_world::print_goodbye;
 /// println!("{}", print_goodbye(&["", "John", "Doe"]));
@@ -19,9 +20,10 @@
 /// ```
 ///
 /// __Output:__
-/// ```txt
-/// Goodbye John Doe from Cargo !
-/// Goodbye World from Cargo !
+///
+/// ```rust
+/// "Goodbye John Doe from Cargo !"
+/// "Goodbye World from Cargo !"
 /// ```
 pub fn print_goodbye(args: &[&str]) -> String {
     if args.len() > 1 {
@@ -41,6 +43,7 @@ pub fn print_goodbye(args: &[&str]) -> String {
 /// `&'static str` - A banner as a string.
 ///
 /// __Example:__
+///
 /// ```rust
 /// use goodbye_world::print_banner;
 /// println!("{}", print_banner());

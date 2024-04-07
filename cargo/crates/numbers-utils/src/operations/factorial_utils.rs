@@ -15,6 +15,7 @@ use rand::Rng;
 /// * `BigUint` - The factorial of the number `num`.
 ///
 /// __Example:__
+/// 
 /// ```rust
 /// use numbers_utils::operations::factorial_utils::factorial;
 /// let fact = factorial(5);
@@ -22,8 +23,9 @@ use rand::Rng;
 /// ```
 ///
 /// __Output:__
-/// ```txt
-/// 5! = 120
+///
+/// ```rust
+/// "5! = 120"
 /// ```
 pub fn factorial(num: usize) -> BigUint {
     let mut fact = BigUint::from(1u8);
@@ -44,6 +46,7 @@ pub fn factorial(num: usize) -> BigUint {
 /// * `String` - The factorial of the random number.
 ///
 /// __Example:__
+///
 /// ```rust
 /// use numbers_utils::operations::factorial_utils::factorial_random;
 /// let fact = factorial_random();
@@ -51,8 +54,9 @@ pub fn factorial(num: usize) -> BigUint {
 /// ```
 ///
 /// __Output:__
-/// ```txt
-/// Fact[5] = 120
+///
+/// ```rust
+/// "Fact[5] = 120"
 /// ```
 pub fn factorial_random() -> String {
     let mut rng = rand::thread_rng();
