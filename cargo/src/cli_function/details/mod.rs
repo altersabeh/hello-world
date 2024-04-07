@@ -2,7 +2,6 @@ use crate::hello_world::print_date;
 
 use std::io;
 use std::io::Write;
-
 use translator::translate;
 
 fn get_user_name(args: &[&str]) -> String {
