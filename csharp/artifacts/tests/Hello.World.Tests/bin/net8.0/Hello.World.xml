@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hello.World</name>
+    </assembly>
+    <members>
+        <member name="F:Hello.World.HelloWorld.GREETING">
+             <summary> A constant string that contains a greeting message.
+             <br></br>
+             <br><b>Example:</b></br>
+             <code>
+             using Hello.World;
+            
+             Console.WriteLine(HelloWorld.GREETING) // Hello, .NET's Here !</code>
+             <b>Output:</b>
+             <code>
+             "Hello, .Net's Here" </code>
+             </summary>
+        </member>
+        <member name="M:Hello.World.HelloWorld.PrintGreeting(System.String[])">
+             <summary> This function prints a greeting.  It takes a list of strings
+             as an argument. If the list is empty, it prints a default
+             greeting.Otherwise, it prints a personalized greeting using the strings
+             in the list.
+             <br></br> <br><b>Signature:</b></br>
+             <code>
+             public static string PrintGreeting(string[] args) </code>
+             <br><b>Example:</b></br>
+             <code>
+             using Hello.World;
+            
+             public class Program
+             {
+                 public static void Main(string[] args)
+                 {
+                     Console.WriteLine(PrintGreeting(args));
+                     Console.WriteLine(PrintGreeting(["John", "Doe"]));
+                 }
+             } </code>
+             <b>Output:</b>
+             <code>
+             "Hello World from .NET !"
+             "Hi John Doe, greetings from .NET !" </code>
+             </summary>
+        </member>
+    </members>
+</doc>

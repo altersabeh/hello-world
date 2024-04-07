@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CLIFunctions/1.0.0": {
+        "dependencies": {
+          "GoodbyeWorld": "1.0.0",
+          "HelloWorld": "1.0.0"
+        },
+        "runtime": {
+          "CLIFunctions.dll": {}
+        }
+      },
+      "GoodbyeWorld/1.0.0": {
+        "runtime": {
+          "GoodbyeWorld.dll": {}
+        }
+      },
+      "HelloWorld/1.0.0": {
+        "runtime": {
+          "HelloWorld.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CLIFunctions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GoodbyeWorld/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HelloWorld/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

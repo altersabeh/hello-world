@@ -4,19 +4,19 @@
             "path": "."
         },
         {
-            "path": "./cabal"
+            "path": "./csharp"
         },
         {
-            "path": "./cargo"
+            "path": "./haskell"
         },
         {
-            "path": "./dotnet"
+            "path": "./kotlin"
         },
         {
-            "path": "./gradle"
+            "path": "./rust"
         },
         {
-            "path": "./swiftpm"
+            "path": "./swift"
         }
     ],
     "settings": {}

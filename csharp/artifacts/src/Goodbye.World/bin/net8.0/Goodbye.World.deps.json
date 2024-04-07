@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Goodbye.World/1.0.0": {
+        "runtime": {
+          "Goodbye.World.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Goodbye.World/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
