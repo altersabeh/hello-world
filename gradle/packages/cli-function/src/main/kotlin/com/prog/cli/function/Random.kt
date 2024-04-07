@@ -4,6 +4,11 @@ import com.prog.numbers.utils.operations.FactorialUtils.factorialRandom
 import com.prog.numbers.utils.operations.FibonacciUtils.fibonacciRandom
 
 object Random {
+    /**
+     * # `main`
+     *
+     * This function is entry point of the application.
+     */
     @JvmStatic
     fun main(args: Array<String>) {
         println("===================================================")
@@ -11,6 +16,12 @@ object Random {
         println("===================================================")
     }
 
+    /**
+     * # `printRandomNumbers`
+     *
+     * This function prints random fibonacci and factorial by calling the
+     * `fibonacciRandom` and `factorialRandom` functions respectively.
+     */
     fun printRandomNumbers() {
         println(fibonacciRandom())
         println(factorialRandom())
