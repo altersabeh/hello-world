@@ -31,7 +31,7 @@ repository.workspace = true
 homepage.workspace = true
 edition.workspace = true
 keywords.workspace = true
-default-run = "cargo-hello"
+default-run = "rust-hello"
 
 [lib]
 path = "src/lib.rs"
@@ -39,7 +39,7 @@ doctest = false
 test = false
 
 [[bin]]
-name = "cargo-hello"
+name = "rust-hello"
 path = "src/main.rs"
 test = false
 

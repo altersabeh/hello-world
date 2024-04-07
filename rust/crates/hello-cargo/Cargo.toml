@@ -1,5 +1,5 @@
 [package]
-name = "hello-cargo"
+name = "hello-rust"
 version.workspace = true
 license.workspace = true
 repository.workspace = true
@@ -9,7 +9,7 @@ edition.workspace = true
 keywords.workspace = true
 
 [[bin]]
-name = "hello-cargo"
+name = "hello-rust"
 test = false
 
 [dependencies]

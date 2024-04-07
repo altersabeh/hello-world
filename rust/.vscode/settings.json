@@ -5,6 +5,6 @@
     },
     "files.watcherExclude": {
         "**/.vscode": true,
-        "**/target": true,
-    },
+        "**/target": true
+    }
 }

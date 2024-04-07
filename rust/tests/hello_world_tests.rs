@@ -22,7 +22,7 @@ fn format_error_message(expected: &str, actual: &str) -> colored::ColoredString 
 #[test]
 fn print_greeting_without_name_test() {
     let args = vec![];
-    let expected_output = "Hello World from Cargo !";
+    let expected_output = "Hello World from Rust !";
     let actual_output = print_greeting(&args);
     let error_message = format_error_message(&expected_output, &actual_output);
     assert_eq!(expected_output, actual_output, "{}", error_message);
@@ -34,7 +34,7 @@ fn print_greeting_without_name_test() {
 #[test]
 fn print_greeting_with_name_test() {
     let args = vec!["", "Alter", "Sabeh"];
-    let expected_output = "Hello Alter Sabeh from Cargo !";
+    let expected_output = "Hello Alter Sabeh from Rust !";
     let actual_output = print_greeting(&args);
     let error_message = format_error_message(&expected_output, &actual_output);
     assert_eq!(expected_output, actual_output, "{}", error_message);
@@ -58,7 +58,7 @@ fn print_date_test() {
 /// This function tests the `GREETING` constant.
 #[test]
 fn print_greet_test() {
-    let expected_output = "Hello, Cargo's Here!";
+    let expected_output = "Hello, Rust's Here!";
     let actual_output = GREETING;
     let error_message = format_error_message(&expected_output, &actual_output);
     assert_ne!(expected_output, actual_output, "{}", error_message);

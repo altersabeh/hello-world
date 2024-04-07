@@ -1,10 +1,10 @@
-# Cargo - Hello World
+# Rust - Hello World
 
-A simple **Hello World** program in Cargo.
+A simple **Hello World** program in Rust.
 
-## Programming Language
+## Build Tool
 
--           Rust
+- `cargo`
 
 ## Creating a new Cargo project
 
@@ -36,7 +36,7 @@ command:
 ## Project Structure
 
 ```plaintext
-cargo-hello
+rust-hello
 ├──── .cargo
 │     └──── config.toml
 ├──── crates
@@ -45,7 +45,7 @@ cargo-hello
 │     │     │     └──── custom
 │     │     │           └──── date_today.rs
 │     │     └──── Cargo.toml
-│     ├──── hello-cargo
+│     ├──── hello-rust
 │     │     ├──── src
 │     │     │     └──── main.rs
 │     │     └──── Cargo.toml
@@ -129,7 +129,7 @@ cargo-hello
 │     │     ├──── examples
 │     │     │     └──── ...
 │     │     ├──── incremental
-│     │     │     ├──── cargo_hello
+│     │     │     ├──── hello_rust
 │     │     │     │     └──── ...
 │     │     │     └──── ...
 │     │     └──── ...

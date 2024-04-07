@@ -60,7 +60,7 @@ fn greetings_from_translations() -> HashMap<&'static str, &'static str> {
 /// __Output:__
 ///
 /// ```rust
-/// "Bonjour Alice, salutations de Cargo !"
+/// "Bonjour Alice, salutations de Rust !"
 /// ```
 pub fn translate(language: &str, name: &str) -> String {
     let binding = hello_translations();
@@ -69,7 +69,7 @@ pub fn translate(language: &str, name: &str) -> String {
     let greetings_from = binding.get(language);
 
     match (greeting, greetings_from) {
-        (Some(g), Some(gf)) => format!("{} {}, {} Cargo !", g, name, gf),
-        _ => format!("Hi {}, greetings from Cargo !", name),
+        (Some(g), Some(gf)) => format!("{} {}, {} Rust !", g, name, gf),
+        _ => format!("Hi {}, greetings from Rust !", name),
     }
 }

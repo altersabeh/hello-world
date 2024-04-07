@@ -22,14 +22,14 @@
 /// __Output:__
 ///
 /// ```rust
-/// "Goodbye John Doe from Cargo !"
-/// "Goodbye World from Cargo !"
+/// "Goodbye John Doe from Rust !"
+/// "Goodbye World from Rust !"
 /// ```
 pub fn print_goodbye(args: &[&str]) -> String {
     if args.len() > 1 {
-        format!("Goodbye {} from Cargo !", args[1..].join(" "))
+        format!("Goodbye {} from Rust !", args[1..].join(" "))
     } else {
-        "Goodbye World from Cargo !".to_string()
+        "Goodbye World from Rust !".to_string()
     }
 }
 

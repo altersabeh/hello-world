@@ -12,15 +12,15 @@ use chrono::{DateTime, Local};
 ///
 /// ```rust
 /// use prog::hello_world::print_greeting;
-/// println!("{}", GREETING); // "Hello, Cargo's Here !"
+/// println!("{}", GREETING); // "Hello, Rust's Here !"
 /// ```
 ///
 /// __Output:__'
 ///
 /// ```rust
-/// Hello, Cargo's Here !
+/// Hello, Rust's Here !
 /// ```
-pub const GREETING: &str = "Hello, Cargo's Here !";
+pub const GREETING: &str = "Hello, Rust's Here !";
 
 /// # `print_greeting`
 /// This function prints a greeting. It takes a list of strings as an argument.
@@ -47,14 +47,14 @@ pub const GREETING: &str = "Hello, Cargo's Here !";
 /// __Output:__'
 ///
 /// ```rust
-/// Hello World from Cargo !
-/// Hello John Doe from Cargo !
+/// Hello World from Rust !
+/// Hello John Doe from Rust !
 /// ```
 pub fn print_greeting(args: &[&str]) -> String {
     if args.len() > 1 {
-        format!("Hello {} from Cargo !", args[1..].join(" "))
+        format!("Hello {} from Rust !", args[1..].join(" "))
     } else {
-        "Hello World from Cargo !".to_string()
+        "Hello World from Rust !".to_string()
     }
 }
 

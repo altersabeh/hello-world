@@ -31,13 +31,13 @@ fn format_error_message(expected: &str, actual: &str) -> colored::ColoredString 
 #[rstest(
     lang,
     expected_output,
-    case::english("English", "Hi Alter Sabeh, greetings from Cargo !"),
-    case::french("French", "Bonjour Alter Sabeh, salutations de Cargo !"),
-    case::spanish("Spanish", "Hola Alter Sabeh, saludos desde Cargo !"),
-    case::german("German", "Hallo Alter Sabeh, grüße aus Cargo !"),
-    case::italian("Italian", "Ciao Alter Sabeh, saluti da Cargo !"),
-    case::dutch("Dutch", "Hallo Alter Sabeh, groeten uit Cargo !"),
-    case::unknown("Unknown", "Hi Alter Sabeh, greetings from Cargo !")
+    case::english("English", "Hi Alter Sabeh, greetings from Rust !"),
+    case::french("French", "Bonjour Alter Sabeh, salutations de Rust !"),
+    case::spanish("Spanish", "Hola Alter Sabeh, saludos desde Rust !"),
+    case::german("German", "Hallo Alter Sabeh, grüße aus Rust !"),
+    case::italian("Italian", "Ciao Alter Sabeh, saluti da Rust !"),
+    case::dutch("Dutch", "Hallo Alter Sabeh, groeten uit Rust !"),
+    case::unknown("Unknown", "Hi Alter Sabeh, greetings from Rust !")
 )]
 fn test_translate(lang: &str, expected_output: &str) {
     let name = "Alter Sabeh";
