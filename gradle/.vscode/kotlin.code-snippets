@@ -1,0 +1,33 @@
+{
+    "Kotlin Docs": {
+        "prefix": "kdoc",
+        "body": [
+            "/**",
+            " * # `$1`",
+            " * ",
+            " * $2",
+            " * ",
+            " * __Arguments:__",
+            " * ",
+            " * `$3`",
+            " * ",
+            " * __Return:__",
+            " * ",
+            " * `$4`",
+            " * ",
+            " * __Example:__",
+            " * ",
+            " * ```kotlin",
+            " * $5",
+            " * ```",
+            " * ",
+            " * __Output:__",
+            " * ",
+            " * ```kotlin",
+            " * \"$6\"",
+            " * ```",
+            " */",
+        ],
+        "description": "Documentation template for Kotlin"
+    }
+}
