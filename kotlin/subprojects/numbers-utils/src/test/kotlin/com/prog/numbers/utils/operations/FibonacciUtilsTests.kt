@@ -44,9 +44,9 @@ class FibonacciUtilsTests {
      */
     @Test
     fun `fibonacci test`() {
-        val n = 100
+        val num = 100
         val expectedOutput = BigInteger("354224848179261915075")
-        val actualOutput = FibonacciUtils.fibonacci(n)
+        val actualOutput = FibonacciUtils.fibonacci(num)
         val errorMessage = formatErrorMessage(expectedOutput, actualOutput)
         assertEquals(expectedOutput, actualOutput, errorMessage)
     }
