@@ -11,6 +11,19 @@ import Test.Tasty.HUnit (assertBool, assertEqual, testCase)
 
 import Numbers.Utils.Operations.FibonacciUtils (fibonacci, fibonacciRandom)
 
+-- |
+-- = @formatErrorMessage@
+--
+-- The function @formatErrorMessage@ is used to format the error message.
+--
+-- __Arguments:__
+--
+-- * @expected: String@ - The expected output.
+-- * @actual: String@ - The actual output.
+--
+-- __Return:__
+--
+-- * @IO String@ - The formatted error message.
 formatErrorMessage :: String -> String -> IO String
 formatErrorMessage expected actual = do
     now <- getCurrentTime >>= utcToLocalZonedTime
@@ -23,14 +36,22 @@ formatErrorMessage expected actual = do
             ++ actual
             ++ "\n"
 
+-- |
+-- = @fibonacciTest@
+--
+-- The function @fibonacciTest@ is used to test the @fibonacci@ function.
 fibonacciTest :: TestTree
 fibonacciTest = testCase "Fibonacci" $ do
-    let n = 100
+    let num = 100
     let expectedOutput = read "354224848179261915075" :: Integer
-    let actualOutput = fibonacci n
+    let actualOutput = fibonacci num
     errorMessage <- formatErrorMessage (show expectedOutput) (show actualOutput)
     assertEqual errorMessage expectedOutput actualOutput
 
+-- |
+-- = @fibonacciRandomTest@
+--
+-- The function @fibonacciRandomTest@ is used to test the @fibonacciRandom@
 fibonacciRandomTest :: TestTree
 fibonacciRandomTest = testCase "Fibonacci Random Test" $ do
     result <- fibonacciRandom

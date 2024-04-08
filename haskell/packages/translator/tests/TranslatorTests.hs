@@ -9,6 +9,19 @@ import Test.Tasty.HUnit (assertBool, testCase)
 
 import Translator (translate)
 
+-- |
+-- = @formatErrorMessage@
+--
+-- The function @formatErrorMessage@ is used to format the error message.
+--
+-- __Arguments:__
+--
+-- * @expected: String@ - The expected output.
+-- * @actual: String@ - The actual output.
+--
+-- __Return:__
+--
+-- * @IO String@ - The formatted error message.
 formatErrorMessage :: String -> String -> IO String
 formatErrorMessage expected actual = do
     now <- getCurrentTime >>= utcToLocalZonedTime
@@ -21,6 +34,11 @@ formatErrorMessage expected actual = do
             ++ actual
             ++ "\n"
 
+-- |
+-- = @translateTests@
+--
+-- The @translateTests@ function contains the tests for the @translate@
+-- function.
 translateTests :: TestTree
 translateTests =
     let name = "Alter Sabeh"
@@ -43,8 +61,16 @@ translateTests =
                 )
                 languages
 
+-- |
+-- = @tests@
+--
+-- This function contains the tests to be run.
 tests :: TestTree
 tests = testGroup "Translator Tests" [translateTests]
 
+-- |
+-- = @main@
+--
+-- The @main@ function is the entrypoint of the program.
 main :: IO ()
 main = defaultMain tests

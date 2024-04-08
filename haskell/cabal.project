@@ -5,4 +5,7 @@ packages:
 test-show-details: direct
 
 program-options
-  ghc-options: -haddock
+  ghc-options: 
+    -haddock
+    -split-sections
+    -O3

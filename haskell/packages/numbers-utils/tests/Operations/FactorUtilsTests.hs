@@ -19,6 +19,19 @@ import Numbers.Utils.Operations.FactorUtils
     , primeFactorRandom
     )
 
+-- |
+-- = @formatErrorMessage@
+--
+-- The function @formatErrorMessage@ is used to format the error message.
+--
+-- __Arguments:__
+--
+-- * @expected: String@ - The expected output.
+-- * @actual: String@ - The actual output.
+--
+-- __Return:__
+--
+-- * @IO String@ - The formatted error message.
 formatErrorMessage :: Show a => [a] -> [a] -> IO String
 formatErrorMessage expected actual = do
     now <- getCurrentTime >>= utcToLocalZonedTime
@@ -31,6 +44,10 @@ formatErrorMessage expected actual = do
             ++ show actual
             ++ "\n"
 
+-- |
+-- = @factorTest@
+--
+-- The function @factorTest@ is used to test the @factor@ function.
 factorTest :: TestTree
 factorTest = testCase "Factor Test" $ do
     let number = 60
@@ -39,6 +56,10 @@ factorTest = testCase "Factor Test" $ do
     errorMessage <- formatErrorMessage expectedOutput actualOutput
     assertEqual errorMessage expectedOutput actualOutput
 
+-- |
+-- = @factorRandomTest@
+--
+-- The function @factorRandomTest@ is used to test the @factorRandom@ function.
 factorRandomTest :: TestTree
 factorRandomTest = testCase "Factor Random Test" $ do
     result <- factorRandom
@@ -47,6 +68,10 @@ factorRandomTest = testCase "Factor Random Test" $ do
     assertBool errorMessage (startString `isPrefixOf` result)
     assertBool errorMessage (" = " `isInfixOf` result)
 
+-- |
+-- = @primeFactorTest@
+--
+-- The function @primeFactorTest@ is used to test the @primeFactor@ function.
 primeFactorTest :: TestTree
 primeFactorTest = testCase "Prime Factor Test" $ do
     let number = 60
@@ -55,6 +80,11 @@ primeFactorTest = testCase "Prime Factor Test" $ do
     errorMessage <- formatErrorMessage expectedOutput actualOutput
     assertEqual errorMessage expectedOutput actualOutput
 
+-- |
+-- = @primeFactorRandomTest@
+--
+-- The function @primeFactorRandomTest@ is used to test the @primeFactorRandom@
+-- function.
 primeFactorRandomTest :: TestTree
 primeFactorRandomTest = testCase "Prime Factor Random Test" $ do
     result <- primeFactorRandom

@@ -11,6 +11,19 @@ import Test.Tasty.HUnit (assertBool, assertEqual, testCase)
 
 import Numbers.Utils.Operations.FactorialUtils (factorial, factorialRandom)
 
+-- |
+-- = @formatErrorMessage@
+--
+-- The function @formatErrorMessage@ is used to format the error message.
+--
+-- __Arguments:__
+--
+-- * @expected: String@ - The expected output.
+-- * @actual: String@ - The actual output.
+--
+-- __Return:__
+--
+-- * @IO String@ - The formatted error message.
 formatErrorMessage :: String -> String -> IO String
 formatErrorMessage expected actual = do
     now <- getCurrentTime >>= utcToLocalZonedTime
@@ -23,17 +36,26 @@ formatErrorMessage expected actual = do
             ++ actual
             ++ "\n"
 
+-- |
+-- = @factorialTest@
+--
+-- The function @factorialTest@ is used to test the @factorial@ function.
 factorialTest :: TestTree
 factorialTest = testCase "Factorial" $ do
-    let n = 75
+    let num = 75
     let expectedOutput =
             read
                 "24809140811395398091946477116594033660926243886570122837795894512655842677572867409443815424000000000000000000"
                 :: Integer
-    let actualOutput = factorial n
+    let actualOutput = factorial num
     errorMessage <- formatErrorMessage (show expectedOutput) (show actualOutput)
     assertEqual errorMessage expectedOutput actualOutput
 
+-- |
+-- = @factorialRandomTest@
+--
+-- The function @factorialRandomTest@ is used to test the @factorialRandom@
+-- function.
 factorialRandomTest :: TestTree
 factorialRandomTest = testCase "Factorial Random Test" $ do
     result <- factorialRandom

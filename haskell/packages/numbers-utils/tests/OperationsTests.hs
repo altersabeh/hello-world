@@ -13,6 +13,10 @@ import Operations.FactorUtilsTests
 import Operations.FactorialUtilsTests (factorialRandomTest, factorialTest)
 import Operations.FibonacciUtilsTests (fibonacciRandomTest, fibonacciTest)
 
+-- |
+-- = @test@
+--
+-- This function contains the tests to be run
 tests :: TestTree
 tests =
     testGroup
@@ -27,5 +31,9 @@ tests =
         , primeFactorRandomTest
         ]
 
+-- |
+-- = @main@
+--
+-- The @main@ function is the entrypoint of the program
 main :: IO ()
 main = defaultMain tests
