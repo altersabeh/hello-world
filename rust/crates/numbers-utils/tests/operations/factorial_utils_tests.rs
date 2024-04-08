@@ -31,9 +31,9 @@ fn format_error_message(expected: &BigUint, actual: &BigUint) -> colored::Colore
 /// This function tests the `factorial` function.
 #[test]
 fn factorial_test() {
-    let n = 75;
+    let num = 75;
     let expected_output = BigUint::parse_bytes(b"24809140811395398091946477116594033660926243886570122837795894512655842677572867409443815424000000000000000000", 10).unwrap();
-    let actual_output = factorial(n);
+    let actual_output = factorial(num);
     let error_message = format_error_message(&expected_output, &actual_output);
     assert_eq!(expected_output, actual_output, "{}", error_message);
 }

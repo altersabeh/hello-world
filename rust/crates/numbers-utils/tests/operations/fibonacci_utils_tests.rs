@@ -31,9 +31,9 @@ fn format_error_message(expected: &BigUint, actual: &BigUint) -> colored::Colore
 /// This function tests the `fibonacci` function.
 #[test]
 fn fibonacci_test() {
-    let n = 100;
+    let num = 100;
     let expected_output = BigUint::parse_bytes(b"354224848179261915075", 10).unwrap();
-    let actual_output = fibonacci(n);
+    let actual_output = fibonacci(num);
     let error_message = format_error_message(&expected_output, &actual_output);
     assert_eq!(expected_output, actual_output, "{}", error_message);
 }
