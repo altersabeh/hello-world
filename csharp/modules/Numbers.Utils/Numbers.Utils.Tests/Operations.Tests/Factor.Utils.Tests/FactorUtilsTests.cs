@@ -33,8 +33,8 @@ public class FactorUtilsTests
     }
 
     /// <summary> <h1><c>FactorTest</c></h1>
-    /// <br/><br/>This method is used to test the Factor method of
-    /// FactorUtils.<br/><br/>
+    /// <br/><br/>This method is used to test the <c>Factor</c> method of
+    /// <c>FactorUtils</c>.<br/><br/>
     /// </summary>
     [Test]
     public void FactorTest()
@@ -46,8 +46,8 @@ public class FactorUtilsTests
     }
 
     /// <summary> <h1><c>FactorRandomTest</c></h1>
-    /// <br/><br/>This method is used to test the FactorRandom method of
-    /// FactorUtils.<br/><br/>
+    /// <br/><br/>This method is used to test the <c>FactorRandom</c> method of
+    /// <c>FactorUtils</c>.<br/><br/>
     /// </summary>
     [Test]
     public void FactorRandomTest()
@@ -63,8 +63,8 @@ public class FactorUtilsTests
     }
 
     /// <summary> <h1><c>PrimeFactorTest</c></h1>
-    /// <br/><br/>This method is used to test the PrimeFactor method of
-    /// FactorUtils.<br/><br/>
+    /// <br/><br/>This method is used to test the <c>PrimeFactor</c> method of
+    /// <c>FactorUtils</c>.<br/><br/>
     /// </summary>
     [Test]
     public void PrimeFactorTest()
@@ -77,8 +77,8 @@ public class FactorUtilsTests
     }
 
     /// <summary> <h1><c>PrimeFactorRandomTest</c></h1>
-    /// <br/><br/>This method is used to test the PrimeFactorRandom method of
-    /// FactorUtils.<br/><br/>
+    /// <br/><br/>This method is used to test the <c>PrimeFactorRandom</c>
+    /// method of <c>FactorUtils</c>.<br/><br/>
     /// </summary>
     [Test]
     public void PrimeFactorRandomTest()

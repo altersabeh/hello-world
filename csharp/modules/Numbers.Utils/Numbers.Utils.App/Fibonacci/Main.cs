@@ -23,12 +23,12 @@ public class Fibonacci
     /// Console.WriteLine(number);</code>
     ///
     /// <b>Output:</b>
-    /// 
+    ///
     /// <code>
     /// "Enter a number : 10"
     /// "Number : 10"</code>
     /// </summary>
-    public static int GetUserNumber()
+    private static int GetUserNumber()
     {
         Console.Write("Enter a number : ");
         string? numberStr = Console.ReadLine();
@@ -44,7 +44,7 @@ public class Fibonacci
     /// using Prog.Numbers.Utils.App;
     /// Factorial.PrintFactorial();</code>
     /// </summary>
-    public static void PrintFactorial()
+    private static void PrintFactorial()
     {
         string[] args = Environment.GetCommandLineArgs();
         int number = args.Length > 1 ? int.Parse(args[1]) : GetUserNumber();

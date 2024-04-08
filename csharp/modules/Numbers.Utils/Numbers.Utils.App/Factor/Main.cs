@@ -69,18 +69,47 @@ public class Factor
         }
     }
 
+    /// <summary> <h1><c>PrintFactor</c></h1>
+    /// <br/><br/>This method is used to print the factors of a
+    /// number.<br/><br/>
+    ///
+    /// <b>Arguments:</b>
+    ///
+    /// <list type="bullet">
+    /// <item>
+    /// <c>number: BigInteger</c> - The number for which the factors are to be
+    /// printed.
+    /// </item>
+    /// </list>
+    /// </summary>
     private static void PrintFactor(BigInteger number)
     {
         var factors = FactorUtils.Factor(number);
         Console.WriteLine($"Factor[{number}] = [{string.Join(", ", factors)}]");
     }
 
+    /// <summary> <h1><c>PrintPrimeFactor</c></h1>
+    /// <br/><br/>This method is used to print the prime factors of a
+    /// number.<br/><br/>
+    ///
+    /// <b>Arguments:</b>
+    ///
+    /// <list type="bullet">
+    /// <item>
+    /// <c>number: BigInteger</c> - The number for which the prime factors are
+    /// to be printed.
+    /// </item>
+    /// </list>
+    /// </summary>
     private static void PrintPrimeFactor(BigInteger number)
     {
         var primeFactors = FactorUtils.PrimeFactor(number);
         Console.WriteLine($"PFactor[{number}] = [{string.Join(", ", primeFactors)}]");
     }
 
+    /// <summary> <h1><c>Main</c></h1>
+    /// <br/><br/>This is the main method of the application.<br/><br/>
+    /// </summary>
     public static void Main(string[] args)
     {
         BigInteger number = GetNumber(args);

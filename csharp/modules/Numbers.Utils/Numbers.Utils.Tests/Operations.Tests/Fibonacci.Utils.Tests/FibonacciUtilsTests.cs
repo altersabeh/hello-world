@@ -33,8 +33,8 @@ public class FibonacciUtilsTests
     }
 
     /// <summary> <h1><c>FibonacciTest</c></h1>
-    /// <br/><br/>This method is used to test the Fibonacci method of
-    /// FibonacciUtils.<br/><br/>
+    /// <br/><br/>This method is used to test the <c>Fibonacci</c> method of
+    /// <c>FibonacciUtils</c>.<br/><br/>
     /// </summary>
     [Test]
     public void FibonacciTest()
@@ -47,8 +47,8 @@ public class FibonacciUtilsTests
     }
 
     /// <summary> <h1><c>FinonacciRandomTest</c></h1>
-    /// <br/><br/>This method is used to test the FibonacciRandom method of
-    /// FibonacciUtils.<br/><br/>
+    /// <br/><br/>This method is used to test the <c>FibonacciRandom</c> method
+    /// of <c>FibonacciUtils</c>.<br/><br/>
     /// </summary>
     [Test]
     public void FinonacciRandomTest()

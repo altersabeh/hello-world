@@ -31,8 +31,8 @@ public class HelloWorldTests
     }
 
     /// <summary> <h1><c>PrintGreetingWithoutNameTest</c></h1>
-    /// <br/><br/>This method is used to test the PrintGreeting method of
-    /// HelloWorld without arguments.<br/><br/>
+    /// <br/><br/>This method is used to test the <c>PrintGreeting</c> method of
+    /// <c>HelloWorld</c> without arguments.<br/><br/>
     /// </summary>
     [Test]
     public void PrintGreetingWithoutNameTest()
@@ -45,8 +45,8 @@ public class HelloWorldTests
     }
 
     /// <summary> <h1><c>PrintGreetingWithNameTest</c></h1>
-    /// <br/><br/>This method is used to test the PrintGreeting method of
-    /// HelloWorld with arguments.<br/><br/>
+    /// <br/><br/>This method is used to test the <c>PrintGreeting</c> method of
+    /// <c>HelloWorld</c> with arguments.<br/><br/>
     /// </summary>
     [Test]
     public void PrintGreetingWithNameTest()
@@ -59,8 +59,8 @@ public class HelloWorldTests
     }
 
     /// <summary> <h1><c>PrintDateTest</c></h1>
-    /// <br/><br/>This method is used to test the PrintDate method of
-    /// HelloWorld.<br/><br/>
+    /// <br/><br/>This method is used to test the <c>PrintDate</c> method of
+    /// <c>HelloWorld</c>.<br/><br/>
     /// </summary>
     [Test]
     public void PrintDateTest()
@@ -74,8 +74,8 @@ public class HelloWorldTests
     }
 
     /// <summary> <h1><c>PrintGreettTest</c></h1>
-    /// <br/><br/>This method is used to test the GREETING constant of
-    /// HelloWorld.<br/><br/>
+    /// <br/><br/>This method is used to test the <c>GREETING</c> constant of
+    /// <c>HelloWorld</c>.<br/><br/>
     /// </summary>
     [Test]
     public void PrintGreettTest()

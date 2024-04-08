@@ -31,8 +31,8 @@ public class GoodbyeWorldTests
     }
 
     /// <summary> <h1><c>PrintGoodbyeWithoutNameTest</c></h1>
-    /// <br/><br/>This method is used to test the PrintGoodbye method of
-    /// GoodbyeWorld without arguments.<br/><br/>
+    /// <br/><br/>This method is used to test the <c>PrintGoodbye</c> method of
+    /// <c>GoodbyeWorld</c> without arguments.<br/><br/>
     /// </summary>
     [Test]
     public void PrintGoodbyeWithoutNameTest()
@@ -45,8 +45,8 @@ public class GoodbyeWorldTests
     }
 
     /// <summary> <h1><c>PrintGoodbyeWithNameTest</c></h1>
-    /// <br/><br/>This method is used to test the PrintGoodbye method of
-    /// GoodbyeWorld with arguments.<br/><br/>
+    /// <br/><br/>This method is used to test the <c>PrintGoodbye</c> method of
+    /// <c>GoodbyeWorld</c> with arguments.<br/><br/>
     /// </summary>
     [Test]
     public void PrintGoodbyeWithNameTest()
@@ -59,8 +59,8 @@ public class GoodbyeWorldTests
     }
 
     /// <summary> <h1><c>PrintBannerTest</c></h1>
-    /// <br/><br/>This method is used to test the PrintBanner method of
-    /// GoodbyeWorld.<br/><br/>
+    /// <br/><br/>This method is used to test the <c>PrintBanner</c> method of
+    /// <c>GoodbyeWorld</c>.<br/><br/>
     [Test]
     public void PrintBannerTest()
     {

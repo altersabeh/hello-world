@@ -11,7 +11,8 @@ public class FactorUtils
     ///
     /// <list type="bullet">
     /// <item>
-    /// <c>num: BigInteger</c> - The number for which the factors are to be found.
+    /// <c>num: BigInteger</c> - The number for which the factors are to be
+    /// found.
     /// </item>
     /// </list>
     ///
@@ -94,7 +95,8 @@ public class FactorUtils
     ///
     /// <list type="bullet">
     /// <item>
-    /// <c>num: BigInteger</c> - The number for which the factors are to be found.
+    /// <c>num: BigInteger</c> - The number for which the factors are to be
+    /// found.
     /// </item>
     /// </list>
     ///

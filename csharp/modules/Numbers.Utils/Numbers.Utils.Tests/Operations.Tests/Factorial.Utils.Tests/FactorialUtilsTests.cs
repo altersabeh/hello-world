@@ -33,8 +33,8 @@ public class FactorialUtilsTests
     }
 
     /// <summary> <h1><c>FactorialTest</c></h1>
-    /// <br/><br/>This method is used to test the Factorial method of
-    /// FactorialUtils.<br/><br/>
+    /// <br/><br/>This method is used to test the </c>Factorial</c> method of
+    /// </c>FactorialUtils</c>.<br/><br/>
     /// </summary>
     [Test]
     public void FactorialTest()
@@ -49,8 +49,8 @@ public class FactorialUtilsTests
     }
 
     /// <summary> <h1><c>FactorialRandomTest</c></h1>
-    /// <br/><br/>This method is used to test the FactorialRandom method of
-    /// FactorialUtils.<br/><br/>
+    /// <br/><br/>This method is used to test the </c>FactorialRandom</c> method
+    /// of </c>FactorialUtils</c>.<br/><br/>
     /// </summary>
     [Test]
     public void FactorialRandomTest()

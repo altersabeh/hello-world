@@ -31,8 +31,8 @@ public class TranslationTests
     }
 
     /// <summary> <h1><c>TestCses</c></h1>
-    /// <br/><br/>This method is used to test the Translate method of
-    /// Translator.<br/><br/>
+    /// <br/><br/>This method is used to test the <c>Translate</c> method of
+    /// <c>Translator</c>.<br/><br/>
     /// </summary>
     private static readonly object[] TestCases =
     [
@@ -46,8 +46,8 @@ public class TranslationTests
     ];
 
     /// <summary> <h1><c>TestTranslate</c></h1>
-    /// <br/><br/>This method is used to test the Translate method of
-    /// Translator.<br/><br/>
+    /// <br/><br/>This method is used to test the <c>Translate</c> method of
+    /// <c>Translator</c>.<br/><br/>
     /// </summary>
     [TestCaseSource(nameof(TestCases))]
     public void TestTranslate(string language, string expectedOutput)

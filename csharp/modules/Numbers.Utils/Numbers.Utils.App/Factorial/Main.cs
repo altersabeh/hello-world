@@ -28,7 +28,7 @@ public class Factorial
     /// "Enter a number : 10"
     /// "Number : 10"</code>
     /// </summary>
-    public static int GetUserNumber()
+    private static int GetUserNumber()
     {
         Console.Write("Enter a number : ");
         string? numberStr = Console.ReadLine();
@@ -44,13 +44,16 @@ public class Factorial
     /// using Prog.Numbers.Utils.App;
     /// Factorial.PrintFactorial();</code>
     /// </summary>
-    public static void PrintFactorial()
+    private static void PrintFactorial()
     {
         string[] args = Environment.GetCommandLineArgs();
         int number = args.Length > 1 ? int.Parse(args[1]) : GetUserNumber();
         Console.WriteLine($"Fact[{number}] = {FactorialUtils.Factorial(number)}");
     }
 
+    /// <summary> <h1><c>Main</c></h1>
+    /// <br/><br/>This is the main method of the application.<br/><br/>
+    /// </summary>
     public static void Main(string[] args)
     {
         PrintFactorial();
