@@ -3,7 +3,7 @@ module Main where
 import Functions (startProgram)
 
 -- |
--- = `main`
+-- = @main@
 --
 -- This is the main function that starts the program.
 main :: IO ()

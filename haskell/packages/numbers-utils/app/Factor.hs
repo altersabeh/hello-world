@@ -104,6 +104,7 @@ printPrimeFactor number = do
             ++ "] = ["
             ++ primeFactorsStr
             ++ "]"
+
 -- |
 -- = @main@
 --
