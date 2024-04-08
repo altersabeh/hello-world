@@ -8,6 +8,21 @@ namespace Prog;
 
 internal class Functions
 {
+    /// <summary> <h1><c>WaitForUser</c></h1>
+    /// <br/><br/>This method waits for the user to press the Enter key before
+    /// continuing.<br/><br/>
+    ///
+    /// <b>Example:</b>
+    ///
+    /// <code>
+    /// using Prog;
+    /// Functions.WaitForUser();</code>
+    ///
+    /// <b>Output:</b>
+    ///
+    /// <code>
+    /// "Press enter to continue ..."</code>
+    /// </summary>
     private static void WaitForUser()
     {
         Console.Write("Press enter to continue ...");
@@ -15,6 +30,12 @@ internal class Functions
         Console.WriteLine("");
     }
 
+    /// <summary> <h1><c>StartProgram</c></h1>
+    /// <br/><br/>This method is the
+    /// entry point of the program. It calls the methods to print the welcome
+    /// message, user details, number calculations, random numbers, goodbye
+    /// message, and banner message.<br/><br/>
+    /// </summary>
     public static void StartProgram()
     {
         string[] args = Environment.GetCommandLineArgs().Skip(1).ToArray();

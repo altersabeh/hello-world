@@ -4,32 +4,46 @@ namespace Prog.Numbers.Utils.Operations;
 
 public class FactorUtils
 {
-    /// <summary> Calculates the factors of a given number.
-    /// <br></br>
-    /// <br><b>Example:</b></br>
-    /// <code>
-    /// using Numbers.Utils.Operations;
+    /// <summary> <h1><c>Factor</c></h1>
+    /// <br/><br/>This method is used to find the factors of a number.<br/><br/>
     ///
-    /// var factors = FactorUtils.Factor(60)
-    /// Console.WriteLine($"[{string.Join(", ", factors)}]");</code>
-    /// <br></br>
-    /// <br><b>Output:</b></br>
+    /// <b>Arguments:</b>
+    ///
+    /// <list type="bullet">
+    /// <item>
+    /// <c>num: BigInteger</c> - The number for which the factors are to be found.
+    /// </item>
+    /// </list>
+    ///
+    /// <b>Return:</b>
+    ///
+    /// <list type="bullet">
+    /// <item>
+    /// <c>List&lt;BigInteger&gt;</c> - The list of factors of the number.
+    /// </item>
+    /// </list>
+    ///
+    /// <b>Example:</b>
+    ///
     /// <code>
-    /// [1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60]</code>
+    /// using Prog.Numbers.Utils.Operations;
+    /// factors = FactorUtils.Factor(10);
+    /// Console.WriteLine(string.Join(", ",factors));</code>
+    ///
+    /// <b>Output:</b>
+    ///
+    /// <code>
+    /// "1, 2, 5, 10"</code>
     /// </summary>
-    /// <param name="n">The number to factorize. The number to factorize. This
-    /// should be of type <see cref="BigInteger"/></param>
-    /// <returns>A list of factors of the number. The return type is <see
-    /// cref="List"/> of <see cref="BigInteger"/>.</returns>
-    public static List<BigInteger> Factor(BigInteger n)
+    public static List<BigInteger> Factor(BigInteger num)
     {
         var factors = new List<BigInteger>();
-        var max = (int)n;
+        var max = (int)num;
 
         for (int i = 1; i <= max; i++)
         {
             var divisor = new BigInteger(i);
-            if (n % divisor == BigInteger.Zero)
+            if (num % divisor == BigInteger.Zero)
             {
                 factors.Add(divisor);
             }
@@ -38,6 +52,30 @@ public class FactorUtils
         return factors;
     }
 
+    /// <summary> <h1><c>FactorRandom</c></h1>
+    /// <br/><br/>This method is used to find the factors of a random
+    /// number.<br/><br/>
+    ///
+    /// <b>Return:</b>
+    ///
+    /// <list type="bullet">
+    /// <item>
+    /// <c>string</c> - The factors of the random number.
+    /// </item>
+    /// </list>
+    ///
+    /// <b>Example:</b>
+    ///
+    /// <code>
+    /// using Prog.Numbers.Utils.Operations;
+    /// factors = FactorUtils.FactorRandom();
+    /// Console.WriteLine(factors);</code>
+    ///
+    /// <b>Output:</b>
+    ///
+    /// <code>
+    /// "Factor[10] = [1, 2, 5, 10]"</code>
+    /// </summary>
     public static string FactorRandom()
     {
         var rng = new Random();
@@ -48,17 +86,49 @@ public class FactorUtils
         return $"Factor[{randomNum}] = [{string.Join(", ", factors)}]";
     }
 
-    public static List<BigInteger> PrimeFactor(BigInteger n)
+    /// <summary> <h1><c>PrimeFactor</c></h1>
+    /// <br/><br/>This method is used to find the prime factors of a
+    /// number.<br/><br/>
+    ///
+    /// <b>Arguments:</b>
+    ///
+    /// <list type="bullet">
+    /// <item>
+    /// <c>num: BigInteger</c> - The number for which the factors are to be found.
+    /// </item>
+    /// </list>
+    ///
+    /// <b>Return:</b>
+    ///
+    /// <list type="bullet">
+    /// <item>
+    /// <c>List&lt;BigInteger&gt;</c> - The list of factors of the number.
+    /// </item>
+    /// </list>
+    ///
+    /// <b>Example:</b>
+    ///
+    /// <code>
+    /// using Prog.Numbers.Utils.Operations;
+    /// primeFactors = FactorUtils.PrimeFactor(10);
+    /// Console.WriteLine(string.Join(", ",primeFactors));</code>
+    ///
+    /// <b>Output:</b>
+    ///
+    /// <code>
+    /// "1, 2, 5, 10"</code>
+    /// </summary>
+    public static List<BigInteger> PrimeFactor(BigInteger num)
     {
         var primeFactors = new List<BigInteger>();
         BigInteger divisor = 2;
 
-        while (divisor * divisor <= n)
+        while (divisor * divisor <= num)
         {
-            if (n % divisor == BigInteger.Zero)
+            if (num % divisor == BigInteger.Zero)
             {
                 primeFactors.Add(divisor);
-                n /= divisor;
+                num /= divisor;
             }
             else
             {
@@ -66,14 +136,36 @@ public class FactorUtils
             }
         }
 
-        if (n > BigInteger.One)
+        if (num > BigInteger.One)
         {
-            primeFactors.Add(n);
+            primeFactors.Add(num);
         }
 
         return primeFactors;
     }
 
+    /// <summary> <h1><c>PrimeFactorRandom</c></h1>
+    /// <br/><br/>This method is used to find the prime factors of a random
+    /// number.<br/><br/>
+    ///
+    /// <b>Return:</b>
+    ///
+    /// <list type="bullet">
+    /// <item>
+    /// <c>string</c> - The prime factors of the random number.
+    /// </item>
+    /// </list>
+    ///
+    /// <b>Example:</b>
+    /// <code>
+    /// using Prog.Numbers.Utils.Operations;
+    /// primeFactors = FactorUtils.PrimeFactorRandom();
+    /// Console.WriteLine(primeFactors);</code>
+    ///
+    /// <b>Output:</b>
+    /// <code>
+    /// "PFactor[10] = [1, 2, 5, 10]"</code>
+    /// </summary>
     public static string PrimeFactorRandom()
     {
         var rng = new Random();

@@ -3,11 +3,37 @@ namespace Prog.Hello.World.Tests;
 [TestFixture]
 public class HelloWorldTests
 {
+    /// <summary> <h1><c>FormatErrorMessage</c></h1>
+    /// <br/><br/>This method is used to format the error message.<br/><br/>
+    ///
+    /// <b>Arguments:</b>
+    ///
+    /// <list type="bullet">
+    /// <item>
+    /// <c>expected: string</c> - The expected list of factors.
+    /// </item>
+    /// <item>
+    /// <c>actual: string</c> - The actual list of factors.
+    /// </item>
+    /// </list>
+    ///
+    /// <b>Return:</b>
+    ///
+    /// <list type="bullet">
+    /// <item>
+    /// <c>string</c> - The formatted error message.
+    /// </item>
+    /// </list>
+    /// </summary>
     private static string FormatErrorMessage(string expected, string actual)
     {
         return $"\nTest run at: {DateTime.Now:O}\nExpected : {expected}\nActual   : {actual}\n";
     }
 
+    /// <summary> <h1><c>PrintGreetingWithoutNameTest</c></h1>
+    /// <br/><br/>This method is used to test the PrintGreeting method of
+    /// HelloWorld without arguments.<br/><br/>
+    /// </summary>
     [Test]
     public void PrintGreetingWithoutNameTest()
     {
@@ -18,6 +44,10 @@ public class HelloWorldTests
         Assert.That(expectedOutput, Is.EqualTo(actualOutput), errorMessage);
     }
 
+    /// <summary> <h1><c>PrintGreetingWithNameTest</c></h1>
+    /// <br/><br/>This method is used to test the PrintGreeting method of
+    /// HelloWorld with arguments.<br/><br/>
+    /// </summary>
     [Test]
     public void PrintGreetingWithNameTest()
     {
@@ -28,6 +58,10 @@ public class HelloWorldTests
         Assert.That(expectedOutput, Is.EqualTo(actualOutput), errorMessage);
     }
 
+    /// <summary> <h1><c>PrintDateTest</c></h1>
+    /// <br/><br/>This method is used to test the PrintDate method of
+    /// HelloWorld.<br/><br/>
+    /// </summary>
     [Test]
     public void PrintDateTest()
     {
@@ -39,6 +73,10 @@ public class HelloWorldTests
         Assert.That(expectedOutput, Is.EqualTo(actualOutput), errorMessage);
     }
 
+    /// <summary> <h1><c>PrintGreettTest</c></h1>
+    /// <br/><br/>This method is used to test the GREETING constant of
+    /// HelloWorld.<br/><br/>
+    /// </summary>
     [Test]
     public void PrintGreettTest()
     {

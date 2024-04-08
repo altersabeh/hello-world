@@ -4,6 +4,9 @@ namespace Prog.CLI.Function;
 
 public class Random
 {
+    /// <summary> <h1><c>PrintRandomNumbers</c></h1>
+    /// <br/><br/>This method prints some random numbers.<br/><br/>
+    /// </summary>
     public static void PrintRandomNumbers()
     {
         Console.WriteLine("Some random numbers :");

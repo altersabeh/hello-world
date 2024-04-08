@@ -2,42 +2,64 @@
 
 public class HelloWorld
 {
-    /// <summary> A constant string that contains a greeting message.
-    /// <br></br>
-    /// <br><b>Example:</b></br>
-    /// <code>
+
+
+    /// <summary> <h1><c>GREETING</c></h1>
+    /// <br/><br/>This constant contains the greeting message.<br/><br/>
     ///
-    /// using Hello.World;
-    /// Console.WriteLine(HelloWorld.GREETING) // Hello, C#'s Here !</code>
-    /// <b>Output:</b>
+    /// <b>Returns:</b>
+    ///
+    /// <list type="bullet">
+    /// <item>
+    /// <c>string</c> - The greeting message.
+    /// </item>
+    /// </list>
+    ///
+    /// <b>Example:</b>
+    ///
     /// <code>
-    /// "Hello, C#'s Here" </code>
+    /// using Hello.World;
+    /// Console.WriteLine(HelloWorld.GREETING) // Hello, C#'s Here !;</code>
+    ///
+    /// <b>Output:</b>
+    ///
+    /// <code>
+    /// "Hello, C#'s Here !"</code>
     /// </summary>
     public const string GREETING = "Hello, C#'s Here !";
 
-    /// <summary> This function prints a greeting.  It takes a list of strings
-    /// as an argument. If the list is empty, it prints a default
-    /// greeting.Otherwise, it prints a personalized greeting using the strings
-    /// in the list.
-    /// <br></br> <br><b>Signature:</b></br>
-    /// <code>
-    /// public static string PrintGreeting(string[] args) </code>
-    /// <br><b>Example:</b></br>
+    /// <summary> <h1><c>PrintGreeting</c></h1>
+    /// <br/><br/>This method prints the greeting message.<br/><br/>
+    ///
+    /// <b>Arguments:</b>
+    ///
+    /// <list type="bullet">
+    /// <item>
+    /// <c>args: string[]</c> - The command line arguments passed to the
+    /// program.
+    /// </item>
+    /// </list>
+    ///
+    /// <b>Return:</b>
+    ///
+    /// <list type="bullet">
+    /// <item>
+    /// <c>string</c> - The greeting message.
+    /// </item>
+    /// </list>
+    ///
+    /// <b>Example:</b>
+    ///
     /// <code>
     /// using Hello.World;
+    /// Console.WriteLine(HelloWorld.PrintGreeting([]));
+    /// Console.WriteLine(HelloWorld.PrintGreeting(["John", "Doe"]));</code>
     ///
-    /// public class Program
-    /// {
-    ///     public static void Main(string[] args)
-    ///     {
-    ///         Console.WriteLine(PrintGreeting(args));
-    ///         Console.WriteLine(PrintGreeting(["John", "Doe"]));
-    ///     }
-    /// } </code>
     /// <b>Output:</b>
+    ///
     /// <code>
     /// "Hello World from C# !"
-    /// "Hi John Doe, greetings from C# !" </code>
+    /// "Hello John Doe from C# !"</code>
     /// </summary>
     public static string PrintGreeting(string[] args)
     {
@@ -52,6 +74,28 @@ public class HelloWorld
         }
     }
 
+    /// <summary> <h1><c>PrintDate</c></h1>
+    /// <br/><br/>This method prints the current date.<br/><br/>
+    ///
+    /// <b>Return:</b>
+    ///
+    /// <list type="bullet">
+    /// <item>
+    /// <c>string</c> - The current date.
+    /// </item>
+    /// </list>
+    ///
+    /// <b>Example:</b>
+    ///
+    /// <code>
+    /// using Hello.World;
+    /// Console.WriteLine(HelloWorld.PrintDate());</code>
+    ///
+    /// <b>Output:</b>
+    ///
+    /// <code>
+    /// "Today is January 16, 2002 at 10:44 AM"</code>
+    /// </summary>
     public static string PrintDate()
     {
         DateTime currentDate = DateTime.Now;

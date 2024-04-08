@@ -3,11 +3,37 @@
 [TestFixture]
 public class TranslationTests
 {
+    /// <summary> <h1><c>FormatErrorMessage</c></h1>
+    /// <br/><br/>This method is used to format the error message.<br/><br/>
+    ///
+    /// <b>Arguments:</b>
+    ///
+    /// <list type="bullet">
+    /// <item>
+    /// <c>expected: string</c> - The expected list of factors.
+    /// </item>
+    /// <item>
+    /// <c>actual: string</c> - The actual list of factors.
+    /// </item>
+    /// </list>
+    ///
+    /// <b>Return:</b>
+    ///
+    /// <list type="bullet">
+    /// <item>
+    /// <c>string</c> - The formatted error message.
+    /// </item>
+    /// </list>
+    /// </summary>
     private static string FormatErrorMessage(string expected, string actual)
     {
         return $"\nTest run at: {DateTime.Now:O}\nExpected : {expected}\nActual   : {actual}\n";
     }
 
+    /// <summary> <h1><c>TestCses</c></h1>
+    /// <br/><br/>This method is used to test the Translate method of
+    /// Translator.<br/><br/>
+    /// </summary>
     private static readonly object[] TestCases =
     [
         new object[] { "English", "Hi Alter Sabeh, greetings from C# !" },
@@ -19,6 +45,10 @@ public class TranslationTests
         new object[] { "Unknown", "Hi Alter Sabeh, greetings from C# !" }
     ];
 
+    /// <summary> <h1><c>TestTranslate</c></h1>
+    /// <br/><br/>This method is used to test the Translate method of
+    /// Translator.<br/><br/>
+    /// </summary>
     [TestCaseSource(nameof(TestCases))]
     public void TestTranslate(string language, string expectedOutput)
     {

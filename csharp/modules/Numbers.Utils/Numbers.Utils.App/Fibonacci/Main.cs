@@ -4,6 +4,30 @@ namespace Prog.Numbers.Utils.App;
 
 public class Fibonacci
 {
+    /// <summary> <h1><c>GetUserNumber</c></h1>
+    /// <br/><br/>This method is used to get a number from the user.<br/><br/>
+    ///
+    /// <b>Return:</b>
+    ///
+    /// <list type="bulle">
+    /// <item>
+    /// <c>int</c> - The number entered by the user.
+    /// </item>
+    /// </list>
+    ///
+    /// <b>Example:</b>
+    ///
+    /// <code>
+    /// using Prog.Numbers.Utils.App;
+    /// number = Factorial.GetUserNumber();
+    /// Console.WriteLine(number);</code>
+    ///
+    /// <b>Output:</b>
+    /// 
+    /// <code>
+    /// "Enter a number : 10"
+    /// "Number : 10"</code>
+    /// </summary>
     public static int GetUserNumber()
     {
         Console.Write("Enter a number : ");
@@ -11,6 +35,15 @@ public class Fibonacci
         return int.TryParse(numberStr, out int number) ? number : 0;
     }
 
+    /// <summary> <h1><c>PrintFactorial</c></h1>
+    /// <br/><br/>This method is used to print the factorial of a
+    /// number.<br/><br/>
+    ///
+    /// <b>Example:</b>
+    /// <code>
+    /// using Prog.Numbers.Utils.App;
+    /// Factorial.PrintFactorial();</code>
+    /// </summary>
     public static void PrintFactorial()
     {
         string[] args = Environment.GetCommandLineArgs();
@@ -18,6 +51,9 @@ public class Fibonacci
         Console.WriteLine($"Fact[{number}] = {FibonacciUtils.Fibonacci(number)}");
     }
 
+    /// <summary> <h1><c>Main</c></h1>
+    /// <br/><br/>This method is the entry point of the program.<br/><br/>
+    /// </summary>
     public static void Main(string[] args)
     {
         PrintFactorial();

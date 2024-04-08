@@ -4,6 +4,9 @@ namespace Prog.CLI.Function;
 
 public class Number
 {
+    /// <summary> <h1><c>GetUserNumber</c></h1>
+    /// <br/><br/>This method gets a number from the user.<br/><br/>
+    /// </summary>
     public static int GetUserNumber()
     {
         Console.Write("Enter a number : ");
@@ -11,6 +14,11 @@ public class Number
         return int.TryParse(numberStr, out int number) ? number : 0;
     }
 
+    /// <summary> <h1><c>PrintNumberCalculations</c></h1>
+    /// <br/><br/>This method prints the Fibonacci and Factorial of a number
+    /// using the FibonacciUtils and FactorialUtils classes from the
+    /// Numbers.Utils module.<br/><br/>
+    /// </summary>
     public static void PrintNumberCalculations()
     {
         int number = GetUserNumber();
