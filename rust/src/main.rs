@@ -1,3 +1,5 @@
+// Hello World in Rust !
+
 mod functions;
 
 use functions::start_program;

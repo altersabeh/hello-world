@@ -1,3 +1,5 @@
+-- Hello World in Haskell !
+
 module Main where
 
 import Functions (startProgram)
