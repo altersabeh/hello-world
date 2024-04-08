@@ -21,8 +21,8 @@ use numbers_utils::operations::fibonacci_utils::fibonacci;
 /// __Output:__
 ///
 /// ```rust
-/// Enter a number : 5
-/// Number : 5
+/// "Enter a number : 5"
+/// "Number : 5"
 /// ```
 fn get_user_number() -> i32 {
     print!("Enter a number : ");
