@@ -4,7 +4,7 @@ import Data.Map (Map)
 import Data.Map qualified as Map
 
 -- |
--- = @helloTranslations@
+-- # @helloTranslations@
 --
 -- The @helloTranslations@ map contains the translations of "Hello" in different
 -- languages.
@@ -19,7 +19,7 @@ helloTranslations =
         ]
 
 -- |
--- = @greetingsFromTranslations@
+-- # @greetingsFromTranslations@
 --
 -- The @greetingsFromTranslations@ map contains the translations of "Greetings
 -- from" in different languages.
@@ -34,7 +34,7 @@ greetingsFromTranslations =
         ]
 
 -- |
--- = @translate@
+-- # @translate@
 --
 -- The function @translate@ is used to translate the greeting message.
 --

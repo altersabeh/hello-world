@@ -9,7 +9,7 @@ import Numeric.Natural (Natural)
 import System.Random (randomRIO)
 
 -- |
--- = @factor@
+-- # @factor@
 --
 -- The function @factor@ is used to calculate the factors of a number.
 --
@@ -38,7 +38,7 @@ factor :: Natural -> [Natural]
 factor num = [x | x <- [1 .. num], num `mod` x == 0]
 
 -- |
--- = @factorRandom@
+-- # @factorRandom@
 --
 -- The function @factorRandom@ is used to calculate the factors of a random
 -- number.
@@ -67,7 +67,7 @@ factorRandom = do
     return $ "Factor[" ++ show randomNum ++ "] = " ++ show factors
 
 -- |
--- = @primeFactor@
+-- # @primeFactor@
 --
 -- The function @primeFactor@ is used to calculate the prime factors of a
 -- number.
@@ -105,7 +105,7 @@ primeFactor num = go num 2
             | otherwise = go n (divisor + 2)
 
 -- |
--- = @primeFactorRandom@
+-- # @primeFactorRandom@
 --
 -- The function @primeFactorRandom@ is used to calculate the prime factors of a
 -- random number.

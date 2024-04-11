@@ -12,7 +12,7 @@ import Test.Tasty.HUnit (assertBool, assertEqual, testCase)
 import Numbers.Utils.Operations.FibonacciUtils (fibonacci, fibonacciRandom)
 
 -- |
--- = @formatErrorMessage@
+-- # @formatErrorMessage@
 --
 -- The function @formatErrorMessage@ is used to format the error message.
 --
@@ -37,7 +37,7 @@ formatErrorMessage expected actual = do
             ++ "\n"
 
 -- |
--- = @fibonacciTest@
+-- # @fibonacciTest@
 --
 -- The function @fibonacciTest@ is used to test the @fibonacci@ function.
 fibonacciTest :: TestTree
@@ -49,7 +49,7 @@ fibonacciTest = testCase "Fibonacci" $ do
     assertEqual errorMessage expectedOutput actualOutput
 
 -- |
--- = @fibonacciRandomTest@
+-- # @fibonacciRandomTest@
 --
 -- The function @fibonacciRandomTest@ is used to test the @fibonacciRandom@
 fibonacciRandomTest :: TestTree

@@ -12,7 +12,7 @@ import Test.Tasty.HUnit (assertBool, assertEqual, testCase)
 import Numbers.Utils.Operations.FactorialUtils (factorial, factorialRandom)
 
 -- |
--- = @formatErrorMessage@
+-- # @formatErrorMessage@
 --
 -- The function @formatErrorMessage@ is used to format the error message.
 --
@@ -37,7 +37,7 @@ formatErrorMessage expected actual = do
             ++ "\n"
 
 -- |
--- = @factorialTest@
+-- # @factorialTest@
 --
 -- The function @factorialTest@ is used to test the @factorial@ function.
 factorialTest :: TestTree
@@ -52,7 +52,7 @@ factorialTest = testCase "Factorial" $ do
     assertEqual errorMessage expectedOutput actualOutput
 
 -- |
--- = @factorialRandomTest@
+-- # @factorialRandomTest@
 --
 -- The function @factorialRandomTest@ is used to test the @factorialRandom@
 -- function.

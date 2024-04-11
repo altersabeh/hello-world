@@ -20,7 +20,7 @@ import Numbers.Utils.Operations.FactorUtils
     )
 
 -- |
--- = @formatErrorMessage@
+-- # @formatErrorMessage@
 --
 -- The function @formatErrorMessage@ is used to format the error message.
 --
@@ -45,7 +45,7 @@ formatErrorMessage expected actual = do
             ++ "\n"
 
 -- |
--- = @factorTest@
+-- # @factorTest@
 --
 -- The function @factorTest@ is used to test the @factor@ function.
 factorTest :: TestTree
@@ -57,7 +57,7 @@ factorTest = testCase "Factor Test" $ do
     assertEqual errorMessage expectedOutput actualOutput
 
 -- |
--- = @factorRandomTest@
+-- # @factorRandomTest@
 --
 -- The function @factorRandomTest@ is used to test the @factorRandom@ function.
 factorRandomTest :: TestTree
@@ -69,7 +69,7 @@ factorRandomTest = testCase "Factor Random Test" $ do
     assertBool errorMessage (" = " `isInfixOf` result)
 
 -- |
--- = @primeFactorTest@
+-- # @primeFactorTest@
 --
 -- The function @primeFactorTest@ is used to test the @primeFactor@ function.
 primeFactorTest :: TestTree
@@ -81,7 +81,7 @@ primeFactorTest = testCase "Prime Factor Test" $ do
     assertEqual errorMessage expectedOutput actualOutput
 
 -- |
--- = @primeFactorRandomTest@
+-- # @primeFactorRandomTest@
 --
 -- The function @primeFactorRandomTest@ is used to test the @primeFactorRandom@
 -- function.

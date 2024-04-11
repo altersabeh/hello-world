@@ -10,7 +10,7 @@ import Test.Tasty.HUnit (assertBool, testCase)
 import Translator (translate)
 
 -- |
--- = @formatErrorMessage@
+-- # @formatErrorMessage@
 --
 -- The function @formatErrorMessage@ is used to format the error message.
 --
@@ -35,7 +35,7 @@ formatErrorMessage expected actual = do
             ++ "\n"
 
 -- |
--- = @translateTests@
+-- # @translateTests@
 --
 -- The @translateTests@ function contains the tests for the @translate@
 -- function.
@@ -62,14 +62,14 @@ translateTests =
                 languages
 
 -- |
--- = @tests@
+-- # @tests@
 --
 -- This function contains the tests to be run.
 tests :: TestTree
 tests = testGroup "Translator Tests" [translateTests]
 
 -- |
--- = @main@
+-- # @main@
 --
 -- The @main@ function is the entrypoint of the program.
 main :: IO ()

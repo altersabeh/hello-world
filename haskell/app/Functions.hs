@@ -10,7 +10,7 @@ import CLI.Function.Number (printNumberCalculations)
 import CLI.Function.Random (printRandomNumbers)
 
 -- |
--- = @waitForUser@
+-- # @waitForUser@
 --
 -- This function waits for the user to press enter before continuing.
 --
@@ -34,7 +34,7 @@ waitForUser = do
     return ()
 
 -- |
--- = @startProgram@
+-- # @startProgram@
 --
 -- This function is the main entry point for the application. It prints the
 -- welcome message, user details, number calculations, random numbers, goodbye

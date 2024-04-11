@@ -10,7 +10,7 @@ import Test.Tasty.HUnit (assertBool, testCase)
 import Goodbye.World (printBanner, printGoodbye)
 
 -- |
--- = @formatErrorMessage@
+-- # @formatErrorMessage@
 --
 -- The function @formatErrorMessage@ is used to format the error message.
 --
@@ -35,7 +35,7 @@ formatErrorMessage expected actual = do
             ++ "\n"
 
 -- |
--- = @printGoodbyeWithoutNameTest@
+-- # @printGoodbyeWithoutNameTest@
 --
 -- The function @printGoodbyeWithoutNameTest@ is used to test the @printGoodbye@
 -- function without args.
@@ -48,7 +48,7 @@ printGoodbyeWithoutNameTest = testCase "Print Goodbye without Name Test" $ do
     assertBool errorMessage (expectedOutput == actualOutput)
 
 -- |
--- = @printGoodbyeWithNameTest@
+-- # @printGoodbyeWithNameTest@
 --
 -- The function @printGoodbyeWithNameTest@ is used to test the @printGoodbye@
 -- function with args.
@@ -61,7 +61,7 @@ printGoodbyeWithNameTest = testCase "Print Goodbye with Name Test" $ do
     assertBool errorMessage (expectedOutput == actualOutput)
 
 -- |
--- = @printBannerTest@
+-- # @printBannerTest@
 --
 -- The function @printBannerTest@ is used to test the @printBanner@ function.
 printBannerTest :: TestTree
@@ -85,7 +85,7 @@ printBannerTest = testCase "Print Banner Test" $ do
     assertBool errorMessage (expectedOutput == actualOutput)
 
 -- |
--- = @tests@
+-- # @tests@
 --
 -- The @tests@ function contains the tests for the @Goodbye.World@ package.
 tests :: TestTree
@@ -95,7 +95,7 @@ tests =
         [printGoodbyeWithoutNameTest, printGoodbyeWithNameTest, printBannerTest]
 
 -- |
--- = @main@
+-- # @main@
 --
 -- The @main@ function is the entrypoint of the test
 main :: IO ()

@@ -6,7 +6,7 @@ import Translator (translate)
 import Hello.World (printDate)
 
 -- |
--- = @getUserName@
+-- # @getUserName@
 --
 -- The function @getUserName@ is used to get the user name.
 --
@@ -28,7 +28,7 @@ getUserName args =
             return (unwords args)
 
 -- |
--- = @getUserLanguage@
+-- # @getUserLanguage@
 --
 -- The function @getUserLanguage@ is used to get the user language.
 --
@@ -42,7 +42,7 @@ getUserLanguage = do
     getLine
 
 -- |
--- = @printUserDetails@
+-- # @printUserDetails@
 --
 -- The function @printUserDetails@ is used to print the user details.
 --

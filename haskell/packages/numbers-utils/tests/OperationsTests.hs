@@ -14,7 +14,7 @@ import Operations.FactorialUtilsTests (factorialRandomTest, factorialTest)
 import Operations.FibonacciUtilsTests (fibonacciRandomTest, fibonacciTest)
 
 -- |
--- = @test@
+-- # @test@
 --
 -- This function contains the tests to be run
 tests :: TestTree
@@ -32,7 +32,7 @@ tests =
         ]
 
 -- |
--- = @main@
+-- # @main@
 --
 -- The @main@ function is the entrypoint of the program
 main :: IO ()

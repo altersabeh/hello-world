@@ -3,7 +3,7 @@ module Numbers.Utils.Operations.FactorialUtils (factorial, factorialRandom) wher
 import System.Random (randomRIO)
 
 -- |
--- = @factorial@
+-- # @factorial@
 --
 -- The function @factorial@ is used to calculate the factorial of a number.
 --
@@ -32,7 +32,7 @@ factorial :: Integer -> Integer
 factorial num = product [1 .. num]
 
 -- |
--- = @factorialRandom@
+-- # @factorialRandom@
 --
 -- The function @factorialRandom@ is used to calculate the factorial of a random
 -- number.

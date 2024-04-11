@@ -3,7 +3,7 @@ module CLI.Function.Banner (printBannerMessage) where
 import Goodbye.World (printBanner)
 
 -- |
--- = @printBannerMessage@
+-- # @printBannerMessage@
 --
 -- The function @printBannerMessage@ is used to print the banner message by
 -- calling the @printBanner@ function.

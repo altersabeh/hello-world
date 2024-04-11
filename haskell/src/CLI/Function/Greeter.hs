@@ -6,7 +6,7 @@ import Goodbye.World (printGoodbye)
 import Hello.World (printGreeting)
 
 -- |
--- = @printWelcomeMessage@
+-- # @printWelcomeMessage@
 --
 -- The function @printWelcomeMessage@ is used to print the welcome message.
 --
@@ -22,7 +22,7 @@ printWelcomeMessage args = do
     putStrLn $ printGreeting args
 
 -- |
--- = @printGoodbyeMessage@
+-- # @printGoodbyeMessage@
 --
 -- The function @printGoodbyeMessage@ is used to print the goodbye message.
 --

@@ -1,7 +1,7 @@
 module Goodbye.World (printGoodbye, printBanner) where
 
 -- |
--- = @printGoodbye@
+-- # @printGoodbye@
 --
 -- The function @printGoodbye@ is used to print the goodbye message.
 --
@@ -32,7 +32,7 @@ printGoodbye [] = "Goodbye World from Haskell !"
 printGoodbye name = "Goodbye " ++ unwords name ++ " from Haskell !"
 
 -- |
--- = @printBanner@
+-- # @printBanner@
 --
 -- The function @printBanner@ is used to print the banner message.
 --

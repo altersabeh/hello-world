@@ -3,7 +3,7 @@ module Main where
 import CLI.Function.Random (printRandomNumbers)
 
 -- |
--- = @main@
+-- # @main@
 --
 -- This function is the main entry point for the application.
 main :: IO ()

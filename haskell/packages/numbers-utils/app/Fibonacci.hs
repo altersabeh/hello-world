@@ -7,7 +7,7 @@ import Text.Read (readMaybe)
 import Numbers.Utils.Operations.FibonacciUtils (fibonacci)
 
 -- |
--- = @getUserNumber@
+-- # @getUserNumber@
 --
 -- The function @getUserNumber@ is used to get a number from the user.
 --
@@ -39,7 +39,7 @@ getUserNumber = do
         Nothing -> return 0
 
 -- |
--- = @printFibonacci@
+-- # @printFibonacci@
 --
 -- The function @printFibonacci@ is used to print the Fibonacci number.
 --
@@ -56,7 +56,7 @@ printFibonacci = do
     putStrLn $ "Fib[" ++ show number ++ "] = " ++ show (fibonacci number)
 
 -- |
--- = @main@
+-- # @main@
 --
 -- The main function is the entry point that starts the program.
 main :: IO ()

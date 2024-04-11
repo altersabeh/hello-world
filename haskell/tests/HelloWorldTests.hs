@@ -11,7 +11,7 @@ import Test.Tasty.HUnit (assertBool, testCase)
 import Hello.World (greeting, printDate, printGreeting)
 
 -- |
--- = @formatErrorMessage@
+-- # @formatErrorMessage@
 --
 -- The function @formatErrorMessage@ is used to format the error message.
 --
@@ -36,7 +36,7 @@ formatErrorMessage expected actual = do
             ++ "\n"
 
 -- |
--- = @printGreetingsWithoutNameTest@
+-- # @printGreetingsWithoutNameTest@
 --
 -- The function @printGreetingsWithoutNameTest@ is used to test the
 -- @printGreeting@ function without args.
@@ -49,7 +49,7 @@ printGreetingWithoutNameTest = testCase "Print Greeting without Name Test" $ do
     assertBool errorMessage (expectedOutput == actualOutput)
 
 -- |
--- = @printGreetingWithNameTest@
+-- # @printGreetingWithNameTest@
 --
 -- The function @printGreetingWithNameTest@ is used to test the @printGreeting@
 -- function with args.
@@ -62,7 +62,7 @@ printGreetingWithNameTest = testCase "Print Greeting with Name Test" $ do
     assertBool errorMessage (expectedOutput == actualOutput)
 
 -- |
--- = @printDateTest@
+-- # @printDateTest@
 --
 -- The function @printDateTest@ is used to test the @printDate@ function.
 printDateTest :: TestTree
@@ -75,7 +75,7 @@ printDateTest = testCase "Print Date Test" $ do
     assertBool errorMessage (expectedOutput == actualOutput)
 
 -- |
--- = @printGreetTest@
+-- # @printGreetTest@
 --
 -- The function @printGreetTest@ is used to test the @greeting@ function.
 printGreetTest :: TestTree
@@ -86,7 +86,7 @@ printGreetTest = testCase "Print Greet Test" $ do
     assertBool errorMessage (expectedOutput == actualOutput)
 
 -- |
--- = @tests@
+-- # @tests@
 --
 -- The @tests@ function contains the tests for the @Hello.World@ module.
 tests :: TestTree
@@ -100,7 +100,7 @@ tests =
         ]
 
 -- |
--- = @main@
+-- # @main@
 --
 -- The @main@ function is used to run the tests.
 main :: IO ()

@@ -5,7 +5,7 @@ import System.Environment (getArgs)
 import CLI.Function.Details (printUserDetails)
 
 -- |
--- = @main@
+-- # @main@
 --
 -- This function is the main entry point for the application.
 --

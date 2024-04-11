@@ -7,7 +7,7 @@ import Text.Read (readMaybe)
 import Numbers.Utils.Operations.FactorialUtils (factorial)
 
 -- |
--- = @getUserNumber@
+-- # @getUserNumber@
 --
 -- The function @getUserNumber@ is used to get a number from the user.
 --
@@ -39,7 +39,7 @@ getUserNumber = do
         Nothing -> return 0
 
 -- |
--- = @printFactorial@
+-- # @printFactorial@
 --
 -- The function @printFactorial@ is used to print the factorial number.
 --
@@ -56,7 +56,7 @@ printFactorial = do
     putStrLn $ "Fact[" ++ show number ++ "] = " ++ show (factorial number)
 
 -- |
--- = @main@
+-- # @main@
 --
 -- The @main@ function is the entry point that starts the program.
 main :: IO ()

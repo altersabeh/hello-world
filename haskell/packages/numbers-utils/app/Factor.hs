@@ -10,7 +10,7 @@ import Text.Read (readMaybe)
 import Numbers.Utils.Operations.FactorUtils (factor, primeFactor)
 
 -- |
--- = @getUserNumber@
+-- # @getUserNumber@
 --
 -- The function @getUserNumber@ is used to get a number from the user.
 --
@@ -39,7 +39,7 @@ getUserNumber = do
     fromMaybe 0 . readMaybe <$> getLine
 
 -- |
--- = @getNumber@
+-- # @getNumber@
 --
 -- The function @getNumber@ is used to get a number from the command line
 -- arguments.
@@ -59,7 +59,7 @@ getNumber = do
         else getUserNumber
 
 -- |
--- = @printFactor@
+-- # @printFactor@
 --
 -- The function @printFactor@ is used to print the factors of a number.
 --
@@ -82,7 +82,7 @@ printFactor number = do
             ++ "]"
 
 -- |
--- = @printPrimeFactor@
+-- # @printPrimeFactor@
 --
 -- The function @printPrimeFactor@ is used to print the prime factors of a
 -- number.
@@ -106,7 +106,7 @@ printPrimeFactor number = do
             ++ "]"
 
 -- |
--- = @main@
+-- # @main@
 --
 -- The function @main@ is the entry point of the program. It gets a number from
 -- the user and prints the factors and prime factors of the number.

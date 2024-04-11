@@ -7,7 +7,7 @@ import Numbers.Utils.Operations.FactorialUtils (factorial)
 import Numbers.Utils.Operations.FibonacciUtils (fibonacci)
 
 -- |
--- = @getUserNumber@
+-- # @getUserNumber@
 --
 -- The function @getUserNumber@ is used to get the user number.
 --
@@ -39,7 +39,7 @@ getUserNumber = do
         Nothing -> return 0
 
 -- |
--- = @printNumberCalculations@
+-- # @printNumberCalculations@
 --
 -- The function @printNumberCalculations@ is used to print the fibonacci and
 -- factorial of the user number by calling the @fibonacci@ and @factorial@.

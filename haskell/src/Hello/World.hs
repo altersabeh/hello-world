@@ -28,7 +28,7 @@ greeting :: String
 greeting = "Hello, Haskell's Here !"
 
 -- |
--- = @printGreeting@
+-- # @printGreeting@
 --
 -- This function prints a greeting.  It takes a list of strings as an argument.
 -- If the list is empty, it prints a default greeting.  Otherwise, it prints a
@@ -61,7 +61,7 @@ printGreeting [] = "Hello World from Haskell !"
 printGreeting name = "Hello " ++ unwords name ++ " from Haskell !"
 
 -- |
--- = @printDate@
+-- # @printDate@
 --
 -- The function @printDate@ is used to print the current date and time.
 --

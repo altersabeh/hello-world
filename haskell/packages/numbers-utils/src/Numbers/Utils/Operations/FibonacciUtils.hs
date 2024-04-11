@@ -3,7 +3,7 @@ module Numbers.Utils.Operations.FibonacciUtils (fibonacci, fibonacciRandom) wher
 import System.Random (randomRIO)
 
 -- |
--- = @fibonacci@
+-- # @fibonacci@
 --
 -- The function @fibonacci@ is used to calculate the Fibonacci number.
 --
@@ -34,7 +34,7 @@ fibonacci num = fibs !! fromIntegral num
         fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
 
 -- |
--- = @fibonacciRandom@
+-- # @fibonacciRandom@
 --
 -- The function @fibonacciRandom@ is used to calculate the Fibonacci number of a
 -- random number.
