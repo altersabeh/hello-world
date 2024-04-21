@@ -31,5 +31,6 @@ tasks {
             attributes["Description"] = "Hello World program in Kotlin"
             attributes["Main-Class"] = "com.prog.MainKt"
         }
+        archiveBaseName.set("kotlin-hello")
     }
 }

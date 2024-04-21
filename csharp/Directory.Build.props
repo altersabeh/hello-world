@@ -24,4 +24,10 @@
     <PackageOutputPath>$(RepoRoot)artifacts/$(ProjectRelativePath)/package</PackageOutputPath>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="$(RepoRoot)README.md" Pack="true" PackagePath="\"/>
+    <None Include="$(RepoRoot)CHANGELOG.md" Pack="true" PackagePath="\"/>
+    <None Include="$(RepoRoot)LICENSE.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+
 </Project>

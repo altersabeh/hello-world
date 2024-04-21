@@ -64,7 +64,8 @@ public class GoodbyeWorldTests
     [Test]
     public void PrintBannerTest()
     {
-        string expectedOutput = @"
+        string expectedOutput =
+            @"
         ███▄    █▓████▄▄▄█████▓
         ██ ▀█   █▓█   ▓  ██▒ ▓▒
        ▓██  ▀█ ██▒███ ▒ ▓██░ ▒░

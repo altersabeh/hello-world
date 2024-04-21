@@ -2,8 +2,6 @@
 
 public class HelloWorld
 {
-
-
     /// <summary> <h1><c>GREETING</c></h1>
     /// <br/><br/>This constant contains the greeting message.<br/><br/>
     ///
