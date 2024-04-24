@@ -12,7 +12,7 @@ cabal_commands=(
     "cabal build all"
     "cabal test all"
     "cabal run cabal-hello"
-    "fourmolu -i . ; for i in $(ls packages); do cabal format packages/$i/*.cabal; done"
+    "fourmolu -i . ; for i in $(ls packages); do cabal-fmt -i packages/$i/*.cabal; done" ; cabal-fmt -i *.cabal
     "hlint ."
     "cabal sdist"
     "cabal clean"
