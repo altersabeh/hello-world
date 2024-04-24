@@ -9,157 +9,157 @@ author:          AlterSabeh
 bug-reports:     https://github.com/altersabeh/hello-world/issues
 synopsis:        Hello World program in Haskell
 description:
-    Please see the README on GitHub at <https://github.com/altersabeh/hello-world#README>
+  Please see the README on GitHub at <https://github.com/altersabeh/hello-world#README>
 
 category:        command-line
 build-type:      Simple
 extra-doc-files:
-    CHANGELOG.md
-    README.md
+  CHANGELOG.md
+  README.md
 
 source-repository head
-    type:     git
-    location: https://github.com/altersabeh/hello-world
+  type:     git
+  location: https://github.com/altersabeh/hello-world
 
 library goodbye-world
-    exposed-modules:  Goodbye.World
-    hs-source-dirs:   src
-    other-modules:    Paths_haskell_hello
-    autogen-modules:  Paths_haskell_hello
-    default-language: GHC2021
-    ghc-options:      -Wall
-    build-depends:
-        base ^>=4.18.2.0,
-        time ^>=1.12.2
+  exposed-modules:  Goodbye.World
+  hs-source-dirs:   src
+  other-modules:    Paths_haskell_hello
+  autogen-modules:  Paths_haskell_hello
+  default-language: GHC2021
+  ghc-options:      -Wall
+  build-depends:
+    , base  >=4.18.2.0
+    , time  >=1.12.2
 
 library hello-world
-    exposed-modules:  Hello.World
-    visibility:       public
-    hs-source-dirs:   src
-    other-modules:    Paths_haskell_hello
-    autogen-modules:  Paths_haskell_hello
-    default-language: GHC2021
-    ghc-options:      -Wall
-    build-depends:
-        base ^>=4.18.2.0,
-        time ^>=1.12.2
+  exposed-modules:  Hello.World
+  visibility:       public
+  hs-source-dirs:   src
+  other-modules:    Paths_haskell_hello
+  autogen-modules:  Paths_haskell_hello
+  default-language: GHC2021
+  ghc-options:      -Wall
+  build-depends:
+    , base  >=4.18.2.0
+    , time  >=1.12.2
 
 library cli-function
-    exposed-modules:
-        CLI.Function.Banner
-        CLI.Function.Details
-        CLI.Function.Greeter
-        CLI.Function.Number
-        CLI.Function.Random
+  exposed-modules:
+    CLI.Function.Banner
+    CLI.Function.Details
+    CLI.Function.Greeter
+    CLI.Function.Number
+    CLI.Function.Random
 
-    hs-source-dirs:   src
-    other-modules:
-        Paths_haskell_hello
-        Hello.World
-        Goodbye.World
+  hs-source-dirs:   src
+  other-modules:
+    Goodbye.World
+    Hello.World
+    Paths_haskell_hello
 
-    autogen-modules:  Paths_haskell_hello
-    default-language: GHC2021
-    ghc-options:      -Wall
-    build-depends:
-        haskell-hello:hello-world,
-        haskell-hello:goodbye-world,
-        base ^>=4.18.2.0,
-        time ^>=1.12.2,
-        numbers-utils ^>=1.0.0,
-        translator ^>=1.0.0
+  autogen-modules:  Paths_haskell_hello
+  default-language: GHC2021
+  ghc-options:      -Wall
+  build-depends:
+    , base                         >=4.18.2.0
+    , haskell-hello:goodbye-world
+    , haskell-hello:hello-world
+    , numbers-utils                >=1.0.0
+    , time                         >=1.12.2
+    , translator                   >=1.0.0
 
 executable haskell-hello
-    main-is:          Main.hs
-    hs-source-dirs:   app
-    other-modules:
-        Paths_haskell_hello
-        Functions
+  main-is:          Main.hs
+  hs-source-dirs:   app
+  other-modules:
+    Functions
+    Paths_haskell_hello
 
-    autogen-modules:  Paths_haskell_hello
-    default-language: GHC2021
-    ghc-options:      -Wall
-    build-depends:
-        haskell-hello:cli-function,
-        base ^>=4.18.2.0
+  autogen-modules:  Paths_haskell_hello
+  default-language: GHC2021
+  ghc-options:      -Wall
+  build-depends:
+    , base                        >=4.18.2.0
+    , haskell-hello:cli-function
 
 executable banner
-    main-is:          Command/Banner.hs
-    hs-source-dirs:   app
-    other-modules:    Paths_haskell_hello
-    autogen-modules:  Paths_haskell_hello
-    default-language: GHC2021
-    ghc-options:      -Wall
-    build-depends:
-        haskell-hello:cli-function,
-        base ^>=4.18.2.0
+  main-is:          Command/Banner.hs
+  hs-source-dirs:   app
+  other-modules:    Paths_haskell_hello
+  autogen-modules:  Paths_haskell_hello
+  default-language: GHC2021
+  ghc-options:      -Wall
+  build-depends:
+    , base                        >=4.18.2.0
+    , haskell-hello:cli-function
 
 executable details
-    main-is:          Command/Details.hs
-    hs-source-dirs:   app
-    other-modules:    Paths_haskell_hello
-    autogen-modules:  Paths_haskell_hello
-    default-language: GHC2021
-    ghc-options:      -Wall
-    build-depends:
-        haskell-hello:cli-function,
-        base ^>=4.18.2.0
+  main-is:          Command/Details.hs
+  hs-source-dirs:   app
+  other-modules:    Paths_haskell_hello
+  autogen-modules:  Paths_haskell_hello
+  default-language: GHC2021
+  ghc-options:      -Wall
+  build-depends:
+    , base                        >=4.18.2.0
+    , haskell-hello:cli-function
 
 executable greeter
-    main-is:          Command/Greeter.hs
-    hs-source-dirs:   app
-    other-modules:    Paths_haskell_hello
-    autogen-modules:  Paths_haskell_hello
-    default-language: GHC2021
-    ghc-options:      -Wall
-    build-depends:
-        haskell-hello:cli-function,
-        base ^>=4.18.2.0
+  main-is:          Command/Greeter.hs
+  hs-source-dirs:   app
+  other-modules:    Paths_haskell_hello
+  autogen-modules:  Paths_haskell_hello
+  default-language: GHC2021
+  ghc-options:      -Wall
+  build-depends:
+    , base                        >=4.18.2.0
+    , haskell-hello:cli-function
 
 executable number
-    main-is:          Command/Number.hs
-    hs-source-dirs:   app
-    other-modules:    Paths_haskell_hello
-    autogen-modules:  Paths_haskell_hello
-    default-language: GHC2021
-    ghc-options:      -Wall
-    build-depends:
-        haskell-hello:cli-function,
-        base ^>=4.18.2.0
+  main-is:          Command/Number.hs
+  hs-source-dirs:   app
+  other-modules:    Paths_haskell_hello
+  autogen-modules:  Paths_haskell_hello
+  default-language: GHC2021
+  ghc-options:      -Wall
+  build-depends:
+    , base                        >=4.18.2.0
+    , haskell-hello:cli-function
 
 executable random
-    main-is:          Command/Random.hs
-    hs-source-dirs:   app
-    other-modules:    Paths_haskell_hello
-    autogen-modules:  Paths_haskell_hello
-    default-language: GHC2021
-    ghc-options:      -Wall
-    build-depends:
-        haskell-hello:cli-function,
-        base ^>=4.18.2.0
+  main-is:          Command/Random.hs
+  hs-source-dirs:   app
+  other-modules:    Paths_haskell_hello
+  autogen-modules:  Paths_haskell_hello
+  default-language: GHC2021
+  ghc-options:      -Wall
+  build-depends:
+    , base                        >=4.18.2.0
+    , haskell-hello:cli-function
 
 test-suite hello-world-test
-    type:             exitcode-stdio-1.0
-    main-is:          HelloWorldTests.hs
-    hs-source-dirs:   tests
-    default-language: GHC2021
-    ghc-options:      -Wall
-    build-depends:
-        haskell-hello:hello-world,
-        base ^>=4.18.2.0,
-        time ^>=1.12.2,
-        tasty ^>=1.4.3,
-        tasty-hunit ^>=0.10.1
+  type:             exitcode-stdio-1.0
+  main-is:          HelloWorldTests.hs
+  hs-source-dirs:   tests
+  default-language: GHC2021
+  ghc-options:      -Wall
+  build-depends:
+    , base                       >=4.18.2.0
+    , haskell-hello:hello-world
+    , tasty                      >=1.4.3
+    , tasty-hunit                >=0.10.1
+    , time                       >=1.12.2
 
 test-suite goodbye-world-test
-    type:             exitcode-stdio-1.0
-    main-is:          GoodbyeWorldTests.hs
-    hs-source-dirs:   tests
-    default-language: GHC2021
-    ghc-options:      -Wall
-    build-depends:
-        haskell-hello:goodbye-world,
-        base ^>=4.18.2.0,
-        time ^>=1.12.2,
-        tasty ^>=1.4.3,
-        tasty-hunit ^>=0.10.1
+  type:             exitcode-stdio-1.0
+  main-is:          GoodbyeWorldTests.hs
+  hs-source-dirs:   tests
+  default-language: GHC2021
+  ghc-options:      -Wall
+  build-depends:
+    , base                         >=4.18.2.0
+    , haskell-hello:goodbye-world
+    , tasty                        >=1.4.3
+    , tasty-hunit                  >=0.10.1
+    , time                         >=1.12.2
